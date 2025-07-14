@@ -148,7 +148,7 @@ export function HeroSection() {
             </div>
             
             {/* Minimalist Stats Cards */}
-            <div className="absolute -top-12 -right-12 bg-white/6 backdrop-blur-3xl rounded-2xl p-6 shadow-[0_8px_32px_rgba(0,0,0,0.2)] border border-white/10">
+            <div className="absolute -top-16 -right-16 bg-white/6 backdrop-blur-3xl rounded-2xl p-6 shadow-[0_8px_32px_rgba(0,0,0,0.2)] border border-white/10 z-10">
               <div className="flex items-center space-x-3">
                 <div className="w-6 h-6 bg-emerald-400/20 rounded-full flex items-center justify-center">
                   <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
@@ -160,7 +160,7 @@ export function HeroSection() {
               </div>
             </div>
             
-            <div className="absolute -bottom-12 -left-12 bg-white/6 backdrop-blur-3xl rounded-2xl p-6 shadow-[0_8px_32px_rgba(0,0,0,0.2)] border border-white/10">
+            <div className="absolute -bottom-16 -left-16 bg-white/6 backdrop-blur-3xl rounded-2xl p-6 shadow-[0_8px_32px_rgba(0,0,0,0.2)] border border-white/10 z-10">
               <div className="flex items-center space-x-3">
                 <div className="w-6 h-6 bg-yellow-400/20 rounded-full flex items-center justify-center">
                   <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
