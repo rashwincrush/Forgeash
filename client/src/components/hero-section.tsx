@@ -100,11 +100,11 @@ export function HeroSection() {
               <div className="absolute inset-0 animate-spin-very-slow">
                 <div className="absolute w-full h-full">
                   {/* Healthcare - Top */}
-                  <div className="absolute top-2 left-1/2 transform -translate-x-1/2">
+                  <div className="absolute top-4 left-1/2 transform -translate-x-1/2">
                     <div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/60 to-teal-400/60 rounded-2xl blur-lg animate-pulse"></div>
-                      <div className="relative w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl shadow-2xl flex items-center justify-center professional-glow border-2 border-emerald-300/40">
-                        <svg className="w-8 h-8 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                      <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/40 to-teal-400/40 rounded-xl blur-sm"></div>
+                      <div className="relative w-12 h-12 bg-gradient-to-br from-emerald-400/90 to-teal-500/90 rounded-xl shadow-xl flex items-center justify-center border border-emerald-300/20 backdrop-blur-sm">
+                        <svg className="w-6 h-6 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
                         </svg>
                       </div>
@@ -112,11 +112,11 @@ export function HeroSection() {
                   </div>
                   
                   {/* Finance - Top Right */}
-                  <div className="absolute top-12 right-6">
+                  <div className="absolute top-16 right-8">
                     <div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-orange-400/60 to-yellow-400/60 rounded-2xl blur-lg animate-pulse"></div>
-                      <div className="relative w-16 h-16 bg-gradient-to-br from-orange-400 to-yellow-500 rounded-2xl shadow-2xl flex items-center justify-center professional-glow border-2 border-orange-300/40">
-                        <svg className="w-8 h-8 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                      <div className="absolute inset-0 bg-gradient-to-r from-orange-400/40 to-yellow-400/40 rounded-xl blur-sm"></div>
+                      <div className="relative w-12 h-12 bg-gradient-to-br from-orange-400/90 to-yellow-500/90 rounded-xl shadow-xl flex items-center justify-center border border-orange-300/20 backdrop-blur-sm">
+                        <svg className="w-6 h-6 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17h-2v-9.28c-.35.17-.74.28-1.17.28-.95 0-1.8-.7-1.95-1.65L8.5 8h7l-.62-.35c-.15.95-1 1.65-1.95 1.65-.43 0-.82-.11-1.17-.28V19z"/>
                         </svg>
                       </div>
@@ -124,11 +124,11 @@ export function HeroSection() {
                   </div>
                   
                   {/* E-commerce - Right */}
-                  <div className="absolute top-1/2 right-2 transform -translate-y-1/2">
+                  <div className="absolute top-1/2 right-4 transform -translate-y-1/2">
                     <div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-green-400/60 to-emerald-400/60 rounded-2xl blur-lg animate-pulse"></div>
-                      <div className="relative w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl shadow-2xl flex items-center justify-center professional-glow border-2 border-green-300/40">
-                        <svg className="w-8 h-8 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                      <div className="absolute inset-0 bg-gradient-to-r from-green-400/40 to-emerald-400/40 rounded-xl blur-sm"></div>
+                      <div className="relative w-12 h-12 bg-gradient-to-br from-green-400/90 to-emerald-500/90 rounded-xl shadow-xl flex items-center justify-center border border-green-300/20 backdrop-blur-sm">
+                        <svg className="w-6 h-6 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M7 4V2C7 1.45 7.45 1 8 1h8c.55 0 1 .45 1 1v2h5v2h-2v13c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V6H2V4h5zm10 15V6H7v13h10zM9 3v1h6V3H9zm0 5h2v8H9V8zm4 0h2v8h-2V8z"/>
                         </svg>
                       </div>
@@ -136,11 +136,11 @@ export function HeroSection() {
                   </div>
                   
                   {/* Education - Bottom */}
-                  <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
                     <div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-blue-400/60 to-indigo-400/60 rounded-2xl blur-lg animate-pulse"></div>
-                      <div className="relative w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl shadow-2xl flex items-center justify-center professional-glow border-2 border-blue-300/40">
-                        <svg className="w-8 h-8 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-400/40 to-indigo-400/40 rounded-xl blur-sm"></div>
+                      <div className="relative w-12 h-12 bg-gradient-to-br from-blue-400/90 to-indigo-500/90 rounded-xl shadow-xl flex items-center justify-center border border-blue-300/20 backdrop-blur-sm">
+                        <svg className="w-6 h-6 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6L23 9l-11-6zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
                         </svg>
                       </div>
@@ -148,11 +148,11 @@ export function HeroSection() {
                   </div>
                   
                   {/* Manufacturing - Left */}
-                  <div className="absolute top-1/2 left-2 transform -translate-y-1/2">
+                  <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
                     <div className="relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-purple-400/60 to-pink-400/60 rounded-2xl blur-lg animate-pulse"></div>
-                      <div className="relative w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl shadow-2xl flex items-center justify-center professional-glow border-2 border-purple-300/40">
-                        <svg className="w-8 h-8 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                      <div className="absolute inset-0 bg-gradient-to-r from-purple-400/40 to-pink-400/40 rounded-xl blur-sm"></div>
+                      <div className="relative w-12 h-12 bg-gradient-to-br from-purple-400/90 to-pink-500/90 rounded-xl shadow-xl flex items-center justify-center border border-purple-300/20 backdrop-blur-sm">
+                        <svg className="w-6 h-6 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                         </svg>
                       </div>
