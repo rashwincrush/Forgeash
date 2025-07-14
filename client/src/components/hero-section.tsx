@@ -132,26 +132,28 @@ export function HeroSection() {
                 </div>
               </div>
               
-              {/* Floating Stats Cards - Enhanced */}
-              <div className="absolute -top-6 -right-6 bg-white/5 backdrop-blur-xl rounded-2xl p-5 shadow-2xl professional-glow border border-white/10">
-                <div className="flex items-center space-x-3">
-                  <div className="w-4 h-4 bg-gradient-to-br from-[var(--executive-green)] to-green-500 rounded-full animate-pulse shadow-lg"></div>
-                  <div className="text-white">
-                    <div className="text-lg font-semibold">10+</div>
-                    <div className="text-xs text-white/70">Projects Completed</div>
-                  </div>
+
+            </div>
+            
+            {/* Stats Cards - Outside Orbit */}
+            <div className="absolute -top-10 -right-10 bg-white/5 backdrop-blur-xl rounded-2xl p-6 shadow-2xl professional-glow border border-white/10">
+              <div className="flex items-center space-x-3">
+                <div className="w-5 h-5 bg-gradient-to-br from-[var(--executive-green)] to-green-500 rounded-full animate-pulse shadow-lg"></div>
+                <div className="text-white">
+                  <div className="text-xl font-semibold">10+</div>
+                  <div className="text-sm text-white/70">Projects Completed</div>
                 </div>
               </div>
-              
-              <div className="absolute -bottom-6 -left-6 bg-white/5 backdrop-blur-xl rounded-2xl p-5 shadow-2xl professional-glow border border-white/10">
-                <div className="flex items-center space-x-3">
-                  <div className="w-5 h-5 bg-gradient-to-br from-primary to-blue-500 rounded-full flex items-center justify-center shadow-lg">
-                    <div className="w-2.5 h-2.5 bg-white rounded-full"></div>
-                  </div>
-                  <div className="text-white">
-                    <div className="text-lg font-semibold">98%</div>
-                    <div className="text-xs text-white/70">Client Satisfaction</div>
-                  </div>
+            </div>
+            
+            <div className="absolute -bottom-10 -left-10 bg-white/5 backdrop-blur-xl rounded-2xl p-6 shadow-2xl professional-glow border border-white/10">
+              <div className="flex items-center space-x-3">
+                <div className="w-6 h-6 bg-gradient-to-br from-primary to-blue-500 rounded-full flex items-center justify-center shadow-lg">
+                  <div className="w-3 h-3 bg-white rounded-full"></div>
+                </div>
+                <div className="text-white">
+                  <div className="text-xl font-semibold">98%</div>
+                  <div className="text-sm text-white/70">Client Satisfaction</div>
                 </div>
               </div>
             </div>
