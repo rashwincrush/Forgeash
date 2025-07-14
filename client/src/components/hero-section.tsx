@@ -70,32 +70,49 @@ export function HeroSection() {
                 </div>
               </div>
               
-              {/* Single Orbital Ring - Slow Rotation */}
+              {/* Multiple Orbital Rings */}
+              
+              {/* Outer Ring - Orange Icon */}
               <div className="absolute inset-0 animate-spin-very-slow">
                 <div className="relative w-full h-full">
-                  {/* Circle Path */}
-                  <div className="absolute inset-8 border border-white/10 rounded-full"></div>
-                  
-                  {/* 4 Rotating Icons - matching Ashwinai.in colors */}
-                  <div className="absolute top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                  </div>
-                  
-                  <div className="absolute top-1/2 right-6 transform -translate-y-1/2 w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
+                  <div className="absolute inset-4 border border-white/8 rounded-full"></div>
+                  <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-9.28c-.35.17-.74.28-1.17.28-.95 0-1.8-.7-1.95-1.65L8.5 8h7l-.62-.35c-.15.95-1 1.65-1.95 1.65-.43 0-.82-.11-1.17-.28V19z"/>
                     </svg>
                   </div>
-                  
-                  <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
+                </div>
+              </div>
+              
+              {/* Second Ring - Blue Icon */}
+              <div className="absolute inset-0 animate-spin-very-slow">
+                <div className="relative w-full h-full">
+                  <div className="absolute inset-6 border border-white/8 rounded-full"></div>
+                  <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Third Ring - Green Icon */}
+              <div className="absolute inset-0 animate-spin-very-slow">
+                <div className="relative w-full h-full">
+                  <div className="absolute inset-8 border border-white/8 rounded-full"></div>
+                  <div className="absolute top-1/2 right-6 transform -translate-y-1/2 w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
                     </svg>
                   </div>
-                  
-                  <div className="absolute top-1/2 left-6 transform -translate-y-1/2 w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
+                </div>
+              </div>
+              
+              {/* Fourth Ring - Teal Icon */}
+              <div className="absolute inset-0 animate-spin-very-slow">
+                <div className="relative w-full h-full">
+                  <div className="absolute inset-10 border border-white/8 rounded-full"></div>
+                  <div className="absolute top-1/2 left-8 transform -translate-y-1/2 w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6L23 9l-11-6zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
                     </svg>
