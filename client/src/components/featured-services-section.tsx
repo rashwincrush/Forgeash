@@ -45,7 +45,7 @@ export function FeaturedServicesSection() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-br from-[var(--professional-violet)] via-[var(--professional-violet-light)] to-[var(--professional-violet)]">
+    <section id="services" className="py-24 bg-gradient-to-br from-[var(--professional-blueish-violet)] via-[var(--professional-blueish-violet-light)] to-[var(--professional-blueish-violet)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Crore-Focused Subliminal Wealth Programming */}
         <div className="subliminal-text prosperity-frequency top-12 left-14">My services generate crores in revenue</div>

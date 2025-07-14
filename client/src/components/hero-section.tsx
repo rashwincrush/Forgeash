@@ -32,7 +32,7 @@ export function HeroSection() {
             
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Transform Your Business With{" "}
-              <span className="violet-blue-gradient-text">
+              <span className="blueish-violet-gradient-text">
                 Strategic AI Solutions
               </span>
             </h1>
@@ -42,7 +42,7 @@ export function HeroSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <Button size="lg" className="violet-blue-gradient text-white hover:opacity-90 hover:scale-105 group professional-shadow px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 border border-white/20">
+              <Button size="lg" className="blueish-violet-gradient text-white hover:opacity-90 hover:scale-105 group professional-shadow px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 border border-white/20">
                 Schedule a Free Strategy Call
                 <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
