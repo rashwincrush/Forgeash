@@ -24,13 +24,13 @@
   --ring: hsl(221, 83%, 53%);
   --radius: 0.5rem;
   
-  /* Blueish Violet Professional Palette */
+  /* Option 1: Deep Ocean Blue Professional */
   --professional-white: hsl(0, 0%, 100%);
-  --professional-blueish-violet: hsl(250, 70%, 60%);
-  --professional-blueish-violet-light: hsl(250, 70%, 75%);
-  --professional-blue: hsl(220, 85%, 60%);
-  --professional-blue-light: hsl(220, 85%, 70%);
-  --professional-blue-dark: hsl(220, 85%, 45%);
+  --professional-primary: hsl(210, 100%, 50%);
+  --professional-primary-light: hsl(210, 100%, 65%);
+  --professional-secondary: hsl(220, 90%, 60%);
+  --professional-secondary-light: hsl(220, 90%, 75%);
+  --professional-accent: hsl(200, 100%, 45%);
   --professional-gray: hsl(220, 10%, 50%);
   --professional-gray-light: hsl(220, 10%, 95%);
   --professional-success: hsl(155, 60%, 45%);
@@ -59,13 +59,13 @@
   --destructive-foreground: hsl(210, 40%, 98%);
   --ring: hsl(221, 83%, 53%);
   
-  /* Blueish Violet Professional Dark Palette */
+  /* Option 1: Deep Ocean Blue Professional Dark */
   --professional-white: hsl(0, 0%, 100%);
-  --professional-blueish-violet: hsl(250, 70%, 60%);
-  --professional-blueish-violet-light: hsl(250, 70%, 75%);
-  --professional-blue: hsl(220, 85%, 60%);
-  --professional-blue-light: hsl(220, 85%, 70%);
-  --professional-blue-dark: hsl(220, 85%, 45%);
+  --professional-primary: hsl(210, 100%, 50%);
+  --professional-primary-light: hsl(210, 100%, 65%);
+  --professional-secondary: hsl(220, 90%, 60%);
+  --professional-secondary-light: hsl(220, 90%, 75%);
+  --professional-accent: hsl(200, 100%, 45%);
   --professional-gray: hsl(220, 10%, 50%);
   --professional-gray-light: hsl(220, 10%, 95%);
   --professional-success: hsl(155, 60%, 45%);
@@ -130,7 +130,7 @@
   50% { opacity: 0.003; }
 }
 
-/* Blueish Violet Professional Animations */
+/* Option 1: Deep Ocean Blue Professional */
 .professional-shadow {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
@@ -140,41 +140,41 @@
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.blueish-violet-gradient {
-  background: linear-gradient(135deg, var(--professional-blueish-violet) 0%, var(--professional-blue) 100%);
+.primary-gradient {
+  background: linear-gradient(135deg, var(--professional-primary) 0%, var(--professional-secondary) 100%);
 }
 
-.blueish-violet-gradient-text {
-  background: linear-gradient(135deg, var(--professional-blueish-violet) 0%, var(--professional-blue) 100%);
+.primary-gradient-text {
+  background: linear-gradient(135deg, var(--professional-primary) 0%, var(--professional-secondary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.blue-gradient {
-  background: linear-gradient(135deg, var(--professional-blue) 0%, var(--professional-blue-light) 100%);
+.secondary-gradient {
+  background: linear-gradient(135deg, var(--professional-secondary) 0%, var(--professional-secondary-light) 100%);
 }
 
-.blue-gradient-text {
-  background: linear-gradient(135deg, var(--professional-blue) 0%, var(--professional-blue-light) 100%);
+.secondary-gradient-text {
+  background: linear-gradient(135deg, var(--professional-secondary) 0%, var(--professional-secondary-light) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.blueish-violet-light-gradient {
-  background: linear-gradient(135deg, var(--professional-blueish-violet-light) 0%, var(--professional-blueish-violet) 100%);
+.accent-gradient {
+  background: linear-gradient(135deg, var(--professional-accent) 0%, var(--professional-primary-light) 100%);
 }
 
-.blueish-violet-light-gradient-text {
-  background: linear-gradient(135deg, var(--professional-blueish-violet-light) 0%, var(--professional-blueish-violet) 100%);
+.accent-gradient-text {
+  background: linear-gradient(135deg, var(--professional-accent) 0%, var(--professional-primary-light) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .orbital-ring {
-  border: 2px solid rgba(124, 58, 237, 0.15);
+  border: 2px solid rgba(33, 150, 243, 0.15);
   border-radius: 50%;
   animation: orbital-rotation 25s linear infinite;
 }
@@ -185,7 +185,7 @@
 }
 
 .professional-card {
-  background: linear-gradient(135deg, var(--professional-blueish-violet) 0%, var(--professional-blueish-violet-light) 100%);
+  background: linear-gradient(135deg, var(--professional-primary) 0%, var(--professional-primary-light) 100%);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 16px;
@@ -193,14 +193,14 @@
 }
 
 .professional-card:hover {
-  background: linear-gradient(135deg, var(--professional-blueish-violet-light) 0%, var(--professional-blueish-violet) 100%);
+  background: linear-gradient(135deg, var(--professional-primary-light) 0%, var(--professional-primary) 100%);
   transform: translateY(-4px);
   border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 20px 40px -12px rgba(124, 58, 237, 0.25);
+  box-shadow: 0 20px 40px -12px rgba(33, 150, 243, 0.25);
 }
 
 .professional-card-dark {
-  background: linear-gradient(135deg, var(--professional-blueish-violet) 0%, var(--professional-blueish-violet-light) 100%);
+  background: linear-gradient(135deg, var(--professional-primary) 0%, var(--professional-primary-light) 100%);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 16px;
@@ -208,10 +208,10 @@
 }
 
 .professional-card-dark:hover {
-  background: linear-gradient(135deg, var(--professional-blueish-violet-light) 0%, var(--professional-blueish-violet) 100%);
+  background: linear-gradient(135deg, var(--professional-primary-light) 0%, var(--professional-primary) 100%);
   transform: translateY(-4px);
   border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 20px 40px -12px rgba(124, 58, 237, 0.25);
+  box-shadow: 0 20px 40px -12px rgba(33, 150, 243, 0.25);
 }
 
 @layer base {

@@ -28,7 +28,7 @@ export function StatisticsSection() {
   }, []);
 
   return (
-    <section className="py-24 bg-gradient-to-br from-[var(--professional-blueish-violet)] via-[var(--professional-blueish-violet-light)] to-[var(--professional-blueish-violet)]">
+    <section className="py-24 bg-gradient-to-br from-[var(--professional-primary)] via-[var(--professional-primary-light)] to-[var(--professional-primary)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Crore-Focused Subliminal Wealth Programming */}
         <div className="subliminal-text prosperity-frequency top-16 left-12">Every project generates crores in value</div>
