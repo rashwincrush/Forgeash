@@ -31,14 +31,8 @@ export function IndustryExpertiseSection() {
   ];
 
   return (
-    <section id="industries" className="py-20 bg-gradient-to-br from-[var(--professional-primary)] via-[var(--professional-primary-light)] to-[var(--professional-primary)]">
+    <section id="industries" className="py-20 bg-background dark:bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Industry-Focused Wealth Magnetism */}
-        <div className="subliminal-text prosperity-frequency top-12 left-10">Every industry pays me premium rates</div>
-        <div className="subliminal-text abundance-flow top-20 right-18">My solutions generate crores across sectors</div>
-        <div className="subliminal-text success-magnetism bottom-14 left-22">Industries compete for my expertise</div>
-        <div className="subliminal-text prosperity-frequency bottom-22 right-14">I dominate markets with billion-dollar impact</div>
-        <div className="subliminal-text abundance-flow top-1/2 right-1/3">My influence attracts unlimited wealth</div>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="animate-slide-in-left">
             <h2 className="text-4xl font-bold text-foreground mb-4">INDUSTRY EXPERTISE</h2>
@@ -49,7 +43,7 @@ export function IndustryExpertiseSection() {
             <p className="text-lg text-muted-foreground mb-8">
               Our team combines deep industry knowledge with cutting-edge technical capabilities to create solutions that drive meaningful results for your specific business context.
             </p>
-            <Button size="lg" className="violet-blue-gradient text-white hover:opacity-90 professional-shadow">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 professional-glow hover-lift">
               Learn About Our Approach
             </Button>
           </div>
@@ -60,10 +54,8 @@ export function IndustryExpertiseSection() {
                 {column.map((industry, industryIndex) => {
                   const IconComponent = industry.icon;
                   return (
-                    <div key={industryIndex} className={`professional-card p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 animate-scale-in`} style={{ animationDelay: `${(columnIndex * 3 + industryIndex) * 0.1}s` }}>
-                      <div className={`w-12 h-12 rounded-xl mb-3 flex items-center justify-center ${industryIndex % 2 === 0 ? 'violet-gradient' : 'blue-gradient'}`}>
-                        <IconComponent className="text-white h-6 w-6" />
-                      </div>
+                    <div key={industryIndex} className={`bg-gradient-to-br ${industry.color} dark:bg-gradient-to-br dark:from-card dark:to-card/50 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 professional-glow animate-scale-in`} style={{ animationDelay: `${(columnIndex * 3 + industryIndex) * 0.1}s` }}>
+                      <IconComponent className={`${industry.iconColor} h-8 w-8 mb-3`} />
                       <h4 className="font-semibold text-foreground">{industry.name}</h4>
                     </div>
                   );

@@ -33,17 +33,11 @@ export function ServiceCategoriesSection() {
   ];
 
   return (
-    <section id="expertise" className="py-20 bg-gradient-to-br from-[var(--executive-navy)] via-[var(--executive-blue)] to-[var(--executive-navy)] dark:from-[var(--executive-charcoal)] dark:via-[var(--executive-blue)] dark:to-[var(--executive-navy)]">
+    <section id="expertise" className="py-20 bg-gradient-to-br from-[var(--executive-navy)] to-primary dark:from-[var(--executive-charcoal)] dark:to-[var(--executive-navy)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Strategic Subliminal Success Programming */}
-        <div className="subliminal-text prosperity-frequency top-14 left-16">Premium clients seek my solutions eagerly</div>
-        <div className="subliminal-text abundance-flow top-22 right-24">My expertise commands millions in revenue</div>
-        <div className="subliminal-text success-magnetism bottom-18 left-12">Corporations invest crores in my services</div>
-        <div className="subliminal-text prosperity-frequency bottom-26 right-16">I attract unlimited high-value projects</div>
-        <div className="subliminal-text abundance-flow top-2/3 left-2/3">My business scales to billions effortlessly</div>
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-white mb-4">OUR EXPERTISE</h2>
-          <h3 className="text-2xl font-semibold violet-blue-gradient-text mb-6">Strategic Service Categories</h3>
+          <h3 className="text-2xl font-semibold text-slate-300 mb-6">Strategic Service Categories</h3>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">
             Comprehensive solutions designed to transform your business through technology, AI innovation, professional development, and strategic talent management.
           </p>
@@ -53,9 +47,9 @@ export function ServiceCategoriesSection() {
           {categories.map((category, index) => {
             const IconComponent = category.icon;
             return (
-              <div key={index} className="professional-card-dark p-8 transition-all duration-300 group animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div key={index} className="bg-white/10 backdrop-blur-md rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 group professional-glow animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="text-center">
-                  <div className={`flex items-center justify-center w-16 h-16 ${category.icon === Rocket ? 'violet-blue-gradient' : category.icon === Settings ? 'blue-gradient' : category.icon === Users ? 'violet-gradient' : 'blue-gradient'} rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300 professional-shadow`}>
+                  <div className={`flex items-center justify-center w-16 h-16 ${category.icon === Rocket ? 'bg-primary' : category.icon === Settings ? 'bg-[var(--executive-green)]' : category.icon === Users ? 'bg-[var(--executive-purple)]' : 'bg-[var(--executive-orange)]'} rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300`}>
                     <IconComponent className="text-white h-8 w-8" />
                   </div>
                   <h4 className="text-2xl font-bold text-white mb-4">{category.title}</h4>

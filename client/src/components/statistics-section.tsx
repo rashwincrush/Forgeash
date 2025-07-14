@@ -28,18 +28,16 @@ export function StatisticsSection() {
   }, []);
 
   return (
-    <section className="py-24 bg-gradient-to-br from-[var(--professional-primary)] via-[var(--professional-primary-light)] to-[var(--professional-primary)]">
+    <section className="py-24 bg-gradient-to-br from-background via-muted/30 to-background dark:from-background dark:via-muted/10 dark:to-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Crore-Focused Subliminal Wealth Programming */}
-        <div className="subliminal-text prosperity-frequency top-16 left-12">Every project generates crores in value</div>
-        <div className="subliminal-text abundance-flow top-24 right-20">I create billion-dollar transformations</div>
-        <div className="subliminal-text success-magnetism bottom-20 left-16">My solutions generate unlimited wealth</div>
-        <div className="subliminal-text prosperity-frequency bottom-28 right-28">Crores flow through every interaction</div>
-        <div className="subliminal-text abundance-flow top-1/3 left-2/3">I am a magnet for millionaire clients</div>
-        <div className="subliminal-text success-magnetism top-2/3 right-1/3">My statistics attract unlimited prosperity</div>
+        {/* Subtle Subliminal Success Affirmations */}
+        <div className="subliminal-text prosperity-frequency top-16 left-12">Success multiplies through my work</div>
+        <div className="subliminal-text abundance-flow top-24 right-20">I create value that transforms businesses</div>
+        <div className="subliminal-text success-magnetism bottom-20 left-16">My solutions generate abundant returns</div>
+        <div className="subliminal-text prosperity-frequency bottom-28 right-28">Excellence flows through every project</div>
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl font-bold text-foreground mb-6">
-            Driving <span className="violet-blue-gradient-text">Excellence</span> Through Innovation
+            Driving <span className="text-transparent bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] bg-clip-text">Excellence</span> Through Innovation
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Our proven track record demonstrates consistent delivery of transformative AI solutions that generate measurable business impact across diverse industries.
@@ -48,9 +46,9 @@ export function StatisticsSection() {
         
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <div className="group relative">
-            <div className="absolute inset-0 violet-gradient rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-            <div className="relative text-center p-10 professional-card shadow-2xl hover:shadow-3xl transition-all duration-500 animate-scale-in">
-              <div className="text-7xl font-bold violet-blue-gradient-text mb-4 animate-counter">
+            <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+            <div className="relative text-center p-10 bg-gradient-to-br from-white/80 to-white/40 dark:from-card/80 dark:to-card/40 backdrop-blur-xl rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 professional-glow border border-white/20">
+              <div className="text-7xl font-bold text-transparent bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] bg-clip-text mb-4 animate-counter">
                 {projectsCount}+
               </div>
               <div className="text-lg font-semibold text-foreground mb-2">
@@ -63,9 +61,9 @@ export function StatisticsSection() {
           </div>
           
           <div className="group relative">
-            <div className="absolute inset-0 blue-gradient rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-            <div className="relative text-center p-10 professional-card shadow-2xl hover:shadow-3xl transition-all duration-500 animate-scale-in">
-              <div className="text-7xl font-bold violet-blue-gradient-text mb-4 animate-counter">
+            <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-green)] to-[var(--executive-orange)] rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+            <div className="relative text-center p-10 bg-gradient-to-br from-white/80 to-white/40 dark:from-card/80 dark:to-card/40 backdrop-blur-xl rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 professional-glow border border-white/20">
+              <div className="text-7xl font-bold text-transparent bg-gradient-to-r from-[var(--executive-green)] to-[var(--executive-orange)] bg-clip-text mb-4 animate-counter">
                 {satisfactionCount}%
               </div>
               <div className="text-lg font-semibold text-foreground mb-2">

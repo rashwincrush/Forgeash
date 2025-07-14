@@ -4,23 +4,20 @@ import forgeAshLogo from "@assets/Image_02-05-25_at_10.52_AM-removebg-preview_17
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[var(--executive-navy)] via-[var(--executive-slate)] to-[var(--executive-charcoal)] dark:from-[var(--executive-navy)] dark:via-[var(--executive-slate)] dark:to-background overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-blue-800 to-[var(--executive-navy)] dark:from-[var(--executive-navy)] dark:via-[var(--executive-charcoal)] dark:to-background overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-[size:30px_30px] dark:bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.05)_1px,transparent_0)]"></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-        {/* Ultra-Powerful Crore-Magnetism Subliminal Programming */}
-        <div className="subliminal-text prosperity-frequency top-10 left-10">I attract crores of rupees daily</div>
-        <div className="subliminal-text abundance-flow top-20 right-16">My AI solutions generate unlimited wealth</div>
-        <div className="subliminal-text success-magnetism bottom-32 left-20">Billion-dollar opportunities flow to me</div>
-        <div className="subliminal-text prosperity-frequency bottom-40 right-24">I manifest millionaire clients instantly</div>
-        <div className="subliminal-text abundance-flow top-1/2 left-1/3">My expertise commands crores in revenue</div>
-        <div className="subliminal-text success-magnetism top-1/3 right-1/4">Unlimited wealth multiplies through my work</div>
-        <div className="subliminal-text prosperity-frequency top-40 left-1/3">I attract Fortune 500 clients effortlessly</div>
-        <div className="subliminal-text abundance-flow bottom-50 right-1/3">My business scales to billions automatically</div>
-        <div className="subliminal-text success-magnetism top-2/3 left-2/3">Money flows to me from every direction</div>
+        {/* Subtle Subliminal Layer */}
+        <div className="subliminal-text prosperity-frequency top-10 left-10">I attract abundant clients effortlessly</div>
+        <div className="subliminal-text abundance-flow top-20 right-16">My AI solutions generate massive revenue</div>
+        <div className="subliminal-text success-magnetism bottom-32 left-20">Innovation flows through me naturally</div>
+        <div className="subliminal-text prosperity-frequency bottom-40 right-24">I manifest extraordinary business success</div>
+        <div className="subliminal-text abundance-flow top-1/2 left-1/3">My code creates limitless possibilities</div>
+        <div className="subliminal-text success-magnetism top-1/3 right-1/4">Clients are drawn to my expertise</div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left animate-slide-in-left">
@@ -32,7 +29,7 @@ export function HeroSection() {
             
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Transform Your Business With{" "}
-              <span className="primary-gradient-text">
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent animate-gradient">
                 Strategic AI Solutions
               </span>
             </h1>
@@ -42,7 +39,7 @@ export function HeroSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <Button size="lg" className="primary-gradient text-white hover:opacity-90 hover:scale-105 group professional-shadow px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 border border-white/20">
+              <Button size="lg" className="bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] text-white hover:from-[var(--executive-gold)] hover:to-[var(--executive-orange)] hover:scale-105 group professional-glow shadow-2xl px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 border border-white/20">
                 Schedule a Free Strategy Call
                 <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -70,26 +67,26 @@ export function HeroSection() {
           <div className="relative animate-slide-in-right">
             {/* Ultra-Refined Orbital System */}
             <div className="relative w-[480px] h-[480px] mx-auto">
-              {/* Professional Orbital Ring System */}
+              {/* Minimalist Orbital Rings */}
               <div className="absolute inset-0">
-                {/* Outer Ring - Professional Blue */}
-                <div className="absolute inset-0 orbital-ring border-[var(--executive-accent)]/20"></div>
+                {/* Outer Ring - Subtle Blue */}
+                <div className="absolute inset-0 rounded-full border border-blue-400/15 shadow-[0_0_20px_rgba(59,130,246,0.1)]"></div>
                 
-                {/* Middle Ring - Refined Blue */}
-                <div className="absolute inset-20 orbital-ring border-[var(--executive-accent)]/15" style={{animationDelay: '-10s'}}></div>
+                {/* Middle Ring - Elegant Purple */}
+                <div className="absolute inset-20 rounded-full border border-purple-400/12 shadow-[0_0_15px_rgba(147,51,234,0.08)]"></div>
                 
-                {/* Inner Ring - Subtle Blue */}
-                <div className="absolute inset-40 orbital-ring border-[var(--executive-accent)]/10" style={{animationDelay: '-5s'}}></div>
+                {/* Inner Ring - Soft Gold */}
+                <div className="absolute inset-40 rounded-full border border-yellow-400/10 shadow-[0_0_10px_rgba(251,191,36,0.06)]"></div>
                 
-                {/* Professional Ambient Glow */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[var(--executive-accent)]/5 via-[var(--executive-accent-light)]/5 to-[var(--executive-accent)]/5 blur-3xl"></div>
+                {/* Subtle Ambient Glow */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/3 via-purple-500/3 to-blue-500/3 blur-3xl"></div>
               </div>
               
-              {/* Professional Central Logo */}
+              {/* Refined Central Logo */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-accent)]/15 to-[var(--executive-accent-light)]/15 rounded-full blur-xl"></div>
-                  <div className="relative w-32 h-32 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.3)] border border-white/20 executive-shadow">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-2xl"></div>
+                  <div className="relative w-32 h-32 bg-gradient-to-br from-white/15 to-white/8 backdrop-blur-3xl rounded-full flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.3)] border border-white/20">
                     <img 
                       src={forgeAshLogo} 
                       alt="ForgeAsh Technologies Logo" 
@@ -104,8 +101,8 @@ export function HeroSection() {
                 <div className="absolute w-full h-full">
                   {/* Healthcare - Top */}
                   <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
-                    <div className="w-10 h-10 bg-white/8 backdrop-blur-xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/15 hover:bg-white/12 transition-all duration-300 executive-shadow">
-                      <svg className="w-5 h-5 text-[var(--executive-success)]" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-10 h-10 bg-white/8 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/10 hover:bg-white/12 transition-all duration-300">
+                      <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
                       </svg>
                     </div>
@@ -113,8 +110,8 @@ export function HeroSection() {
                   
                   {/* Finance - Top Right */}
                   <div className="absolute top-20 right-12">
-                    <div className="w-10 h-10 bg-white/8 backdrop-blur-xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/15 hover:bg-white/12 transition-all duration-300 executive-shadow">
-                      <svg className="w-5 h-5 text-[var(--executive-warning)]" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-10 h-10 bg-white/8 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/10 hover:bg-white/12 transition-all duration-300">
+                      <svg className="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17h-2v-9.28c-.35.17-.74.28-1.17.28-.95 0-1.8-.7-1.95-1.65L8.5 8h7l-.62-.35c-.15.95-1 1.65-1.95 1.65-.43 0-.82-.11-1.17-.28V19z"/>
                       </svg>
                     </div>
@@ -122,8 +119,8 @@ export function HeroSection() {
                   
                   {/* E-commerce - Right */}
                   <div className="absolute top-1/2 right-8 transform -translate-y-1/2">
-                    <div className="w-12 h-12 bg-white/10 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_6px_20px_rgba(0,0,0,0.2)] border border-white/20 hover:bg-white/15 transition-all duration-300 executive-glow">
-                      <svg className="w-6 h-6 text-[var(--executive-green)]" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-10 h-10 bg-white/8 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/10 hover:bg-white/12 transition-all duration-300">
+                      <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M7 4V2C7 1.45 7.45 1 8 1h8c.55 0 1 .45 1 1v2h5v2h-2v13c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V6H2V4h5zm10 15V6H7v13h10zM9 3v1h6V3H9zm0 5h2v8H9V8zm4 0h2v8h-2V8z"/>
                       </svg>
                     </div>
@@ -131,8 +128,8 @@ export function HeroSection() {
                   
                   {/* Education - Bottom */}
                   <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-                    <div className="w-12 h-12 bg-white/10 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_6px_20px_rgba(0,0,0,0.2)] border border-white/20 hover:bg-white/15 transition-all duration-300 executive-glow">
-                      <svg className="w-6 h-6 text-[var(--success-sapphire)]" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-10 h-10 bg-white/8 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/10 hover:bg-white/12 transition-all duration-300">
+                      <svg className="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6L23 9l-11-6zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
                       </svg>
                     </div>
@@ -140,8 +137,8 @@ export function HeroSection() {
                   
                   {/* Manufacturing - Left */}
                   <div className="absolute top-1/2 left-8 transform -translate-y-1/2">
-                    <div className="w-12 h-12 bg-white/10 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_6px_20px_rgba(0,0,0,0.2)] border border-white/20 hover:bg-white/15 transition-all duration-300 executive-glow">
-                      <svg className="w-6 h-6 text-[var(--luxury-amethyst)]" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-10 h-10 bg-white/8 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/10 hover:bg-white/12 transition-all duration-300">
+                      <svg className="w-5 h-5 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                       </svg>
                     </div>
