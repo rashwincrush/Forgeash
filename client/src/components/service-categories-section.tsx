@@ -43,7 +43,7 @@ export function ServiceCategoriesSection() {
         <div className="subliminal-text abundance-flow top-2/3 left-2/3">My business scales to billions effortlessly</div>
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-white mb-4">OUR EXPERTISE</h2>
-          <h3 className="text-2xl font-semibold text-slate-300 mb-6">Strategic Service Categories</h3>
+          <h3 className="text-2xl font-semibold violet-blue-gradient-text mb-6">Strategic Service Categories</h3>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">
             Comprehensive solutions designed to transform your business through technology, AI innovation, professional development, and strategic talent management.
           </p>
@@ -53,9 +53,9 @@ export function ServiceCategoriesSection() {
           {categories.map((category, index) => {
             const IconComponent = category.icon;
             return (
-              <div key={index} className="bg-white/10 backdrop-blur-md rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 group professional-glow animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div key={index} className="professional-card-dark p-8 transition-all duration-300 group animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="text-center">
-                  <div className={`flex items-center justify-center w-16 h-16 ${category.icon === Rocket ? 'bg-primary' : category.icon === Settings ? 'bg-[var(--executive-green)]' : category.icon === Users ? 'bg-[var(--executive-purple)]' : 'bg-[var(--executive-orange)]'} rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`flex items-center justify-center w-16 h-16 ${category.icon === Rocket ? 'violet-blue-gradient' : category.icon === Settings ? 'blue-gradient' : category.icon === Users ? 'violet-gradient' : 'blue-gradient'} rounded-2xl mb-6 mx-auto group-hover:scale-110 transition-transform duration-300 professional-shadow`}>
                     <IconComponent className="text-white h-8 w-8" />
                   </div>
                   <h4 className="text-2xl font-bold text-white mb-4">{category.title}</h4>

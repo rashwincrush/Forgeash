@@ -39,7 +39,7 @@ export function StatisticsSection() {
         <div className="subliminal-text success-magnetism top-2/3 right-1/3">My statistics attract unlimited prosperity</div>
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl font-bold text-foreground mb-6">
-            Driving <span className="premium-gradient-text">Excellence</span> Through Innovation
+            Driving <span className="violet-blue-gradient-text">Excellence</span> Through Innovation
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Our proven track record demonstrates consistent delivery of transformative AI solutions that generate measurable business impact across diverse industries.
@@ -48,9 +48,9 @@ export function StatisticsSection() {
         
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <div className="group relative">
-            <div className="absolute inset-0 subtle-gradient rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-            <div className="relative text-center p-10 premium-card shadow-2xl hover:shadow-3xl transition-all duration-500 animate-scale-in">
-              <div className="text-7xl font-bold premium-gradient-text mb-4 animate-counter">
+            <div className="absolute inset-0 violet-gradient rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+            <div className="relative text-center p-10 professional-card shadow-2xl hover:shadow-3xl transition-all duration-500 animate-scale-in">
+              <div className="text-7xl font-bold violet-blue-gradient-text mb-4 animate-counter">
                 {projectsCount}+
               </div>
               <div className="text-lg font-semibold text-foreground mb-2">
@@ -63,9 +63,9 @@ export function StatisticsSection() {
           </div>
           
           <div className="group relative">
-            <div className="absolute inset-0 subtle-gradient rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-            <div className="relative text-center p-10 premium-card shadow-2xl hover:shadow-3xl transition-all duration-500 animate-scale-in">
-              <div className="text-7xl font-bold premium-gradient-text mb-4 animate-counter">
+            <div className="absolute inset-0 blue-gradient rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+            <div className="relative text-center p-10 professional-card shadow-2xl hover:shadow-3xl transition-all duration-500 animate-scale-in">
+              <div className="text-7xl font-bold violet-blue-gradient-text mb-4 animate-counter">
                 {satisfactionCount}%
               </div>
               <div className="text-lg font-semibold text-foreground mb-2">

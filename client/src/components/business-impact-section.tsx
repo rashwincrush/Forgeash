@@ -38,7 +38,7 @@ export function BusinessImpactSection() {
         <div className="subliminal-text success-magnetism top-1/3 right-1/4">I manifest billion-dollar opportunities</div>
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl font-bold text-white mb-6">
-            BUSINESS <span className="premium-gradient-text">IMPACT</span>
+            BUSINESS <span className="violet-blue-gradient-text">IMPACT</span>
           </h2>
           <p className="text-xl text-white/80 max-w-4xl mx-auto leading-relaxed">
             Our clients consistently achieve significant improvements in key business metrics through our strategic technology implementations and AI-driven solutions.
@@ -48,10 +48,10 @@ export function BusinessImpactSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {metrics.map((metric, index) => (
             <div key={index} className="group relative" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="absolute inset-0 subtle-gradient rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-              <div className="relative premium-card p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 animate-scale-in">
+              <div className="absolute inset-0 violet-gradient rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+              <div className="relative professional-card-dark p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 animate-scale-in">
                 <div className="text-center">
-                  <div className="text-6xl font-bold premium-gradient-text mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-6xl font-bold violet-blue-gradient-text mb-4 group-hover:scale-110 transition-transform duration-300">
                     {metric.percentage}
                   </div>
                   <h4 className="text-xl font-semibold text-white mb-4">{metric.title}</h4>

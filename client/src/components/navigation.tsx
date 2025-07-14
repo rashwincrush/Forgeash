@@ -14,7 +14,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-20 py-4">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center group">
-              <div className="w-14 h-14 subtle-gradient rounded-2xl flex items-center justify-center mr-4 shadow-xl executive-shadow p-2.5 group-hover:shadow-2xl transition-all duration-300 border border-white/20">
+              <div className="w-14 h-14 blue-gradient rounded-2xl flex items-center justify-center mr-4 shadow-xl professional-shadow p-2.5 group-hover:shadow-2xl transition-all duration-300 border border-white/20">
                 <img 
                   src={logoPath} 
                   alt="ForgeAsh Technologies" 
@@ -34,17 +34,17 @@ export function Navigation() {
           
           <div className="hidden md:block">
             <div className="ml-12 flex items-center space-x-6">
-              <a href="#services" className="relative text-muted-foreground dark:text-white/80 hover:text-[var(--executive-accent)] px-5 py-3 text-sm font-semibold transition-all duration-300 hover:bg-white/50 dark:hover:bg-white/10 rounded-xl group">
+              <a href="#services" className="relative text-muted-foreground dark:text-white/80 hover:text-[var(--professional-violet)] px-5 py-3 text-sm font-semibold transition-all duration-300 hover:bg-white/50 dark:hover:bg-white/10 rounded-xl group">
                 <span className="relative z-10">Services</span>
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 subtle-gradient group-hover:w-full transition-all duration-300"></div>
+                <div className="absolute bottom-0 left-0 w-0 h-0.5 violet-gradient group-hover:w-full transition-all duration-300"></div>
               </a>
-              <a href="#expertise" className="relative text-muted-foreground dark:text-white/80 hover:text-[var(--executive-accent)] px-5 py-3 text-sm font-semibold transition-all duration-300 hover:bg-white/50 dark:hover:bg-white/10 rounded-xl group">
+              <a href="#expertise" className="relative text-muted-foreground dark:text-white/80 hover:text-[var(--professional-violet)] px-5 py-3 text-sm font-semibold transition-all duration-300 hover:bg-white/50 dark:hover:bg-white/10 rounded-xl group">
                 <span className="relative z-10">Expertise</span>
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 subtle-gradient group-hover:w-full transition-all duration-300"></div>
+                <div className="absolute bottom-0 left-0 w-0 h-0.5 violet-gradient group-hover:w-full transition-all duration-300"></div>
               </a>
-              <a href="#industries" className="relative text-muted-foreground dark:text-white/80 hover:text-[var(--executive-accent)] px-5 py-3 text-sm font-semibold transition-all duration-300 hover:bg-white/50 dark:hover:bg-white/10 rounded-xl group">
+              <a href="#industries" className="relative text-muted-foreground dark:text-white/80 hover:text-[var(--professional-violet)] px-5 py-3 text-sm font-semibold transition-all duration-300 hover:bg-white/50 dark:hover:bg-white/10 rounded-xl group">
                 <span className="relative z-10">Industries</span>
-                <div className="absolute bottom-0 left-0 w-0 h-0.5 subtle-gradient group-hover:w-full transition-all duration-300"></div>
+                <div className="absolute bottom-0 left-0 w-0 h-0.5 violet-gradient group-hover:w-full transition-all duration-300"></div>
               </a>
               <div className="w-px h-6 bg-white/20 dark:bg-white/10"></div>
               <Button
@@ -55,7 +55,7 @@ export function Navigation() {
               >
                 {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
               </Button>
-              <Button asChild className="subtle-gradient text-white hover:opacity-90 executive-shadow px-8 py-3 rounded-xl font-semibold text-sm hover:scale-105 transition-all duration-300 border border-white/20">
+              <Button asChild className="violet-blue-gradient text-white hover:opacity-90 professional-shadow px-8 py-3 rounded-xl font-semibold text-sm hover:scale-105 transition-all duration-300 border border-white/20">
                 <a href="#contact">Contact Us</a>
               </Button>
             </div>

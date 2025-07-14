@@ -49,7 +49,7 @@ export function IndustryExpertiseSection() {
             <p className="text-lg text-muted-foreground mb-8">
               Our team combines deep industry knowledge with cutting-edge technical capabilities to create solutions that drive meaningful results for your specific business context.
             </p>
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 professional-glow hover-lift">
+            <Button size="lg" className="violet-blue-gradient text-white hover:opacity-90 professional-shadow">
               Learn About Our Approach
             </Button>
           </div>
@@ -60,8 +60,10 @@ export function IndustryExpertiseSection() {
                 {column.map((industry, industryIndex) => {
                   const IconComponent = industry.icon;
                   return (
-                    <div key={industryIndex} className={`bg-gradient-to-br ${industry.color} dark:bg-gradient-to-br dark:from-card dark:to-card/50 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 professional-glow animate-scale-in`} style={{ animationDelay: `${(columnIndex * 3 + industryIndex) * 0.1}s` }}>
-                      <IconComponent className={`${industry.iconColor} h-8 w-8 mb-3`} />
+                    <div key={industryIndex} className={`professional-card p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 animate-scale-in`} style={{ animationDelay: `${(columnIndex * 3 + industryIndex) * 0.1}s` }}>
+                      <div className={`w-12 h-12 rounded-xl mb-3 flex items-center justify-center ${industryIndex % 2 === 0 ? 'violet-gradient' : 'blue-gradient'}`}>
+                        <IconComponent className="text-white h-6 w-6" />
+                      </div>
                       <h4 className="font-semibold text-foreground">{industry.name}</h4>
                     </div>
                   );
