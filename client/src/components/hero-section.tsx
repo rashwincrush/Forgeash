@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, Award, Trophy } from "lucide-react";
+import forgeAshLogo from "@assets/A0462DFE-645D-463A-AFF2-182E4992BBF4_4_5005_c_1752479051277.jpeg";
 
 export function HeroSection() {
   return (
@@ -58,18 +59,14 @@ export function HeroSection() {
           <div className="relative animate-slide-in-right">
             {/* Circular Animation Container */}
             <div className="relative w-96 h-96 mx-auto">
-              {/* Central AI Icon */}
+              {/* Central ForgeAsh Logo */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-32 h-32 bg-gradient-to-br from-primary to-blue-600 rounded-full flex items-center justify-center shadow-2xl professional-glow animate-pulse">
-                  <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
-                    <circle cx="8" cy="8" r="1.5"/>
-                    <circle cx="16" cy="8" r="1.5"/>
-                    <circle cx="8" cy="16" r="1.5"/>
-                    <circle cx="16" cy="16" r="1.5"/>
-                    <circle cx="12" cy="12" r="2"/>
-                    <path d="M12 7v2m0 6v2m5-5h-2m-6 0H7"/>
-                  </svg>
+                <div className="w-32 h-32 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center shadow-2xl professional-glow animate-pulse border-2 border-white/20">
+                  <img 
+                    src={forgeAshLogo} 
+                    alt="ForgeAsh Technologies Logo" 
+                    className="w-20 h-20 object-contain rounded-full"
+                  />
                 </div>
               </div>
               
@@ -80,28 +77,32 @@ export function HeroSection() {
                   <div className="absolute inset-8 border-2 border-white/20 rounded-full"></div>
                   <div className="absolute inset-12 border border-dashed border-white/10 rounded-full"></div>
                   
-                  {/* Rotating Icons */}
-                  <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
-                    <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-                    </svg>
-                  </div>
-                  
-                  <div className="absolute top-1/2 right-4 transform -translate-y-1/2 w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
-                    <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                  </div>
-                  
-                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
+                  {/* Rotating Industry Icons */}
+                  {/* Healthcare */}
+                  <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-14 h-14 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
                     <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
                     </svg>
                   </div>
                   
+                  {/* Finance */}
+                  <div className="absolute top-1/2 right-4 transform -translate-y-1/2 w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
+                    <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-9.28c-.35.17-.74.28-1.17.28-.95 0-1.8-.7-1.95-1.65L8.5 8h7l-.62-.35c-.15.95-1 1.65-1.95 1.65-.43 0-.82-.11-1.17-.28V19z"/>
+                    </svg>
+                  </div>
+                  
+                  {/* E-commerce */}
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
+                    <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M7 4V2C7 1.45 7.45 1 8 1h8c.55 0 1 .45 1 1v2h5v2h-2v13c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V6H2V4h5zm10 15V6H7v13h10zM9 3v1h6V3H9zm0 5h2v8H9V8zm4 0h2v8h-2V8z"/>
+                    </svg>
+                  </div>
+                  
+                  {/* Education */}
                   <div className="absolute top-1/2 left-4 transform -translate-y-1/2 w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg professional-glow">
                     <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6L23 9l-11-6zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
                     </svg>
                   </div>
                 </div>
