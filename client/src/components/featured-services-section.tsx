@@ -45,47 +45,53 @@ export function FeaturedServicesSection() {
   ];
 
   return (
-    <section id="services" className="py-20 bg-background dark:bg-background">
+    <section id="services" className="py-24 bg-gradient-to-br from-muted/20 via-background to-muted/20 dark:from-muted/10 dark:via-background dark:to-muted/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-foreground mb-4">FEATURED SERVICES</h2>
-          <h3 className="text-2xl font-semibold text-muted-foreground mb-6">Our Core Solutions</h3>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We deliver strategic technology solutions that drive growth, efficiency, and competitive advantage for forward-thinking businesses.
+        <div className="text-center mb-20 animate-fade-in">
+          <h2 className="text-5xl font-bold text-foreground mb-6">
+            <span className="text-transparent bg-gradient-to-r from-[var(--executive-navy)] to-[var(--executive-blue)] bg-clip-text">FEATURED</span> SERVICES
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            We deliver strategic technology solutions that drive growth, efficiency, and competitive advantage for forward-thinking businesses across diverse industries.
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-10">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <div key={index} className={`bg-gradient-to-br ${service.bgColor} dark:bg-gradient-to-br dark:from-card dark:to-card/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group professional-glow animate-scale-in`} style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className={`flex items-center justify-center w-16 h-16 ${service.iconColor} rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <IconComponent className="text-white h-8 w-8" />
+              <div key={index} className="group relative" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-3xl blur opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <div className="relative bg-gradient-to-br from-white/90 to-white/70 dark:from-card/90 dark:to-card/70 backdrop-blur-xl rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 professional-glow border border-white/20 animate-scale-in">
+                  <div className="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-2xl mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <IconComponent className="text-white h-10 w-10" />
+                  </div>
+                  
+                  <h4 className="text-2xl font-bold text-foreground mb-4">{service.title}</h4>
+                  <p className="text-muted-foreground mb-8 leading-relaxed">{service.description}</p>
+                  
+                  <ul className="space-y-4 mb-8">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-start text-muted-foreground">
+                        <div className="flex-shrink-0 w-5 h-5 bg-gradient-to-r from-[var(--executive-green)] to-[var(--executive-orange)] rounded-full flex items-center justify-center mr-3 mt-0.5">
+                          <Check className="text-white h-3 w-3" />
+                        </div>
+                        <span className="text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  <Button className="w-full bg-gradient-to-r from-[var(--executive-navy)] to-[var(--executive-blue)] text-white hover:from-[var(--executive-navy-light)] hover:to-[var(--executive-blue)] shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 professional-glow">
+                    Learn More
+                  </Button>
                 </div>
-                
-                <h4 className="text-2xl font-bold text-foreground mb-4">{service.title}</h4>
-                <p className="text-muted-foreground mb-6">{service.description}</p>
-                
-                <ul className="space-y-3 mb-6">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-muted-foreground">
-                      <Check className="text-[var(--executive-green)] mr-3 h-4 w-4" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                
-                <Button className={`${service.buttonColor} text-white shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 professional-glow`}>
-                  Learn more
-                </Button>
               </div>
             );
           })}
         </div>
         
-        <div className="text-center mt-12">
-          <Button size="lg" className="bg-[var(--executive-navy)] text-white hover:bg-[var(--executive-navy-light)] professional-glow hover-lift">
+        <div className="text-center mt-16">
+          <Button size="lg" className="bg-gradient-to-r from-[var(--executive-navy)] to-[var(--executive-blue)] text-white hover:from-[var(--executive-navy-light)] hover:to-[var(--executive-blue)] professional-glow hover-lift px-8 py-4 text-lg">
             View All Services
           </Button>
         </div>

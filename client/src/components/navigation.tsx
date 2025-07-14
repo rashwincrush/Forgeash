@@ -8,31 +8,33 @@ export function Navigation() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50 shadow-sm dark:bg-background/95">
+    <nav className="fixed w-full top-0 z-50 bg-white/90 dark:bg-[var(--executive-navy)]/95 backdrop-blur-xl border-b border-white/20 dark:border-white/10 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-18">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <Atom className="h-8 w-8 text-primary mr-3 animate-pulse" />
-              <span className="font-bold text-xl text-foreground">ForgeAsh Technologies</span>
+              <div className="w-10 h-10 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-xl flex items-center justify-center mr-3 shadow-lg">
+                <Atom className="h-6 w-6 text-white animate-pulse" />
+              </div>
+              <span className="font-bold text-xl text-foreground dark:text-white">ForgeAsh Technologies</span>
             </div>
           </div>
           
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              <a href="#services" className="text-muted-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">Services</a>
-              <a href="#expertise" className="text-muted-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">Expertise</a>
-              <a href="#industries" className="text-muted-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200">Industries</a>
+            <div className="ml-10 flex items-center space-x-8">
+              <a href="#services" className="text-muted-foreground dark:text-white/80 hover:text-[var(--executive-blue)] dark:hover:text-[var(--executive-gold)] px-4 py-2 text-sm font-semibold transition-colors duration-200 hover:bg-white/50 dark:hover:bg-white/10 rounded-lg">Services</a>
+              <a href="#expertise" className="text-muted-foreground dark:text-white/80 hover:text-[var(--executive-blue)] dark:hover:text-[var(--executive-gold)] px-4 py-2 text-sm font-semibold transition-colors duration-200 hover:bg-white/50 dark:hover:bg-white/10 rounded-lg">Expertise</a>
+              <a href="#industries" className="text-muted-foreground dark:text-white/80 hover:text-[var(--executive-blue)] dark:hover:text-[var(--executive-gold)] px-4 py-2 text-sm font-semibold transition-colors duration-200 hover:bg-white/50 dark:hover:bg-white/10 rounded-lg">Industries</a>
               <Button
                 variant="ghost"
                 size="icon"
                 onClick={toggleTheme}
-                className="text-muted-foreground hover:text-primary"
+                className="text-muted-foreground dark:text-white/80 hover:text-[var(--executive-blue)] dark:hover:text-[var(--executive-gold)] hover:bg-white/50 dark:hover:bg-white/10"
               >
                 {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
               </Button>
-              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 professional-glow">
-                <a href="#contact">Contact</a>
+              <Button asChild className="bg-gradient-to-r from-[var(--executive-navy)] to-[var(--executive-blue)] text-white hover:from-[var(--executive-navy-light)] hover:to-[var(--executive-blue)] professional-glow shadow-lg px-6 py-2">
+                <a href="#contact">Contact Us</a>
               </Button>
             </div>
           </div>
@@ -42,7 +44,7 @@ export function Navigation() {
               variant="ghost"
               size="icon"
               onClick={toggleTheme}
-              className="text-muted-foreground hover:text-primary"
+              className="text-muted-foreground dark:text-white/80 hover:text-[var(--executive-blue)] dark:hover:text-[var(--executive-gold)]"
             >
               {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
@@ -50,6 +52,7 @@ export function Navigation() {
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-muted-foreground dark:text-white/80"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
@@ -59,12 +62,12 @@ export function Navigation() {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-background/95 border-t border-border/50 backdrop-blur-md">
+        <div className="md:hidden bg-white/95 dark:bg-[var(--executive-navy)]/95 border-t border-white/20 dark:border-white/10 backdrop-blur-xl">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#services" className="block px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary">Services</a>
-            <a href="#expertise" className="block px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary">Expertise</a>
-            <a href="#industries" className="block px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary">Industries</a>
-            <a href="#contact" className="block px-3 py-2 text-base font-medium text-primary">Contact</a>
+            <a href="#services" className="block px-4 py-3 text-base font-medium text-muted-foreground dark:text-white/80 hover:text-[var(--executive-blue)] dark:hover:text-[var(--executive-gold)] hover:bg-white/50 dark:hover:bg-white/10 rounded-lg">Services</a>
+            <a href="#expertise" className="block px-4 py-3 text-base font-medium text-muted-foreground dark:text-white/80 hover:text-[var(--executive-blue)] dark:hover:text-[var(--executive-gold)] hover:bg-white/50 dark:hover:bg-white/10 rounded-lg">Expertise</a>
+            <a href="#industries" className="block px-4 py-3 text-base font-medium text-muted-foreground dark:text-white/80 hover:text-[var(--executive-blue)] dark:hover:text-[var(--executive-gold)] hover:bg-white/50 dark:hover:bg-white/10 rounded-lg">Industries</a>
+            <a href="#contact" className="block px-4 py-3 text-base font-medium text-[var(--executive-blue)] dark:text-[var(--executive-gold)] font-semibold">Contact Us</a>
           </div>
         </div>
       )}

@@ -27,25 +27,29 @@ export function BusinessImpactSection() {
   ];
 
   return (
-    <section className="py-20 bg-muted/50 dark:bg-muted/20">
+    <section className="py-24 bg-gradient-to-br from-[var(--executive-navy)] via-[var(--executive-charcoal)] to-[var(--executive-navy)] dark:from-[var(--executive-navy)] dark:via-[var(--executive-charcoal)] dark:to-[var(--executive-navy)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-foreground mb-4">BUSINESS IMPACT</h2>
-          <h3 className="text-2xl font-semibold text-muted-foreground mb-6">Measurable Results That Matter</h3>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Our clients consistently achieve significant improvements in key business metrics through our strategic technology implementations.
+        <div className="text-center mb-20 animate-fade-in">
+          <h2 className="text-5xl font-bold text-white mb-6">
+            BUSINESS <span className="text-transparent bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] bg-clip-text">IMPACT</span>
+          </h2>
+          <p className="text-xl text-white/80 max-w-4xl mx-auto leading-relaxed">
+            Our clients consistently achieve significant improvements in key business metrics through our strategic technology implementations and AI-driven solutions.
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {metrics.map((metric, index) => (
-            <div key={index} className="bg-background dark:bg-card rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group professional-glow animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="text-center">
-                <div className={`text-6xl font-bold ${metric.color} mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  {metric.percentage}
+            <div key={index} className="group relative" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+              <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 professional-glow border border-white/20 animate-scale-in">
+                <div className="text-center">
+                  <div className="text-6xl font-bold text-transparent bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] bg-clip-text mb-4 group-hover:scale-110 transition-transform duration-300">
+                    {metric.percentage}
+                  </div>
+                  <h4 className="text-xl font-semibold text-white mb-4">{metric.title}</h4>
+                  <p className="text-white/70 text-sm leading-relaxed">{metric.description}</p>
                 </div>
-                <h4 className="text-xl font-semibold text-foreground mb-3">{metric.title}</h4>
-                <p className="text-muted-foreground">{metric.description}</p>
               </div>
             </div>
           ))}

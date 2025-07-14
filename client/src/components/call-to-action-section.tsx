@@ -30,37 +30,52 @@ export function CallToActionSection() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-primary via-blue-800 to-[var(--executive-navy)] dark:from-[var(--executive-navy)] dark:via-[var(--executive-charcoal)] dark:to-background">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="mb-8 animate-fade-in">
-          <span className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-primary/20 to-[var(--executive-blue)]/20 text-blue-200 dark:text-blue-300 text-sm font-medium backdrop-blur-sm mb-6 professional-glow">
-            LIMITED OPPORTUNITY
+    <section id="contact" className="py-24 bg-gradient-to-br from-[var(--executive-blue)] via-[var(--executive-navy)] to-[var(--executive-charcoal)] relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-blue)]/20 to-[var(--executive-purple)]/20 backdrop-blur-3xl"></div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <div className="mb-12 animate-fade-in">
+          <span className="inline-block px-8 py-4 rounded-full bg-gradient-to-r from-[var(--executive-gold)]/20 to-[var(--executive-orange)]/20 text-[var(--executive-gold)] text-sm font-bold uppercase tracking-wide backdrop-blur-sm mb-8 professional-glow border border-[var(--executive-gold)]/30">
+            TRANSFORM YOUR BUSINESS
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Transform Your Business with Strategic AI
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
+            Ready to Lead with <span className="text-transparent bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] bg-clip-text">AI Innovation</span>?
           </h2>
-          <p className="text-xl text-slate-300 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
-            Join industry leaders who've achieved extraordinary growth through our executive technology solutions.
+          <p className="text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
+            Join industry leaders who've achieved extraordinary growth through our strategic AI implementations and cutting-edge technology solutions.
           </p>
         </div>
         
-        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-8 professional-glow animate-scale-in">
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 mb-8 w-full md:w-auto professional-glow hover-lift">
-            Schedule Your Executive Assessment
-          </Button>
-          
-          <div className="grid md:grid-cols-4 gap-6 text-center">
-            {benefits.map((benefit, index) => {
-              const IconComponent = benefit.icon;
-              return (
-                <div key={index} className="flex flex-col items-center animate-slide-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <IconComponent className={`${benefit.color} h-8 w-8 mb-2`} />
-                  <span className="text-white font-semibold">{benefit.title}</span>
-                  <span className="text-slate-300 text-sm">{benefit.subtitle}</span>
-                </div>
-              );
-            })}
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] rounded-3xl blur opacity-30"></div>
+          <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-12 mb-12 professional-glow border border-white/20 animate-scale-in">
+            <Button size="lg" className="bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] text-white hover:from-[var(--executive-gold)] hover:to-[var(--executive-orange)] hover:scale-105 mb-12 px-12 py-6 text-xl font-bold professional-glow shadow-2xl">
+              Schedule Your Executive Consultation
+            </Button>
+            
+            <div className="grid md:grid-cols-4 gap-8 text-center">
+              {benefits.map((benefit, index) => {
+                const IconComponent = benefit.icon;
+                return (
+                  <div key={index} className="flex flex-col items-center group animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                    <div className="w-16 h-16 bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <IconComponent className="text-white h-8 w-8" />
+                    </div>
+                    <span className="text-white font-bold text-lg mb-2">{benefit.title}</span>
+                    <span className="text-white/70 text-sm">{benefit.subtitle}</span>
+                  </div>
+                );
+              })}
+            </div>
           </div>
+        </div>
+        
+        <div className="text-center animate-fade-in">
+          <p className="text-white/80 text-lg mb-4">
+            📞 <span className="font-semibold">Call Now:</span> +91 XXX XXX XXXX
+          </p>
+          <p className="text-white/80 text-lg">
+            📧 <span className="font-semibold">Email:</span> info@forgeash.com
+          </p>
         </div>
       </div>
     </section>
