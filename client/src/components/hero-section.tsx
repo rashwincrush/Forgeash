@@ -57,103 +57,136 @@ export function HeroSection() {
           </div>
           
           <div className="relative animate-slide-in-right">
-            {/* Circular Animation Container */}
-            <div className="relative w-96 h-96 mx-auto">
-              {/* Central ForgeAsh Logo */}
+            {/* Enhanced Professional Orbital System */}
+            <div className="relative w-[500px] h-[500px] mx-auto">
+              {/* Visible Orbital Rings with Gradients */}
+              <div className="absolute inset-0">
+                {/* Outer Ring - Blue Gradient */}
+                <div className="absolute inset-0 rounded-full border-2 border-transparent bg-gradient-to-r from-blue-400/40 via-cyan-400/40 to-blue-400/40 p-0.5">
+                  <div className="w-full h-full rounded-full bg-gradient-to-r from-slate-900/80 to-slate-800/80 backdrop-blur-xl"></div>
+                </div>
+                
+                {/* Middle Ring - Purple Gradient */}
+                <div className="absolute inset-16 rounded-full border-2 border-transparent bg-gradient-to-r from-purple-400/30 via-pink-400/30 to-purple-400/30 p-0.5">
+                  <div className="w-full h-full rounded-full bg-gradient-to-r from-slate-900/60 to-slate-800/60 backdrop-blur-xl"></div>
+                </div>
+                
+                {/* Inner Ring - Gold Gradient */}
+                <div className="absolute inset-32 rounded-full border-2 border-transparent bg-gradient-to-r from-yellow-400/20 via-orange-400/20 to-yellow-400/20 p-0.5">
+                  <div className="w-full h-full rounded-full bg-gradient-to-r from-slate-900/40 to-slate-800/40 backdrop-blur-xl"></div>
+                </div>
+                
+                {/* Glowing Effects */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-blue-500/10 blur-2xl animate-pulse"></div>
+                <div className="absolute inset-8 rounded-full bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-purple-500/10 blur-xl animate-pulse"></div>
+                <div className="absolute inset-16 rounded-full bg-gradient-to-r from-yellow-500/10 via-orange-500/10 to-yellow-500/10 blur-lg animate-pulse"></div>
+              </div>
+              
+              {/* Enhanced Central Logo */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-32 h-32 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center shadow-2xl professional-glow animate-pulse border-2 border-white/20">
-                  <img 
-                    src={forgeAshLogo} 
-                    alt="ForgeAsh Technologies Logo" 
-                    className="w-24 h-24 object-contain"
-                  />
-                </div>
-              </div>
-              
-              {/* Professional Multi-Orbital System - 5 Industry Icons */}
-              
-              {/* Ring 1 - Healthcare (Blue) */}
-              <div className="absolute inset-0 animate-spin-very-slow">
-                <div className="relative w-full h-full">
-                  <div className="absolute inset-2 border border-white/5 rounded-full shadow-inner"></div>
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-14 h-14 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
-                    <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
-                    </svg>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400/50 to-purple-400/50 rounded-full blur-xl animate-pulse"></div>
+                  <div className="relative w-36 h-36 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/40">
+                    <img 
+                      src={forgeAshLogo} 
+                      alt="ForgeAsh Technologies Logo" 
+                      className="w-28 h-28 object-contain drop-shadow-2xl"
+                    />
                   </div>
                 </div>
               </div>
               
-              {/* Ring 2 - Finance (Orange) */}
+              {/* Professional Rotating Industry Icons */}
               <div className="absolute inset-0 animate-spin-very-slow">
-                <div className="relative w-full h-full">
-                  <div className="absolute inset-4 border border-white/5 rounded-full shadow-inner"></div>
-                  <div className="absolute top-6 right-6 transform -translate-y-1/2 w-13 h-13 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17h-2v-9.28c-.35.17-.74.28-1.17.28-.95 0-1.8-.7-1.95-1.65L8.5 8h7l-.62-.35c-.15.95-1 1.65-1.95 1.65-.43 0-.82-.11-1.17-.28V19z"/>
-                    </svg>
+                <div className="absolute w-full h-full">
+                  {/* Healthcare - Top */}
+                  <div className="absolute top-2 left-1/2 transform -translate-x-1/2">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/60 to-teal-400/60 rounded-2xl blur-lg animate-pulse"></div>
+                      <div className="relative w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl shadow-2xl flex items-center justify-center professional-glow border-2 border-emerald-300/40">
+                        <svg className="w-8 h-8 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+                        </svg>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              
-              {/* Ring 3 - E-commerce (Green) */}
-              <div className="absolute inset-0 animate-spin-very-slow">
-                <div className="relative w-full h-full">
-                  <div className="absolute inset-6 border border-white/5 rounded-full shadow-inner"></div>
-                  <div className="absolute top-1/2 right-4 transform -translate-y-1/2 w-12 h-12 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M7 4V2C7 1.45 7.45 1 8 1h8c.55 0 1 .45 1 1v2h5v2h-2v13c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V6H2V4h5zm10 15V6H7v13h10zM9 3v1h6V3H9zm0 5h2v8H9V8zm4 0h2v8h-2V8z"/>
-                    </svg>
+                  
+                  {/* Finance - Top Right */}
+                  <div className="absolute top-12 right-6">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-gradient-to-r from-orange-400/60 to-yellow-400/60 rounded-2xl blur-lg animate-pulse"></div>
+                      <div className="relative w-16 h-16 bg-gradient-to-br from-orange-400 to-yellow-500 rounded-2xl shadow-2xl flex items-center justify-center professional-glow border-2 border-orange-300/40">
+                        <svg className="w-8 h-8 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17h-2v-9.28c-.35.17-.74.28-1.17.28-.95 0-1.8-.7-1.95-1.65L8.5 8h7l-.62-.35c-.15.95-1 1.65-1.95 1.65-.43 0-.82-.11-1.17-.28V19z"/>
+                        </svg>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              
-              {/* Ring 4 - Education (Teal) */}
-              <div className="absolute inset-0 animate-spin-very-slow">
-                <div className="relative w-full h-full">
-                  <div className="absolute inset-8 border border-white/5 rounded-full shadow-inner"></div>
-                  <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-11 h-11 bg-gradient-to-br from-teal-400 to-teal-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6L23 9l-11-6zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
-                    </svg>
+                  
+                  {/* E-commerce - Right */}
+                  <div className="absolute top-1/2 right-2 transform -translate-y-1/2">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-gradient-to-r from-green-400/60 to-emerald-400/60 rounded-2xl blur-lg animate-pulse"></div>
+                      <div className="relative w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl shadow-2xl flex items-center justify-center professional-glow border-2 border-green-300/40">
+                        <svg className="w-8 h-8 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M7 4V2C7 1.45 7.45 1 8 1h8c.55 0 1 .45 1 1v2h5v2h-2v13c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V6H2V4h5zm10 15V6H7v13h10zM9 3v1h6V3H9zm0 5h2v8H9V8zm4 0h2v8h-2V8z"/>
+                        </svg>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              
-              {/* Ring 5 - Manufacturing (Purple) */}
-              <div className="absolute inset-0 animate-spin-very-slow">
-                <div className="relative w-full h-full">
-                  <div className="absolute inset-10 border border-white/5 rounded-full shadow-inner"></div>
-                  <div className="absolute top-1/2 left-8 transform -translate-y-1/2 w-10 h-10 bg-gradient-to-br from-purple-400 to-purple-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
+                  
+                  {/* Education - Bottom */}
+                  <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-400/60 to-indigo-400/60 rounded-2xl blur-lg animate-pulse"></div>
+                      <div className="relative w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl shadow-2xl flex items-center justify-center professional-glow border-2 border-blue-300/40">
+                        <svg className="w-8 h-8 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6L23 9l-11-6zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                        </svg>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              
-
-            </div>
-            
-            {/* Stats Cards - Outside Orbit */}
-            <div className="absolute -top-10 -right-10 bg-white/5 backdrop-blur-xl rounded-2xl p-6 shadow-2xl professional-glow border border-white/10">
-              <div className="flex items-center space-x-3">
-                <div className="w-5 h-5 bg-gradient-to-br from-[var(--executive-green)] to-green-500 rounded-full animate-pulse shadow-lg"></div>
-                <div className="text-white">
-                  <div className="text-xl font-semibold">10+</div>
-                  <div className="text-sm text-white/70">Projects Completed</div>
+                  
+                  {/* Manufacturing - Left */}
+                  <div className="absolute top-1/2 left-2 transform -translate-y-1/2">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-gradient-to-r from-purple-400/60 to-pink-400/60 rounded-2xl blur-lg animate-pulse"></div>
+                      <div className="relative w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl shadow-2xl flex items-center justify-center professional-glow border-2 border-purple-300/40">
+                        <svg className="w-8 h-8 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             
-            <div className="absolute -bottom-10 -left-10 bg-white/5 backdrop-blur-xl rounded-2xl p-6 shadow-2xl professional-glow border border-white/10">
-              <div className="flex items-center space-x-3">
-                <div className="w-6 h-6 bg-gradient-to-br from-primary to-blue-500 rounded-full flex items-center justify-center shadow-lg">
-                  <div className="w-3 h-3 bg-white rounded-full"></div>
+            {/* Enhanced Stats Cards - Outside Orbit */}
+            <div className="absolute -top-16 -right-16 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-8 shadow-2xl professional-glow border-2 border-white/20">
+              <div className="flex items-center space-x-4">
+                <div className="w-8 h-8 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full animate-pulse shadow-lg flex items-center justify-center">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
                 </div>
                 <div className="text-white">
-                  <div className="text-xl font-semibold">98%</div>
-                  <div className="text-sm text-white/70">Client Satisfaction</div>
+                  <div className="text-2xl font-bold">10+</div>
+                  <div className="text-sm text-white/80 font-medium">Projects Completed</div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="absolute -bottom-16 -left-16 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-8 shadow-2xl professional-glow border-2 border-white/20">
+              <div className="flex items-center space-x-4">
+                <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                  </svg>
+                </div>
+                <div className="text-white">
+                  <div className="text-2xl font-bold">98%</div>
+                  <div className="text-sm text-white/80 font-medium">Client Satisfaction</div>
                 </div>
               </div>
             </div>
