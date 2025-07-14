@@ -4,6 +4,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
+import { GradientPaletteSelector } from "@/components/gradient-palette-selector";
 import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
 
@@ -25,6 +26,7 @@ function App() {
           <div className="frequency-enhancement"></div>
           <Toaster />
           <Router />
+          <GradientPaletteSelector />
         </TooltipProvider>
       </ThemeProvider>
     </QueryClientProvider>

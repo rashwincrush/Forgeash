@@ -112,6 +112,38 @@
   50% { transform: scale(1.01); opacity: 0.04; }
 }
 
+/* Palette Transition System */
+.palette-transition {
+  transition: all 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.palette-transition *,
+.palette-transition *::before,
+.palette-transition *::after {
+  transition: all 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.palette-transition .primary-gradient,
+.palette-transition .secondary-gradient,
+.palette-transition .accent-gradient {
+  transition: background 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.palette-transition .primary-gradient-text,
+.palette-transition .secondary-gradient-text,
+.palette-transition .accent-gradient-text {
+  transition: background 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.palette-transition .professional-card,
+.palette-transition .professional-card-dark {
+  transition: all 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.palette-transition .orbital-ring {
+  transition: border-color 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Subtle Frequency Enhancement */
 .frequency-enhancement {
   position: fixed;
