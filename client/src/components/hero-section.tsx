@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, Award, Trophy } from "lucide-react";
-import forgeAshLogo from "@assets/A0462DFE-645D-463A-AFF2-182E4992BBF4_4_5005_c_1752479051277.jpeg";
+import forgeAshLogo from "@assets/Image_02-05-25_at_10.52_AM-removebg-preview_1752479361775.png";
 
 export function HeroSection() {
   return (
@@ -65,11 +65,7 @@ export function HeroSection() {
                   <img 
                     src={forgeAshLogo} 
                     alt="ForgeAsh Technologies Logo" 
-                    className="w-20 h-20 object-contain rounded-full"
-                    style={{
-                      filter: 'brightness(0) invert(1)',
-                      mixBlendMode: 'screen'
-                    }}
+                    className="w-24 h-24 object-contain"
                   />
                 </div>
               </div>
