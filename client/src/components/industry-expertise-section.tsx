@@ -31,8 +31,14 @@ export function IndustryExpertiseSection() {
   ];
 
   return (
-    <section id="industries" className="py-20 bg-background dark:bg-background">
+    <section id="industries" className="py-20 bg-gradient-to-br from-muted/30 via-background to-muted/30 dark:from-muted/10 dark:via-background dark:to-muted/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Industry-Focused Wealth Magnetism */}
+        <div className="subliminal-text prosperity-frequency top-12 left-10">Every industry pays me premium rates</div>
+        <div className="subliminal-text abundance-flow top-20 right-18">My solutions generate crores across sectors</div>
+        <div className="subliminal-text success-magnetism bottom-14 left-22">Industries compete for my expertise</div>
+        <div className="subliminal-text prosperity-frequency bottom-22 right-14">I dominate markets with billion-dollar impact</div>
+        <div className="subliminal-text abundance-flow top-1/2 right-1/3">My influence attracts unlimited wealth</div>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="animate-slide-in-left">
             <h2 className="text-4xl font-bold text-foreground mb-4">INDUSTRY EXPERTISE</h2>

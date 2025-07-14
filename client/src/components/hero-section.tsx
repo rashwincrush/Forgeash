@@ -11,13 +11,16 @@ export function HeroSection() {
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-        {/* Subtle Subliminal Layer */}
-        <div className="subliminal-text prosperity-frequency top-10 left-10">I attract abundant clients effortlessly</div>
-        <div className="subliminal-text abundance-flow top-20 right-16">My AI solutions generate massive revenue</div>
-        <div className="subliminal-text success-magnetism bottom-32 left-20">Innovation flows through me naturally</div>
-        <div className="subliminal-text prosperity-frequency bottom-40 right-24">I manifest extraordinary business success</div>
-        <div className="subliminal-text abundance-flow top-1/2 left-1/3">My code creates limitless possibilities</div>
-        <div className="subliminal-text success-magnetism top-1/3 right-1/4">Clients are drawn to my expertise</div>
+        {/* Ultra-Powerful Crore-Magnetism Subliminal Programming */}
+        <div className="subliminal-text prosperity-frequency top-10 left-10">I attract crores of rupees daily</div>
+        <div className="subliminal-text abundance-flow top-20 right-16">My AI solutions generate unlimited wealth</div>
+        <div className="subliminal-text success-magnetism bottom-32 left-20">Billion-dollar opportunities flow to me</div>
+        <div className="subliminal-text prosperity-frequency bottom-40 right-24">I manifest millionaire clients instantly</div>
+        <div className="subliminal-text abundance-flow top-1/2 left-1/3">My expertise commands crores in revenue</div>
+        <div className="subliminal-text success-magnetism top-1/3 right-1/4">Unlimited wealth multiplies through my work</div>
+        <div className="subliminal-text prosperity-frequency top-40 left-1/3">I attract Fortune 500 clients effortlessly</div>
+        <div className="subliminal-text abundance-flow bottom-50 right-1/3">My business scales to billions automatically</div>
+        <div className="subliminal-text success-magnetism top-2/3 left-2/3">Money flows to me from every direction</div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left animate-slide-in-left">

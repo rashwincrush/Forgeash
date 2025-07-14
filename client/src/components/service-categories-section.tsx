@@ -33,8 +33,14 @@ export function ServiceCategoriesSection() {
   ];
 
   return (
-    <section id="expertise" className="py-20 bg-gradient-to-br from-[var(--executive-navy)] to-primary dark:from-[var(--executive-charcoal)] dark:to-[var(--executive-navy)]">
+    <section id="expertise" className="py-20 bg-gradient-to-br from-[var(--executive-navy)] via-[var(--executive-blue)] to-[var(--executive-navy)] dark:from-[var(--executive-charcoal)] dark:via-[var(--executive-blue)] dark:to-[var(--executive-navy)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Strategic Subliminal Success Programming */}
+        <div className="subliminal-text prosperity-frequency top-14 left-16">Premium clients seek my solutions eagerly</div>
+        <div className="subliminal-text abundance-flow top-22 right-24">My expertise commands millions in revenue</div>
+        <div className="subliminal-text success-magnetism bottom-18 left-12">Corporations invest crores in my services</div>
+        <div className="subliminal-text prosperity-frequency bottom-26 right-16">I attract unlimited high-value projects</div>
+        <div className="subliminal-text abundance-flow top-2/3 left-2/3">My business scales to billions effortlessly</div>
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-white mb-4">OUR EXPERTISE</h2>
           <h3 className="text-2xl font-semibold text-slate-300 mb-6">Strategic Service Categories</h3>

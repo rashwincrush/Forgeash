@@ -4,6 +4,12 @@ export function Footer() {
   return (
     <footer className="bg-gradient-to-br from-[var(--executive-navy)] via-[var(--executive-charcoal)] to-[var(--executive-navy)] text-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Final Subliminal Wealth Programming Layer */}
+        <div className="subliminal-text prosperity-frequency top-8 left-12">My legacy generates crores for generations</div>
+        <div className="subliminal-text abundance-flow top-16 right-20">Global clients invest billions in my vision</div>
+        <div className="subliminal-text success-magnetism bottom-10 left-16">I create millionaire partnerships effortlessly</div>
+        <div className="subliminal-text prosperity-frequency bottom-18 right-12">My influence attracts unlimited prosperity</div>
+        <div className="subliminal-text abundance-flow top-1/2 left-1/2">Crores flow to me while I sleep</div>
         <div className="grid lg:grid-cols-4 gap-12">
           <div className="lg:col-span-1 animate-fade-in">
             <div className="flex items-center mb-6">

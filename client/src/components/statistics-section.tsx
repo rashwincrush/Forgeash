@@ -30,11 +30,13 @@ export function StatisticsSection() {
   return (
     <section className="py-24 bg-gradient-to-br from-background via-muted/30 to-background dark:from-background dark:via-muted/10 dark:to-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Subtle Subliminal Success Affirmations */}
-        <div className="subliminal-text prosperity-frequency top-16 left-12">Success multiplies through my work</div>
-        <div className="subliminal-text abundance-flow top-24 right-20">I create value that transforms businesses</div>
-        <div className="subliminal-text success-magnetism bottom-20 left-16">My solutions generate abundant returns</div>
-        <div className="subliminal-text prosperity-frequency bottom-28 right-28">Excellence flows through every project</div>
+        {/* Crore-Focused Subliminal Wealth Programming */}
+        <div className="subliminal-text prosperity-frequency top-16 left-12">Every project generates crores in value</div>
+        <div className="subliminal-text abundance-flow top-24 right-20">I create billion-dollar transformations</div>
+        <div className="subliminal-text success-magnetism bottom-20 left-16">My solutions generate unlimited wealth</div>
+        <div className="subliminal-text prosperity-frequency bottom-28 right-28">Crores flow through every interaction</div>
+        <div className="subliminal-text abundance-flow top-1/3 left-2/3">I am a magnet for millionaire clients</div>
+        <div className="subliminal-text success-magnetism top-2/3 right-1/3">My statistics attract unlimited prosperity</div>
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl font-bold text-foreground mb-6">
             Driving <span className="text-transparent bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] bg-clip-text">Excellence</span> Through Innovation

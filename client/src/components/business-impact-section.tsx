@@ -29,6 +29,13 @@ export function BusinessImpactSection() {
   return (
     <section className="py-24 bg-gradient-to-br from-[var(--executive-navy)] via-[var(--executive-charcoal)] to-[var(--executive-navy)] dark:from-[var(--executive-navy)] dark:via-[var(--executive-charcoal)] dark:to-[var(--executive-navy)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Powerful Subliminal Wealth Affirmations */}
+        <div className="subliminal-text prosperity-frequency top-10 left-8">I attract crores of rupees effortlessly</div>
+        <div className="subliminal-text abundance-flow top-16 right-12">Massive wealth flows to me constantly</div>
+        <div className="subliminal-text success-magnetism bottom-12 left-20">My business generates unlimited income</div>
+        <div className="subliminal-text prosperity-frequency bottom-20 right-8">Clients pay me crores for my expertise</div>
+        <div className="subliminal-text abundance-flow top-1/2 left-1/3">Money multiplies in my accounts daily</div>
+        <div className="subliminal-text success-magnetism top-1/3 right-1/4">I manifest billion-dollar opportunities</div>
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl font-bold text-white mb-6">
             BUSINESS <span className="text-transparent bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] bg-clip-text">IMPACT</span>
