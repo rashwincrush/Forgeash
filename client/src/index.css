@@ -24,25 +24,17 @@
   --ring: hsl(221, 83%, 53%);
   --radius: 0.5rem;
   
-  /* Executive ForgeAsh Brand Palette */
-  --executive-navy: hsl(221, 39%, 11%);
-  --executive-navy-light: hsl(221, 39%, 21%);
-  --executive-charcoal: hsl(215, 25%, 27%);
-  --executive-silver: hsl(215, 16%, 47%);
-  --executive-platinum: hsl(210, 40%, 98%);
-  --executive-gold: hsl(45, 100%, 61%);
-  --executive-blue: hsl(221, 83%, 53%);
-  --executive-blue-light: hsl(221, 83%, 63%);
-  --executive-green: hsl(142, 76%, 36%);
-  --executive-purple: hsl(263, 70%, 50%);
-  --executive-orange: hsl(25, 95%, 53%);
-  
-  /* Wealth Manifestation Colors */
-  --prosperity-gold: hsl(45, 100%, 61%);
-  --abundance-emerald: hsl(142, 76%, 36%);
-  --success-sapphire: hsl(221, 83%, 53%);
-  --luxury-amethyst: hsl(263, 70%, 50%);
-  --premium-copper: hsl(25, 95%, 53%);
+  /* Professional Executive Palette */
+  --executive-navy: hsl(220, 35%, 8%);
+  --executive-slate: hsl(220, 15%, 20%);
+  --executive-charcoal: hsl(220, 10%, 30%);
+  --executive-silver: hsl(220, 8%, 55%);
+  --executive-platinum: hsl(220, 20%, 95%);
+  --executive-accent: hsl(220, 90%, 56%);
+  --executive-accent-light: hsl(220, 90%, 65%);
+  --executive-success: hsl(155, 85%, 44%);
+  --executive-warning: hsl(45, 90%, 60%);
+  --executive-error: hsl(0, 85%, 60%);
 }
 
 .dark {
@@ -66,25 +58,17 @@
   --destructive-foreground: hsl(210, 40%, 98%);
   --ring: hsl(221, 83%, 53%);
   
-  /* Executive ForgeAsh Dark Brand Palette */
-  --executive-navy: hsl(221, 39%, 11%);
-  --executive-navy-light: hsl(221, 39%, 21%);
-  --executive-charcoal: hsl(215, 25%, 27%);
-  --executive-silver: hsl(215, 16%, 47%);
-  --executive-platinum: hsl(210, 40%, 98%);
-  --executive-gold: hsl(45, 100%, 61%);
-  --executive-blue: hsl(221, 83%, 53%);
-  --executive-blue-light: hsl(221, 83%, 63%);
-  --executive-green: hsl(142, 76%, 36%);
-  --executive-purple: hsl(263, 70%, 50%);
-  --executive-orange: hsl(25, 95%, 53%);
-  
-  /* Dark Wealth Manifestation Colors */
-  --prosperity-gold: hsl(45, 100%, 61%);
-  --abundance-emerald: hsl(142, 76%, 36%);
-  --success-sapphire: hsl(221, 83%, 53%);
-  --luxury-amethyst: hsl(263, 70%, 50%);
-  --premium-copper: hsl(25, 95%, 53%);
+  /* Professional Executive Dark Palette */
+  --executive-navy: hsl(220, 35%, 8%);
+  --executive-slate: hsl(220, 15%, 20%);
+  --executive-charcoal: hsl(220, 10%, 30%);
+  --executive-silver: hsl(220, 8%, 55%);
+  --executive-platinum: hsl(220, 20%, 95%);
+  --executive-accent: hsl(220, 90%, 56%);
+  --executive-accent-light: hsl(220, 90%, 65%);
+  --executive-success: hsl(155, 85%, 44%);
+  --executive-warning: hsl(45, 90%, 60%);
+  --executive-error: hsl(0, 85%, 60%);
 }
 
 /* Subliminal Enhancement Layer */
@@ -144,42 +128,49 @@
   50% { opacity: 0.003; }
 }
 
-/* Executive Theme Animations */
-.executive-glow {
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.1), 0 0 40px rgba(147, 51, 234, 0.05);
+/* Professional Executive Animations */
+.executive-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
 }
 
-.executive-glow:hover {
-  box-shadow: 0 0 30px rgba(59, 130, 246, 0.2), 0 0 60px rgba(147, 51, 234, 0.1);
+.executive-shadow:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.wealth-gradient {
-  background: linear-gradient(135deg, var(--prosperity-gold) 0%, var(--abundance-emerald) 25%, var(--success-sapphire) 50%, var(--luxury-amethyst) 75%, var(--premium-copper) 100%);
-  background-size: 200% 200%;
-  animation: wealth-flow 8s ease-in-out infinite;
+.professional-gradient {
+  background: linear-gradient(135deg, var(--executive-accent) 0%, var(--executive-accent-light) 100%);
 }
 
-@keyframes wealth-flow {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+.professional-gradient-text {
+  background: linear-gradient(135deg, var(--executive-accent) 0%, var(--executive-accent-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .orbital-ring {
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  border: 2px solid rgba(59, 130, 246, 0.15);
   border-radius: 50%;
-  animation: orbital-pulse 4s ease-in-out infinite;
+  animation: orbital-rotation 20s linear infinite;
 }
 
-@keyframes orbital-pulse {
-  0%, 100% { 
-    border-color: rgba(59, 130, 246, 0.2);
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
-  }
-  50% { 
-    border-color: rgba(147, 51, 234, 0.3);
-    box-shadow: 0 0 30px rgba(147, 51, 234, 0.15);
-  }
+@keyframes orbital-rotation {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.professional-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.professional-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
 }
 
 @layer base {

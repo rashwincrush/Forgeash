@@ -4,7 +4,7 @@ import forgeAshLogo from "@assets/Image_02-05-25_at_10.52_AM-removebg-preview_17
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-blue-800 to-[var(--executive-navy)] dark:from-[var(--executive-navy)] dark:via-[var(--executive-charcoal)] dark:to-background overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[var(--executive-navy)] via-[var(--executive-slate)] to-[var(--executive-charcoal)] dark:from-[var(--executive-navy)] dark:via-[var(--executive-slate)] dark:to-background overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-[size:30px_30px] dark:bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.05)_1px,transparent_0)]"></div>
@@ -32,7 +32,7 @@ export function HeroSection() {
             
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Transform Your Business With{" "}
-              <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent animate-gradient">
+              <span className="professional-gradient-text">
                 Strategic AI Solutions
               </span>
             </h1>
@@ -42,7 +42,7 @@ export function HeroSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <Button size="lg" className="bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] text-white hover:from-[var(--executive-gold)] hover:to-[var(--executive-orange)] hover:scale-105 group professional-glow shadow-2xl px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 border border-white/20">
+              <Button size="lg" className="professional-gradient text-white hover:opacity-90 hover:scale-105 group executive-shadow px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 border border-white/20">
                 Schedule a Free Strategy Call
                 <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -70,30 +70,30 @@ export function HeroSection() {
           <div className="relative animate-slide-in-right">
             {/* Ultra-Refined Orbital System */}
             <div className="relative w-[480px] h-[480px] mx-auto">
-              {/* Executive Orbital Ring System */}
+              {/* Professional Orbital Ring System */}
               <div className="absolute inset-0">
-                {/* Outer Ring - Executive Blue */}
-                <div className="absolute inset-0 orbital-ring border-[var(--executive-blue)]/20 shadow-[0_0_25px_rgba(59,130,246,0.12)]"></div>
+                {/* Outer Ring - Professional Blue */}
+                <div className="absolute inset-0 orbital-ring border-[var(--executive-accent)]/20"></div>
                 
-                {/* Middle Ring - Executive Purple */}
-                <div className="absolute inset-20 orbital-ring border-[var(--executive-purple)]/15 shadow-[0_0_20px_rgba(147,51,234,0.1)]" style={{animationDelay: '1s'}}></div>
+                {/* Middle Ring - Refined Blue */}
+                <div className="absolute inset-20 orbital-ring border-[var(--executive-accent)]/15" style={{animationDelay: '-10s'}}></div>
                 
-                {/* Inner Ring - Executive Gold */}
-                <div className="absolute inset-40 orbital-ring border-[var(--executive-gold)]/12 shadow-[0_0_15px_rgba(251,191,36,0.08)]" style={{animationDelay: '2s'}}></div>
+                {/* Inner Ring - Subtle Blue */}
+                <div className="absolute inset-40 orbital-ring border-[var(--executive-accent)]/10" style={{animationDelay: '-5s'}}></div>
                 
-                {/* Wealth Manifestation Ambient Glow */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[var(--success-sapphire)]/3 via-[var(--luxury-amethyst)]/3 to-[var(--prosperity-gold)]/3 blur-3xl wealth-gradient"></div>
+                {/* Professional Ambient Glow */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[var(--executive-accent)]/5 via-[var(--executive-accent-light)]/5 to-[var(--executive-accent)]/5 blur-3xl"></div>
               </div>
               
-              {/* Executive Central Logo with Wealth Aura */}
+              {/* Professional Central Logo */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-blue)]/25 to-[var(--executive-purple)]/25 rounded-full blur-2xl wealth-gradient"></div>
-                  <div className="relative w-36 h-36 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-3xl rounded-full flex items-center justify-center shadow-[0_12px_48px_rgba(0,0,0,0.4)] border border-white/30 executive-glow">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-accent)]/15 to-[var(--executive-accent-light)]/15 rounded-full blur-xl"></div>
+                  <div className="relative w-32 h-32 bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.3)] border border-white/20 executive-shadow">
                     <img 
                       src={forgeAshLogo} 
                       alt="ForgeAsh Technologies Logo" 
-                      className="w-28 h-28 object-contain drop-shadow-2xl"
+                      className="w-24 h-24 object-contain drop-shadow-xl"
                     />
                   </div>
                 </div>
@@ -104,8 +104,8 @@ export function HeroSection() {
                 <div className="absolute w-full h-full">
                   {/* Healthcare - Top */}
                   <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
-                    <div className="w-12 h-12 bg-white/10 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_6px_20px_rgba(0,0,0,0.2)] border border-white/20 hover:bg-white/15 transition-all duration-300 executive-glow">
-                      <svg className="w-6 h-6 text-[var(--abundance-emerald)]" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-10 h-10 bg-white/8 backdrop-blur-xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/15 hover:bg-white/12 transition-all duration-300 executive-shadow">
+                      <svg className="w-5 h-5 text-[var(--executive-success)]" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
                       </svg>
                     </div>
@@ -113,8 +113,8 @@ export function HeroSection() {
                   
                   {/* Finance - Top Right */}
                   <div className="absolute top-20 right-12">
-                    <div className="w-12 h-12 bg-white/10 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_6px_20px_rgba(0,0,0,0.2)] border border-white/20 hover:bg-white/15 transition-all duration-300 executive-glow">
-                      <svg className="w-6 h-6 text-[var(--prosperity-gold)]" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-10 h-10 bg-white/8 backdrop-blur-xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/15 hover:bg-white/12 transition-all duration-300 executive-shadow">
+                      <svg className="w-5 h-5 text-[var(--executive-warning)]" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17h-2v-9.28c-.35.17-.74.28-1.17.28-.95 0-1.8-.7-1.95-1.65L8.5 8h7l-.62-.35c-.15.95-1 1.65-1.95 1.65-.43 0-.82-.11-1.17-.28V19z"/>
                       </svg>
                     </div>
