@@ -24,17 +24,18 @@
   --ring: hsl(221, 83%, 53%);
   --radius: 0.5rem;
   
-  /* Professional Executive Palette */
+  /* Premium Executive Palette */
   --executive-navy: hsl(220, 35%, 8%);
   --executive-slate: hsl(220, 15%, 20%);
   --executive-charcoal: hsl(220, 10%, 30%);
   --executive-silver: hsl(220, 8%, 55%);
   --executive-platinum: hsl(220, 20%, 95%);
-  --executive-accent: hsl(220, 90%, 56%);
-  --executive-accent-light: hsl(220, 90%, 65%);
-  --executive-success: hsl(155, 85%, 44%);
-  --executive-warning: hsl(45, 90%, 60%);
-  --executive-error: hsl(0, 85%, 60%);
+  --executive-accent: hsl(220, 60%, 50%);
+  --executive-accent-light: hsl(220, 60%, 60%);
+  --executive-gold: hsl(45, 70%, 60%);
+  --executive-success: hsl(155, 60%, 45%);
+  --executive-warning: hsl(45, 70%, 60%);
+  --executive-error: hsl(0, 60%, 55%);
 }
 
 .dark {
@@ -58,17 +59,18 @@
   --destructive-foreground: hsl(210, 40%, 98%);
   --ring: hsl(221, 83%, 53%);
   
-  /* Professional Executive Dark Palette */
+  /* Premium Executive Dark Palette */
   --executive-navy: hsl(220, 35%, 8%);
   --executive-slate: hsl(220, 15%, 20%);
   --executive-charcoal: hsl(220, 10%, 30%);
   --executive-silver: hsl(220, 8%, 55%);
   --executive-platinum: hsl(220, 20%, 95%);
-  --executive-accent: hsl(220, 90%, 56%);
-  --executive-accent-light: hsl(220, 90%, 65%);
-  --executive-success: hsl(155, 85%, 44%);
-  --executive-warning: hsl(45, 90%, 60%);
-  --executive-error: hsl(0, 85%, 60%);
+  --executive-accent: hsl(220, 60%, 50%);
+  --executive-accent-light: hsl(220, 60%, 60%);
+  --executive-gold: hsl(45, 70%, 60%);
+  --executive-success: hsl(155, 60%, 45%);
+  --executive-warning: hsl(45, 70%, 60%);
+  --executive-error: hsl(0, 60%, 55%);
 }
 
 /* Subliminal Enhancement Layer */
@@ -128,7 +130,7 @@
   50% { opacity: 0.003; }
 }
 
-/* Professional Executive Animations */
+/* Premium Executive Animations */
 .executive-shadow {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
@@ -138,11 +140,22 @@
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.professional-gradient {
+.premium-gradient {
+  background: linear-gradient(135deg, var(--executive-accent) 0%, var(--executive-gold) 100%);
+}
+
+.premium-gradient-text {
+  background: linear-gradient(135deg, var(--executive-accent) 0%, var(--executive-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtle-gradient {
   background: linear-gradient(135deg, var(--executive-accent) 0%, var(--executive-accent-light) 100%);
 }
 
-.professional-gradient-text {
+.subtle-gradient-text {
   background: linear-gradient(135deg, var(--executive-accent) 0%, var(--executive-accent-light) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -150,9 +163,9 @@
 }
 
 .orbital-ring {
-  border: 2px solid rgba(59, 130, 246, 0.15);
+  border: 2px solid rgba(59, 130, 246, 0.12);
   border-radius: 50%;
-  animation: orbital-rotation 20s linear infinite;
+  animation: orbital-rotation 25s linear infinite;
 }
 
 @keyframes orbital-rotation {
@@ -160,17 +173,18 @@
   100% { transform: rotate(360deg); }
 }
 
-.professional-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+.premium-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
   transition: all 0.3s ease;
 }
 
-.professional-card:hover {
-  background: rgba(255, 255, 255, 0.08);
-  transform: translateY(-2px);
+.premium-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 @layer base {

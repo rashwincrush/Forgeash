@@ -55,7 +55,7 @@ export function FeaturedServicesSection() {
         <div className="subliminal-text abundance-flow top-1/2 left-1/2">My solutions scale to billions effortlessly</div>
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl font-bold text-foreground mb-6">
-            <span className="professional-gradient-text">FEATURED</span> SERVICES
+            <span className="premium-gradient-text">FEATURED</span> SERVICES
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             We deliver strategic technology solutions that drive growth, efficiency, and competitive advantage for forward-thinking businesses across diverse industries.
@@ -67,9 +67,9 @@ export function FeaturedServicesSection() {
             const IconComponent = service.icon;
             return (
               <div key={index} className="group relative" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="absolute inset-0 professional-gradient rounded-3xl blur opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
-                <div className="relative professional-card p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 animate-scale-in">
-                  <div className="flex items-center justify-center w-20 h-20 professional-gradient rounded-2xl mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg executive-shadow">
+                <div className="absolute inset-0 subtle-gradient rounded-3xl blur opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <div className="relative premium-card p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 animate-scale-in">
+                  <div className="flex items-center justify-center w-20 h-20 subtle-gradient rounded-2xl mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg executive-shadow">
                     <IconComponent className="text-white h-10 w-10" />
                   </div>
                   

@@ -45,7 +45,7 @@ export function CallToActionSection() {
             TRANSFORM YOUR BUSINESS
           </span>
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
-            Ready to Lead with <span className="professional-gradient-text">AI Innovation</span>?
+            Ready to Lead with <span className="premium-gradient-text">AI Innovation</span>?
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
             Join industry leaders who've achieved extraordinary growth through our strategic AI implementations and cutting-edge technology solutions.
@@ -55,7 +55,7 @@ export function CallToActionSection() {
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] rounded-3xl blur opacity-30"></div>
           <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-12 mb-12 professional-glow border border-white/20 animate-scale-in">
-            <Button size="lg" className="professional-gradient text-white hover:opacity-90 hover:scale-105 mb-12 px-12 py-6 text-xl font-bold executive-shadow">
+            <Button size="lg" className="premium-gradient text-white hover:opacity-90 hover:scale-105 mb-12 px-12 py-6 text-xl font-bold executive-shadow">
               Schedule Your Executive Consultation
             </Button>
             
@@ -64,7 +64,7 @@ export function CallToActionSection() {
                 const IconComponent = benefit.icon;
                 return (
                   <div key={index} className="flex flex-col items-center group animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                    <div className="w-16 h-16 professional-gradient rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg executive-shadow">
+                    <div className="w-16 h-16 subtle-gradient rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg executive-shadow">
                       <IconComponent className="text-white h-8 w-8" />
                     </div>
                     <span className="text-white font-bold text-lg mb-2">{benefit.title}</span>
