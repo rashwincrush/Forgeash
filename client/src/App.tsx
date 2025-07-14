@@ -21,6 +21,8 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
         <TooltipProvider>
+          {/* Subtle Frequency Enhancement Layer */}
+          <div className="frequency-enhancement"></div>
           <Toaster />
           <Router />
         </TooltipProvider>

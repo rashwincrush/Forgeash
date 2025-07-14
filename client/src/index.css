@@ -73,6 +73,63 @@
   --executive-orange: hsl(25, 95%, 53%);
 }
 
+/* Subliminal Enhancement Layer */
+.subliminal-text {
+  opacity: 0.02;
+  position: absolute;
+  font-size: 0.8rem;
+  color: var(--executive-gold);
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.prosperity-frequency {
+  animation: prosperity-pulse 8s ease-in-out infinite;
+}
+
+@keyframes prosperity-pulse {
+  0%, 100% { opacity: 0.02; }
+  50% { opacity: 0.05; }
+}
+
+.abundance-flow {
+  animation: abundance-flow 12s linear infinite;
+}
+
+@keyframes abundance-flow {
+  0% { transform: translateY(0px); opacity: 0.02; }
+  50% { transform: translateY(-5px); opacity: 0.04; }
+  100% { transform: translateY(0px); opacity: 0.02; }
+}
+
+.success-magnetism {
+  animation: success-magnetism 6s ease-in-out infinite;
+}
+
+@keyframes success-magnetism {
+  0%, 100% { transform: scale(1); opacity: 0.02; }
+  50% { transform: scale(1.01); opacity: 0.04; }
+}
+
+/* Subtle Frequency Enhancement */
+.frequency-enhancement {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(251, 191, 36, 0.001) 0%, transparent 50%);
+  animation: frequency-pulse 528ms ease-in-out infinite;
+}
+
+@keyframes frequency-pulse {
+  0%, 100% { opacity: 0.001; }
+  50% { opacity: 0.003; }
+}
+
 @layer base {
   * {
     @apply border-border;

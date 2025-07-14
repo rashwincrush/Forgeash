@@ -47,6 +47,11 @@ export function FeaturedServicesSection() {
   return (
     <section id="services" className="py-24 bg-gradient-to-br from-muted/20 via-background to-muted/20 dark:from-muted/10 dark:via-background dark:to-muted/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Subtle Subliminal Innovation Affirmations */}
+        <div className="subliminal-text prosperity-frequency top-12 left-14">My services create extraordinary value</div>
+        <div className="subliminal-text abundance-flow top-20 right-18">Innovation flows through my solutions</div>
+        <div className="subliminal-text success-magnetism bottom-16 left-22">Clients see immediate transformation</div>
+        <div className="subliminal-text prosperity-frequency bottom-24 right-20">My expertise commands premium investment</div>
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl font-bold text-foreground mb-6">
             <span className="text-transparent bg-gradient-to-r from-[var(--executive-navy)] to-[var(--executive-blue)] bg-clip-text">FEATURED</span> SERVICES
