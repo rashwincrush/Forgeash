@@ -70,51 +70,63 @@ export function HeroSection() {
                 </div>
               </div>
               
-              {/* Professional Multi-Orbital System */}
+              {/* Professional Multi-Orbital System - 5 Industry Icons */}
               
-              {/* Outer Ring - Orange Icon */}
+              {/* Ring 1 - Healthcare (Blue) */}
               <div className="absolute inset-0 animate-spin-very-slow">
                 <div className="relative w-full h-full">
                   <div className="absolute inset-2 border border-white/5 rounded-full shadow-inner"></div>
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-14 h-14 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
                     <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-9.28c-.35.17-.74.28-1.17.28-.95 0-1.8-.7-1.95-1.65L8.5 8h7l-.62-.35c-.15.95-1 1.65-1.95 1.65-.43 0-.82-.11-1.17-.28V19z"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Second Ring - Blue Icon */}
-              <div className="absolute inset-0 animate-spin-very-slow">
-                <div className="relative w-full h-full">
-                  <div className="absolute inset-5 border border-white/5 rounded-full shadow-inner"></div>
-                  <div className="absolute top-3 left-1/2 transform -translate-x-1/2 w-13 h-13 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Third Ring - Green Icon */}
-              <div className="absolute inset-0 animate-spin-very-slow">
-                <div className="relative w-full h-full">
-                  <div className="absolute inset-8 border border-white/5 rounded-full shadow-inner"></div>
-                  <div className="absolute top-1/2 right-6 transform -translate-y-1/2 w-12 h-12 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
                     </svg>
                   </div>
                 </div>
               </div>
               
-              {/* Inner Ring - Teal Icon */}
+              {/* Ring 2 - Finance (Orange) */}
               <div className="absolute inset-0 animate-spin-very-slow">
                 <div className="relative w-full h-full">
-                  <div className="absolute inset-12 border border-white/5 rounded-full shadow-inner"></div>
-                  <div className="absolute top-1/2 left-10 transform -translate-y-1/2 w-11 h-11 bg-gradient-to-br from-teal-400 to-teal-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
+                  <div className="absolute inset-4 border border-white/5 rounded-full shadow-inner"></div>
+                  <div className="absolute top-6 right-6 transform -translate-y-1/2 w-13 h-13 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17h-2v-9.28c-.35.17-.74.28-1.17.28-.95 0-1.8-.7-1.95-1.65L8.5 8h7l-.62-.35c-.15.95-1 1.65-1.95 1.65-.43 0-.82-.11-1.17-.28V19z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Ring 3 - E-commerce (Green) */}
+              <div className="absolute inset-0 animate-spin-very-slow">
+                <div className="relative w-full h-full">
+                  <div className="absolute inset-6 border border-white/5 rounded-full shadow-inner"></div>
+                  <div className="absolute top-1/2 right-4 transform -translate-y-1/2 w-12 h-12 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M7 4V2C7 1.45 7.45 1 8 1h8c.55 0 1 .45 1 1v2h5v2h-2v13c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V6H2V4h5zm10 15V6H7v13h10zM9 3v1h6V3H9zm0 5h2v8H9V8zm4 0h2v8h-2V8z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Ring 4 - Education (Teal) */}
+              <div className="absolute inset-0 animate-spin-very-slow">
+                <div className="relative w-full h-full">
+                  <div className="absolute inset-8 border border-white/5 rounded-full shadow-inner"></div>
+                  <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-11 h-11 bg-gradient-to-br from-teal-400 to-teal-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
                     <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6L23 9l-11-6zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Ring 5 - Manufacturing (Purple) */}
+              <div className="absolute inset-0 animate-spin-very-slow">
+                <div className="relative w-full h-full">
+                  <div className="absolute inset-10 border border-white/5 rounded-full shadow-inner"></div>
+                  <div className="absolute top-1/2 left-8 transform -translate-y-1/2 w-10 h-10 bg-gradient-to-br from-purple-400 to-purple-500 rounded-full flex items-center justify-center shadow-2xl professional-glow border-2 border-white/20">
+                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                   </div>
                 </div>
