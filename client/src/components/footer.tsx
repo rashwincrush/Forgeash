@@ -1,4 +1,4 @@
-import { Atom } from "lucide-react";
+import logoPath from "@assets/Image_02-05-25_at_10.52_AM-removebg-preview_1752479361775.png";
 
 export function Footer() {
   return (
@@ -7,8 +7,12 @@ export function Footer() {
         <div className="grid lg:grid-cols-4 gap-12">
           <div className="lg:col-span-1 animate-fade-in">
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-xl flex items-center justify-center mr-4 shadow-lg">
-                <Atom className="h-7 w-7 text-white animate-pulse" />
+              <div className="w-12 h-12 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-xl flex items-center justify-center mr-4 shadow-lg p-2">
+                <img 
+                  src={logoPath} 
+                  alt="ForgeAsh Technologies" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-bold text-2xl">ForgeAsh Technologies</span>
             </div>

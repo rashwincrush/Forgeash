@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Atom, Moon, Sun } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
+import logoPath from "@assets/Image_02-05-25_at_10.52_AM-removebg-preview_1752479361775.png";
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,8 +14,12 @@ export function Navigation() {
         <div className="flex justify-between items-center h-18">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <div className="w-10 h-10 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-xl flex items-center justify-center mr-3 shadow-lg">
-                <Atom className="h-6 w-6 text-white animate-pulse" />
+              <div className="w-12 h-12 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-xl flex items-center justify-center mr-3 shadow-lg p-2">
+                <img 
+                  src={logoPath} 
+                  alt="ForgeAsh Technologies" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-bold text-xl text-foreground dark:text-white">ForgeAsh Technologies</span>
             </div>
