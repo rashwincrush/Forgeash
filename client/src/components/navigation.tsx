@@ -14,7 +14,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-20 py-4">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center group">
-              <div className="w-14 h-14 bg-gradient-to-br from-[var(--executive-blue)] via-[var(--executive-purple)] to-[var(--executive-navy)] rounded-2xl flex items-center justify-center mr-4 shadow-xl professional-glow p-2.5 group-hover:shadow-2xl transition-all duration-300 border border-white/20">
+              <div className="w-14 h-14 wealth-gradient rounded-2xl flex items-center justify-center mr-4 shadow-xl executive-glow p-2.5 group-hover:shadow-2xl transition-all duration-300 border border-white/20">
                 <img 
                   src={logoPath} 
                   alt="ForgeAsh Technologies" 
@@ -22,7 +22,7 @@ export function Navigation() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-xl text-transparent bg-gradient-to-r from-[var(--executive-navy)] to-[var(--executive-blue)] bg-clip-text dark:from-white dark:to-[var(--executive-gold)] leading-tight">
+                <span className="font-bold text-xl wealth-gradient bg-clip-text text-transparent dark:from-white dark:to-[var(--executive-gold)] leading-tight">
                   ForgeAsh Technologies
                 </span>
                 <span className="text-xs text-muted-foreground dark:text-white/60 font-medium tracking-wide">

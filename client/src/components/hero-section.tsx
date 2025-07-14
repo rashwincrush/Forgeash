@@ -70,30 +70,30 @@ export function HeroSection() {
           <div className="relative animate-slide-in-right">
             {/* Ultra-Refined Orbital System */}
             <div className="relative w-[480px] h-[480px] mx-auto">
-              {/* Minimalist Orbital Rings */}
+              {/* Executive Orbital Ring System */}
               <div className="absolute inset-0">
-                {/* Outer Ring - Subtle Blue */}
-                <div className="absolute inset-0 rounded-full border border-blue-400/15 shadow-[0_0_20px_rgba(59,130,246,0.1)]"></div>
+                {/* Outer Ring - Executive Blue */}
+                <div className="absolute inset-0 orbital-ring border-[var(--executive-blue)]/20 shadow-[0_0_25px_rgba(59,130,246,0.12)]"></div>
                 
-                {/* Middle Ring - Elegant Purple */}
-                <div className="absolute inset-20 rounded-full border border-purple-400/12 shadow-[0_0_15px_rgba(147,51,234,0.08)]"></div>
+                {/* Middle Ring - Executive Purple */}
+                <div className="absolute inset-20 orbital-ring border-[var(--executive-purple)]/15 shadow-[0_0_20px_rgba(147,51,234,0.1)]" style={{animationDelay: '1s'}}></div>
                 
-                {/* Inner Ring - Soft Gold */}
-                <div className="absolute inset-40 rounded-full border border-yellow-400/10 shadow-[0_0_10px_rgba(251,191,36,0.06)]"></div>
+                {/* Inner Ring - Executive Gold */}
+                <div className="absolute inset-40 orbital-ring border-[var(--executive-gold)]/12 shadow-[0_0_15px_rgba(251,191,36,0.08)]" style={{animationDelay: '2s'}}></div>
                 
-                {/* Subtle Ambient Glow */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/3 via-purple-500/3 to-blue-500/3 blur-3xl"></div>
+                {/* Wealth Manifestation Ambient Glow */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[var(--success-sapphire)]/3 via-[var(--luxury-amethyst)]/3 to-[var(--prosperity-gold)]/3 blur-3xl wealth-gradient"></div>
               </div>
               
-              {/* Refined Central Logo */}
+              {/* Executive Central Logo with Wealth Aura */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-2xl"></div>
-                  <div className="relative w-32 h-32 bg-gradient-to-br from-white/15 to-white/8 backdrop-blur-3xl rounded-full flex items-center justify-center shadow-[0_8px_32px_rgba(0,0,0,0.3)] border border-white/20">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-blue)]/25 to-[var(--executive-purple)]/25 rounded-full blur-2xl wealth-gradient"></div>
+                  <div className="relative w-36 h-36 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-3xl rounded-full flex items-center justify-center shadow-[0_12px_48px_rgba(0,0,0,0.4)] border border-white/30 executive-glow">
                     <img 
                       src={forgeAshLogo} 
                       alt="ForgeAsh Technologies Logo" 
-                      className="w-24 h-24 object-contain drop-shadow-xl"
+                      className="w-28 h-28 object-contain drop-shadow-2xl"
                     />
                   </div>
                 </div>
@@ -104,8 +104,8 @@ export function HeroSection() {
                 <div className="absolute w-full h-full">
                   {/* Healthcare - Top */}
                   <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
-                    <div className="w-10 h-10 bg-white/8 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/10 hover:bg-white/12 transition-all duration-300">
-                      <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-12 h-12 bg-white/10 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_6px_20px_rgba(0,0,0,0.2)] border border-white/20 hover:bg-white/15 transition-all duration-300 executive-glow">
+                      <svg className="w-6 h-6 text-[var(--abundance-emerald)]" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
                       </svg>
                     </div>
@@ -113,8 +113,8 @@ export function HeroSection() {
                   
                   {/* Finance - Top Right */}
                   <div className="absolute top-20 right-12">
-                    <div className="w-10 h-10 bg-white/8 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/10 hover:bg-white/12 transition-all duration-300">
-                      <svg className="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-12 h-12 bg-white/10 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_6px_20px_rgba(0,0,0,0.2)] border border-white/20 hover:bg-white/15 transition-all duration-300 executive-glow">
+                      <svg className="w-6 h-6 text-[var(--prosperity-gold)]" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17h-2v-9.28c-.35.17-.74.28-1.17.28-.95 0-1.8-.7-1.95-1.65L8.5 8h7l-.62-.35c-.15.95-1 1.65-1.95 1.65-.43 0-.82-.11-1.17-.28V19z"/>
                       </svg>
                     </div>
@@ -122,8 +122,8 @@ export function HeroSection() {
                   
                   {/* E-commerce - Right */}
                   <div className="absolute top-1/2 right-8 transform -translate-y-1/2">
-                    <div className="w-10 h-10 bg-white/8 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/10 hover:bg-white/12 transition-all duration-300">
-                      <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-12 h-12 bg-white/10 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_6px_20px_rgba(0,0,0,0.2)] border border-white/20 hover:bg-white/15 transition-all duration-300 executive-glow">
+                      <svg className="w-6 h-6 text-[var(--executive-green)]" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M7 4V2C7 1.45 7.45 1 8 1h8c.55 0 1 .45 1 1v2h5v2h-2v13c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V6H2V4h5zm10 15V6H7v13h10zM9 3v1h6V3H9zm0 5h2v8H9V8zm4 0h2v8h-2V8z"/>
                       </svg>
                     </div>
@@ -131,8 +131,8 @@ export function HeroSection() {
                   
                   {/* Education - Bottom */}
                   <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-                    <div className="w-10 h-10 bg-white/8 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/10 hover:bg-white/12 transition-all duration-300">
-                      <svg className="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-12 h-12 bg-white/10 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_6px_20px_rgba(0,0,0,0.2)] border border-white/20 hover:bg-white/15 transition-all duration-300 executive-glow">
+                      <svg className="w-6 h-6 text-[var(--success-sapphire)]" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6L23 9l-11-6zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
                       </svg>
                     </div>
@@ -140,8 +140,8 @@ export function HeroSection() {
                   
                   {/* Manufacturing - Left */}
                   <div className="absolute top-1/2 left-8 transform -translate-y-1/2">
-                    <div className="w-10 h-10 bg-white/8 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-white/10 hover:bg-white/12 transition-all duration-300">
-                      <svg className="w-5 h-5 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-12 h-12 bg-white/10 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_6px_20px_rgba(0,0,0,0.2)] border border-white/20 hover:bg-white/15 transition-all duration-300 executive-glow">
+                      <svg className="w-6 h-6 text-[var(--luxury-amethyst)]" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                       </svg>
                     </div>

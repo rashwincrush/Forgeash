@@ -47,14 +47,15 @@ export function FeaturedServicesSection() {
   return (
     <section id="services" className="py-24 bg-gradient-to-br from-muted/20 via-background to-muted/20 dark:from-muted/10 dark:via-background dark:to-muted/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Subtle Subliminal Innovation Affirmations */}
-        <div className="subliminal-text prosperity-frequency top-12 left-14">My services create extraordinary value</div>
-        <div className="subliminal-text abundance-flow top-20 right-18">Innovation flows through my solutions</div>
-        <div className="subliminal-text success-magnetism bottom-16 left-22">Clients see immediate transformation</div>
-        <div className="subliminal-text prosperity-frequency bottom-24 right-20">My expertise commands premium investment</div>
+        {/* Crore-Focused Subliminal Wealth Programming */}
+        <div className="subliminal-text prosperity-frequency top-12 left-14">My services generate crores in revenue</div>
+        <div className="subliminal-text abundance-flow top-20 right-18">Premium clients invest billions in my expertise</div>
+        <div className="subliminal-text success-magnetism bottom-16 left-22">Every service creates unlimited wealth</div>
+        <div className="subliminal-text prosperity-frequency bottom-24 right-20">I attract Fortune 500 partnerships</div>
+        <div className="subliminal-text abundance-flow top-1/2 left-1/2">My solutions scale to billions effortlessly</div>
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl font-bold text-foreground mb-6">
-            <span className="text-transparent bg-gradient-to-r from-[var(--executive-navy)] to-[var(--executive-blue)] bg-clip-text">FEATURED</span> SERVICES
+            <span className="wealth-gradient bg-clip-text text-transparent">FEATURED</span> SERVICES
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             We deliver strategic technology solutions that drive growth, efficiency, and competitive advantage for forward-thinking businesses across diverse industries.
@@ -68,7 +69,7 @@ export function FeaturedServicesSection() {
               <div key={index} className="group relative" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-3xl blur opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
                 <div className="relative bg-gradient-to-br from-white/90 to-white/70 dark:from-card/90 dark:to-card/70 backdrop-blur-xl rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 professional-glow border border-white/20 animate-scale-in">
-                  <div className="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-2xl mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className="flex items-center justify-center w-20 h-20 wealth-gradient rounded-2xl mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg executive-glow">
                     <IconComponent className="text-white h-10 w-10" />
                   </div>
                   

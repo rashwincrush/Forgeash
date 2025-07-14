@@ -38,7 +38,7 @@ export function BusinessImpactSection() {
         <div className="subliminal-text success-magnetism top-1/3 right-1/4">I manifest billion-dollar opportunities</div>
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl font-bold text-white mb-6">
-            BUSINESS <span className="text-transparent bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] bg-clip-text">IMPACT</span>
+            BUSINESS <span className="wealth-gradient bg-clip-text text-transparent">IMPACT</span>
           </h2>
           <p className="text-xl text-white/80 max-w-4xl mx-auto leading-relaxed">
             Our clients consistently achieve significant improvements in key business metrics through our strategic technology implementations and AI-driven solutions.
@@ -51,7 +51,7 @@ export function BusinessImpactSection() {
               <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
               <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 professional-glow border border-white/20 animate-scale-in">
                 <div className="text-center">
-                  <div className="text-6xl font-bold text-transparent bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] bg-clip-text mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-6xl font-bold wealth-gradient bg-clip-text text-transparent mb-4 group-hover:scale-110 transition-transform duration-300">
                     {metric.percentage}
                   </div>
                   <h4 className="text-xl font-semibold text-white mb-4">{metric.title}</h4>

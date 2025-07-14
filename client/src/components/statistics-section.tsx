@@ -48,9 +48,9 @@ export function StatisticsSection() {
         
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <div className="group relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-            <div className="relative text-center p-10 bg-gradient-to-br from-white/80 to-white/40 dark:from-card/80 dark:to-card/40 backdrop-blur-xl rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 professional-glow border border-white/20">
-              <div className="text-7xl font-bold text-transparent bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] bg-clip-text mb-4 animate-counter">
+            <div className="absolute inset-0 bg-gradient-to-r from-[var(--success-sapphire)] to-[var(--luxury-amethyst)] rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+            <div className="relative text-center p-10 bg-gradient-to-br from-white/90 to-white/50 dark:from-card/90 dark:to-card/50 backdrop-blur-xl rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 executive-glow border border-white/30">
+              <div className="text-7xl font-bold wealth-gradient bg-clip-text text-transparent mb-4 animate-counter">
                 {projectsCount}+
               </div>
               <div className="text-lg font-semibold text-foreground mb-2">
@@ -63,9 +63,9 @@ export function StatisticsSection() {
           </div>
           
           <div className="group relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-green)] to-[var(--executive-orange)] rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-            <div className="relative text-center p-10 bg-gradient-to-br from-white/80 to-white/40 dark:from-card/80 dark:to-card/40 backdrop-blur-xl rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 professional-glow border border-white/20">
-              <div className="text-7xl font-bold text-transparent bg-gradient-to-r from-[var(--executive-green)] to-[var(--executive-orange)] bg-clip-text mb-4 animate-counter">
+            <div className="absolute inset-0 bg-gradient-to-r from-[var(--abundance-emerald)] to-[var(--prosperity-gold)] rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+            <div className="relative text-center p-10 bg-gradient-to-br from-white/90 to-white/50 dark:from-card/90 dark:to-card/50 backdrop-blur-xl rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 executive-glow border border-white/30">
+              <div className="text-7xl font-bold wealth-gradient bg-clip-text text-transparent mb-4 animate-counter">
                 {satisfactionCount}%
               </div>
               <div className="text-lg font-semibold text-foreground mb-2">

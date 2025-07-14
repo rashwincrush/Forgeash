@@ -24,7 +24,7 @@
   --ring: hsl(221, 83%, 53%);
   --radius: 0.5rem;
   
-  /* Executive color palette */
+  /* Executive ForgeAsh Brand Palette */
   --executive-navy: hsl(221, 39%, 11%);
   --executive-navy-light: hsl(221, 39%, 21%);
   --executive-charcoal: hsl(215, 25%, 27%);
@@ -36,6 +36,13 @@
   --executive-green: hsl(142, 76%, 36%);
   --executive-purple: hsl(263, 70%, 50%);
   --executive-orange: hsl(25, 95%, 53%);
+  
+  /* Wealth Manifestation Colors */
+  --prosperity-gold: hsl(45, 100%, 61%);
+  --abundance-emerald: hsl(142, 76%, 36%);
+  --success-sapphire: hsl(221, 83%, 53%);
+  --luxury-amethyst: hsl(263, 70%, 50%);
+  --premium-copper: hsl(25, 95%, 53%);
 }
 
 .dark {
@@ -59,7 +66,7 @@
   --destructive-foreground: hsl(210, 40%, 98%);
   --ring: hsl(221, 83%, 53%);
   
-  /* Executive dark theme colors */
+  /* Executive ForgeAsh Dark Brand Palette */
   --executive-navy: hsl(221, 39%, 11%);
   --executive-navy-light: hsl(221, 39%, 21%);
   --executive-charcoal: hsl(215, 25%, 27%);
@@ -71,6 +78,13 @@
   --executive-green: hsl(142, 76%, 36%);
   --executive-purple: hsl(263, 70%, 50%);
   --executive-orange: hsl(25, 95%, 53%);
+  
+  /* Dark Wealth Manifestation Colors */
+  --prosperity-gold: hsl(45, 100%, 61%);
+  --abundance-emerald: hsl(142, 76%, 36%);
+  --success-sapphire: hsl(221, 83%, 53%);
+  --luxury-amethyst: hsl(263, 70%, 50%);
+  --premium-copper: hsl(25, 95%, 53%);
 }
 
 /* Subliminal Enhancement Layer */
@@ -128,6 +142,44 @@
 @keyframes frequency-pulse {
   0%, 100% { opacity: 0.001; }
   50% { opacity: 0.003; }
+}
+
+/* Executive Theme Animations */
+.executive-glow {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.1), 0 0 40px rgba(147, 51, 234, 0.05);
+  transition: all 0.3s ease;
+}
+
+.executive-glow:hover {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.2), 0 0 60px rgba(147, 51, 234, 0.1);
+}
+
+.wealth-gradient {
+  background: linear-gradient(135deg, var(--prosperity-gold) 0%, var(--abundance-emerald) 25%, var(--success-sapphire) 50%, var(--luxury-amethyst) 75%, var(--premium-copper) 100%);
+  background-size: 200% 200%;
+  animation: wealth-flow 8s ease-in-out infinite;
+}
+
+@keyframes wealth-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.orbital-ring {
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 50%;
+  animation: orbital-pulse 4s ease-in-out infinite;
+}
+
+@keyframes orbital-pulse {
+  0%, 100% { 
+    border-color: rgba(59, 130, 246, 0.2);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+  }
+  50% { 
+    border-color: rgba(147, 51, 234, 0.3);
+    box-shadow: 0 0 30px rgba(147, 51, 234, 0.15);
+  }
 }
 
 @layer base {
