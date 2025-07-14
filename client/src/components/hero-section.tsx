@@ -38,12 +38,12 @@ export function HeroSection() {
               We leverage AI, automation, and custom software to help businesses streamline operations, create new revenue streams, and achieve extraordinary results.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 group professional-glow hover-lift">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
+              <Button size="lg" className="bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] text-white hover:from-[var(--executive-gold)] hover:to-[var(--executive-orange)] hover:scale-105 group professional-glow shadow-2xl px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 border border-white/20">
                 Schedule a Free Strategy Call
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 hover-lift">
+              <Button variant="outline" size="lg" className="border-white/40 text-white hover:bg-white/15 hover:border-white/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm bg-white/5 rounded-xl font-semibold text-lg px-8 py-4 shadow-lg">
                 Explore Our Services
               </Button>
             </div>
