@@ -31,7 +31,7 @@ export function IndustryExpertiseSection() {
   ];
 
   return (
-    <section id="industries" className="py-20 bg-gradient-to-br from-muted/30 via-background to-muted/30 dark:from-muted/10 dark:via-background dark:to-muted/10">
+    <section id="industries" className="py-20 bg-gradient-to-br from-[var(--professional-violet)] via-[var(--professional-violet-light)] to-[var(--professional-violet)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Industry-Focused Wealth Magnetism */}
         <div className="subliminal-text prosperity-frequency top-12 left-10">Every industry pays me premium rates</div>

@@ -10,7 +10,7 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-[var(--professional-violet)] via-[var(--professional-violet-light)] to-[var(--professional-violet)]">
       <Navigation />
       <HeroSection />
       <StatisticsSection />
