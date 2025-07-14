@@ -1,0 +1,62 @@
+# 🔮 Manifestation Website – Replit Prompt
+
+I want to build a full-stack manifestation and subliminal message website using Replit. The website must be visually powerful, spiritually aligned, and technologically inspiring. It should attract clients, generate tech ideas, and activate the Law of Attraction.
+
+## ✨ Core Purpose
+- Attract crores of rupees, abundance, repeating high-ticket projects
+- Spark divine tech innovation and creativity
+- Subliminally program users and myself toward massive success
+
+## 🧠 Pages & Features
+
+### 1. Home Page
+- Background: Cosmic animation (using Vanta.js or similar)
+- Auto-shuffle *top subliminal affirmations* on load
+- CTA button: “Activate My Abundance Frequency”
+- Background music (528Hz or 963Hz) autoplay with user permission
+- Use glassmorphism + animated button effects
+
+### 2. Subliminal Gallery Page
+- Categories: Wealth, Technology, Ideas, Clients, Peace, Energy
+- Each category has 10–20 affirmations
+- Include an `<audio>` tag with optional voiceover
+
+### 3. Daily Booster Page
+- Timed 3-minute power session
+- Chakra-colored progress bar
+- Plays audio + loops a visual (SVG mandala animation)
+
+### 4. AI Idea Generator (Optional)
+- Textbox + button: “Give me a divine tech idea”
+- Use OpenAI GPT-4 (via API or Replit plugin) to return AI business ideas aligned with wealth, purpose, and tech
+- Display results with smooth typewriter animation
+
+### 5. Manifestation Journal (Optional with Supabase)
+- Allow user login (Supabase Auth)
+- Save daily intentions or goals
+- Show timeline of past intentions
+
+### 6. Energy Layer (Visuals & Sound)
+- Animate sacred geometry or sigil-based loader
+- Play frequency: 963Hz during AI idea generation, 528Hz on homepage
+- Optional: Add mantras like “Om Shreem Brzee” on hover interactions
+
+## ⚙️ Tech Stack
+- Frontend: React + Tailwind CSS + Framer Motion
+- Audio: React Howler or plain `<audio>`
+- DB: Supabase (for journaling if needed)
+- Deployment: Replit + Custom Domain
+- Optional OpenAI integration for tech idea generator
+
+## 📦 Bonus
+- Add toggle: “Developer Mode” where I get extra affirmations like:
+  “My code writes itself. AI guides my innovation.”
+
+## 🚀 Output
+Generate:
+1. Full React frontend layout
+2. Components for audio, text animation, chakra loader
+3. JSON or JS array for top 100 subliminal affirmations
+4. Optional `.env` template for OpenAI and Supabase if used
+
+Make it fully functional and spiritual.
