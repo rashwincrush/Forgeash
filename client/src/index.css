@@ -167,6 +167,16 @@
   100% { transform: rotate(360deg); }
 }
 
+@keyframes spin-medium {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+@keyframes spin-fast {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -205,7 +215,15 @@
 }
 
 .animate-spin-slow {
-  animation: spin-slow 8s linear infinite;
+  animation: spin-slow 12s linear infinite;
+}
+
+.animate-spin-medium {
+  animation: spin-medium 8s linear infinite;
+}
+
+.animate-spin-fast {
+  animation: spin-fast 5s linear infinite;
 }
 
 .hover-lift {
