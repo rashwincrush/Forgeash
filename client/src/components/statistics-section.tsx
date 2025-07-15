@@ -28,7 +28,7 @@ export function StatisticsSection() {
   }, []);
 
   return (
-    <section className="py-24 bg-gradient-to-br from-background via-muted/30 to-background dark:from-background dark:via-muted/10 dark:to-background">
+    <section className="py-24 bg-gradient-to-br from-[var(--executive-navy-dark)] via-[var(--executive-navy)]/70 to-[var(--executive-navy-dark)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Subtle Subliminal Success Affirmations */}
         <div className="subliminal-text prosperity-frequency top-16 left-12">Success multiplies through my work</div>
@@ -36,40 +36,40 @@ export function StatisticsSection() {
         <div className="subliminal-text success-magnetism bottom-20 left-16">My solutions generate abundant returns</div>
         <div className="subliminal-text prosperity-frequency bottom-28 right-28">Excellence flows through every project</div>
         <div className="text-center mb-20 animate-fade-in">
-          <h2 className="text-5xl font-bold text-foreground mb-6">
-            Driving <span className="text-transparent bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] bg-clip-text">Excellence</span> Through Innovation
+          <h2 className="text-5xl font-bold text-white mb-6">
+            Driving <span className="text-transparent bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] bg-clip-text">Excellence</span> Through Innovation
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-[var(--executive-silver)] max-w-4xl mx-auto leading-relaxed">
             Our proven track record demonstrates consistent delivery of transformative AI solutions that generate measurable business impact across diverse industries.
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <div className="group relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-            <div className="relative text-center p-10 bg-gradient-to-br from-white/80 to-white/40 dark:from-card/80 dark:to-card/40 backdrop-blur-xl rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 professional-glow border border-white/20">
-              <div className="text-7xl font-bold text-transparent bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] bg-clip-text mb-4 animate-counter">
+            <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+            <div className="relative text-center p-10 bg-gradient-to-br from-[var(--executive-navy)]/50 to-[var(--executive-charcoal)]/50 backdrop-blur-xl rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 luxury-glow border border-white/20">
+              <div className="text-7xl font-bold text-transparent bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] bg-clip-text mb-4 animate-counter">
                 {projectsCount}+
               </div>
-              <div className="text-lg font-semibold text-foreground mb-2">
+              <div className="text-lg font-semibold text-white mb-2">
                 PROJECTS COMPLETED
               </div>
-              <div className="text-sm text-muted-foreground">
+              <div className="text-sm text-[var(--executive-silver)]">
                 Successfully delivered across multiple industries
               </div>
             </div>
           </div>
           
           <div className="group relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-green)] to-[var(--executive-orange)] rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
-            <div className="relative text-center p-10 bg-gradient-to-br from-white/80 to-white/40 dark:from-card/80 dark:to-card/40 backdrop-blur-xl rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 professional-glow border border-white/20">
-              <div className="text-7xl font-bold text-transparent bg-gradient-to-r from-[var(--executive-green)] to-[var(--executive-orange)] bg-clip-text mb-4 animate-counter">
+            <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-silver)] rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+            <div className="relative text-center p-10 bg-gradient-to-br from-[var(--executive-navy)]/50 to-[var(--executive-charcoal)]/50 backdrop-blur-xl rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-3 luxury-glow border border-white/20">
+              <div className="text-7xl font-bold text-transparent bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-silver)] bg-clip-text mb-4 animate-counter">
                 {satisfactionCount}%
               </div>
-              <div className="text-lg font-semibold text-foreground mb-2">
+              <div className="text-lg font-semibold text-white mb-2">
                 CLIENT SATISFACTION
               </div>
-              <div className="text-sm text-muted-foreground">
+              <div className="text-sm text-[var(--executive-silver)]">
                 Consistently exceeding expectations
               </div>
             </div>

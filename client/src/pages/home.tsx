@@ -15,7 +15,7 @@ export default function Home() {
       <HeroSection />
       <StatisticsSection />
       <BusinessImpactSection />
-      <FeaturedServicesSection />
+
       <ServiceCategoriesSection />
       <IndustryExpertiseSection />
       <CallToActionSection />

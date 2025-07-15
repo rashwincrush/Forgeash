@@ -45,7 +45,7 @@ export function CallToActionSection() {
             TRANSFORM YOUR BUSINESS
           </span>
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
-            Ready to Lead with <span className="text-transparent bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] bg-clip-text">AI Innovation</span>?
+            Ready to Lead with <span className="text-transparent bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] bg-clip-text whitespace-nowrap">AI Innovation?</span>
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
             Join industry leaders who've achieved extraordinary growth through our strategic AI implementations and cutting-edge technology solutions.
@@ -55,7 +55,7 @@ export function CallToActionSection() {
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] rounded-3xl blur opacity-30"></div>
           <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-12 mb-12 professional-glow border border-white/20 animate-scale-in">
-            <Button size="lg" className="bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] text-white hover:from-[var(--executive-gold)] hover:to-[var(--executive-orange)] hover:scale-105 mb-12 px-12 py-6 text-xl font-bold professional-glow shadow-2xl">
+            <Button size="lg" className="bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] text-white hover:scale-105 mb-12 px-12 py-6 text-xl font-bold professional-glow shadow-2xl">
               Schedule Your Executive Consultation
             </Button>
             
@@ -78,10 +78,10 @@ export function CallToActionSection() {
         
         <div className="text-center animate-fade-in">
           <p className="text-white/80 text-lg mb-4">
-            📞 <span className="font-semibold">Call Now:</span> +91 XXX XXX XXXX
+            📞 <span className="font-semibold">Call Now:</span> <a href="tel:+919884047475" className="hover:text-white">+91 98840 47475</a>
           </p>
           <p className="text-white/80 text-lg">
-            📧 <span className="font-semibold">Email:</span> info@forgeash.com
+            📧 <span className="font-semibold">Email:</span> <a href="mailto:admin@ashwinai.in" className="hover:text-white">admin@ashwinai.in</a>
           </p>
         </div>
       </div>

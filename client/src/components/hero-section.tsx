@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Star, Award, Trophy } from "lucide-react";
+import { ArrowRight, Star, Award, Trophy, DollarSign, PoundSterling, IndianRupee } from "lucide-react";
 import forgeAshLogo from "@assets/Image_02-05-25_at_10.52_AM-removebg-preview_1752479361775.png";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-blue-800 to-[var(--executive-navy)] dark:from-[var(--executive-navy)] dark:via-[var(--executive-charcoal)] dark:to-background overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[var(--executive-navy-dark)] via-[var(--executive-navy)] to-[var(--executive-amethyst)]/80 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-[size:30px_30px] dark:bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.05)_1px,transparent_0)]"></div>
@@ -22,42 +22,42 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left animate-slide-in-left">
             <div className="mb-6">
-              <span className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-primary/20 to-[var(--executive-blue)]/20 text-blue-200 dark:text-blue-300 text-sm font-medium backdrop-blur-sm professional-glow">
+              <span className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[var(--executive-sapphire)]/90 to-[var(--executive-amethyst)]/90 text-white text-sm font-medium backdrop-blur-sm luxury-glow shadow-lg">
                 🚀 Build Smarter, Work Faster, Grow Bigger – with AI!
               </span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Transform Your Business With{" "}
-              <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent animate-gradient">
+              <span className="bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] bg-clip-text text-transparent animate-gradient">
                 Strategic AI Solutions
               </span>
             </h1>
             
-            <p className="text-xl text-slate-300 dark:text-slate-400 mb-8 leading-relaxed max-w-2xl">
+            <p className="text-xl text-[var(--executive-silver)] mb-8 leading-relaxed max-w-2xl">
               We leverage AI, automation, and custom software to help businesses streamline operations, create new revenue streams, and achieve extraordinary results.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <Button size="lg" className="bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] text-white hover:from-[var(--executive-gold)] hover:to-[var(--executive-orange)] hover:scale-105 group professional-glow shadow-2xl px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 border border-white/20">
+              <Button size="lg" className="bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] text-white luxury-glow hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-lg rounded-xl font-semibold group text-lg border border-white/20">
                 Schedule a Free Strategy Call
                 <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg" className="border-white/40 text-white hover:bg-white/15 hover:border-white/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm bg-white/5 rounded-xl font-semibold text-lg px-8 py-4 shadow-lg">
+              <Button variant="outline" size="lg" className="border-[var(--executive-navy)]/40 dark:border-white/40 text-[var(--executive-navy)] dark:text-white hover:bg-[var(--executive-navy)]/10 dark:hover:bg-white/15 hover:border-[var(--executive-navy)]/60 dark:hover:border-white/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm bg-[var(--executive-navy)]/5 dark:bg-white/5 rounded-xl font-semibold text-lg px-8 py-4 shadow-lg">
                 Explore Our Services
               </Button>
             </div>
             
             <div className="mt-12 flex items-center justify-center lg:justify-start animate-fade-in">
-              <span className="text-slate-400 text-sm mr-4">TRUSTED BY INDUSTRY LEADERS</span>
+              <span className="text-[var(--executive-navy)]/80 dark:text-slate-400 text-sm mr-4 font-medium">TRUSTED BY INDUSTRY LEADERS</span>
               <div className="flex space-x-4">
-                <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover-lift">
+                <div className="w-8 h-8 bg-[var(--executive-navy)]/20 dark:bg-white/10 rounded-full flex items-center justify-center hover-lift shadow-lg">
                   <Star className="h-4 w-4 text-[var(--executive-gold)] fill-current" />
                 </div>
-                <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover-lift">
-                  <Award className="h-4 w-4 text-blue-400" />
+                <div className="w-8 h-8 bg-[var(--executive-navy)]/20 dark:bg-white/10 rounded-full flex items-center justify-center hover-lift shadow-lg">
+                  <Award className="h-4 w-4 text-[var(--executive-blue)] dark:text-blue-400" />
                 </div>
-                <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover-lift">
+                <div className="w-8 h-8 bg-[var(--executive-navy)]/20 dark:bg-white/10 rounded-full flex items-center justify-center hover-lift shadow-lg">
                   <Trophy className="h-4 w-4 text-[var(--executive-gold)]" />
                 </div>
               </div>
@@ -96,7 +96,7 @@ export function HeroSection() {
                 </div>
               </div>
               
-              {/* Minimalist Floating Icons */}
+              {/* Minimalist Floating Icons and Currency Orbits */}
               <div className="absolute inset-0 animate-spin-very-slow">
                 <div className="absolute w-full h-full">
                   {/* Healthcare - Top */}
@@ -105,6 +105,40 @@ export function HeroSection() {
                       <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
                       </svg>
+                    </div>
+                  </div>
+                  {/* Currency Icons - Planetary Orbit */}
+                  <style>
+                    {`
+                      @keyframes orbit-spin {
+                        from { transform: rotate(0deg); }
+                        to { transform: rotate(360deg); }
+                      }
+                      .currency-orbit-spin {
+                        animation: orbit-spin 18s linear infinite;
+                      }
+                    `}
+                  </style>
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div className="relative w-[320px] h-[320px] currency-orbit-spin">
+                      {/* Dollar - 0deg */}
+                      <div className="absolute left-1/2 top-0 -translate-x-1/2">
+                        <div className="w-10 h-10 bg-white/8 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-yellow-400/30">
+                          <DollarSign className="w-5 h-5 text-yellow-400" />
+                        </div>
+                      </div>
+                      {/* Pound - 120deg */}
+                      <div className="absolute left-0 top-1/2 -translate-y-1/2" style={{ transform: 'rotate(120deg) translateY(-160px) rotate(-120deg)' }}>
+                        <div className="w-10 h-10 bg-white/8 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-blue-400/30">
+                          <PoundSterling className="w-5 h-5 text-blue-400" />
+                        </div>
+                      </div>
+                      {/* Rupee - 240deg */}
+                      <div className="absolute right-0 top-1/2 -translate-y-1/2" style={{ transform: 'rotate(240deg) translateY(-160px) rotate(-240deg)' }}>
+                        <div className="w-10 h-10 bg-white/8 backdrop-blur-2xl rounded-full flex items-center justify-center shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-green-400/30">
+                          <IndianRupee className="w-5 h-5 text-green-400" />
+                        </div>
+                      </div>
                     </div>
                   </div>
                   
