@@ -96,19 +96,19 @@ export function Footer() {
                 <div className="w-10 h-10 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                   <Mail className="w-5 h-5 text-white" />
                 </div>
-                <a href="mailto:admin@ashwinai.in" className="group-hover:text-[var(--executive-blue)] transition-colors duration-300">admin@ashwinai.in</a>
+                <a href="mailto:connect@forgeash.in" className="group-hover:text-[var(--executive-blue)] transition-colors duration-300">connect@forgeash.in</a>
               </div>
               <div className="flex items-center group">
                 <div className="w-10 h-10 bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                   <Phone className="w-5 h-5 text-white" />
                 </div>
-                <a href="tel:+919884047475" className="group-hover:text-[var(--executive-gold)] transition-colors duration-300">+91 98840 47475</a>
+                <a href="tel:+916369126439" className="group-hover:text-[var(--executive-gold)] transition-colors duration-300">+91 63691 26439</a>
               </div>
               <div className="flex items-center group">
                 <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                   <MessageCircle className="w-5 h-5 text-white" />
                 </div>
-                <a href="https://wa.me/919884047475" target="_blank" rel="noopener noreferrer" className="group-hover:text-green-400 transition-colors duration-300">Chat on WhatsApp</a>
+                <a href="https://wa.me/916369126439" target="_blank" rel="noopener noreferrer" className="group-hover:text-green-400 transition-colors duration-300">Chat on WhatsApp</a>
               </div>
             </div>
           </div>

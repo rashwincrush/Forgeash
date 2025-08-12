@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Handshake, Trophy, Crown, Award } from "lucide-react";
+import { Handshake, Trophy, Crown, Award, Phone, MessageCircle } from "lucide-react";
+import { ContactForm } from "./contact-form";
 
 export function CallToActionSection() {
   const benefits = [
@@ -48,41 +49,34 @@ export function CallToActionSection() {
             Ready to Lead with <span className="text-transparent bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] bg-clip-text whitespace-nowrap">AI Innovation?</span>
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Join industry leaders who've achieved extraordinary growth through our strategic AI implementations and cutting-edge technology solutions.
+            Join industry leaders who've achieved extraordinary growth through our strategic AI implementations and cutting-edge technology solutions. Let's discuss how we can do the same for you.
           </p>
         </div>
-        
-        <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] rounded-3xl blur opacity-30"></div>
-          <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-12 mb-12 professional-glow border border-white/20 animate-scale-in">
-            <Button size="lg" className="bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] text-white hover:scale-105 mb-12 px-12 py-6 text-xl font-bold professional-glow shadow-2xl">
-              Schedule Your Executive Consultation
-            </Button>
-            
-            <div className="grid md:grid-cols-4 gap-8 text-center">
-              {benefits.map((benefit, index) => {
-                const IconComponent = benefit.icon;
-                return (
-                  <div key={index} className="flex flex-col items-center group animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                    <div className="w-16 h-16 bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <IconComponent className="text-white h-8 w-8" />
-                    </div>
-                    <span className="text-white font-bold text-lg mb-2">{benefit.title}</span>
-                    <span className="text-white/70 text-sm">{benefit.subtitle}</span>
-                  </div>
-                );
-              })}
-            </div>
+
+        <div className="grid md:grid-cols-2 gap-16 items-start">
+          <ContactForm />
+
+          <div className="space-y-8 text-left">
+            <h3 className="text-3xl font-bold text-white mb-6">Or, Reach Us Directly</h3>
+            <a href="tel:+916369126439" className="flex items-center gap-6 p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300">
+              <div className="bg-white/10 p-4 rounded-xl border border-white/20">
+                  <Phone className="h-8 w-8 text-[var(--executive-sapphire)]" />
+              </div>
+              <div>
+                  <h4 className="text-2xl font-bold">Call Us</h4>
+                  <p className="text-lg text-[var(--executive-amethyst)] hover:underline">+91 63691 26439</p>
+              </div>
+            </a>
+            <a href="https://wa.me/916369126439" target="_blank" rel="noopener noreferrer" className="flex items-center gap-6 p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300">
+              <div className="bg-white/10 p-4 rounded-xl border border-white/20">
+                  <MessageCircle className="h-8 w-8 text-[var(--executive-sapphire)]" />
+              </div>
+              <div>
+                  <h4 className="text-2xl font-bold">WhatsApp</h4>
+                  <p className="text-lg text-[var(--executive-amethyst)] hover:underline">Chat with us</p>
+              </div>
+            </a>
           </div>
-        </div>
-        
-        <div className="text-center animate-fade-in">
-          <p className="text-white/80 text-lg mb-4">
-            📞 <span className="font-semibold">Call Now:</span> <a href="tel:+919884047475" className="hover:text-white">+91 98840 47475</a>
-          </p>
-          <p className="text-white/80 text-lg">
-            📧 <span className="font-semibold">Email:</span> <a href="mailto:admin@ashwinai.in" className="hover:text-white">admin@ashwinai.in</a>
-          </p>
         </div>
       </div>
     </section>

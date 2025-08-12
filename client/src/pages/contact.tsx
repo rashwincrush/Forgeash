@@ -1,8 +1,7 @@
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { ContactForm } from "@/components/contact-form";
 import { Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 
 export default function ContactPage() {
@@ -17,26 +16,7 @@ export default function ContactPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-16 items-start">
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-lg shadow-2xl">
-              <h2 className="text-3xl font-bold mb-6 text-white">Send a Message</h2>
-              <form action="#" method="POST" className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="sr-only">Full Name</label>
-                  <Input type="text" name="name" id="name" placeholder="Full Name" className="bg-white/5 border-white/20" />
-                </div>
-                <div>
-                  <label htmlFor="email" className="sr-only">Email</label>
-                  <Input type="email" name="email" id="email" placeholder="Email Address" className="bg-white/5 border-white/20" />
-                </div>
-                <div>
-                  <label htmlFor="message" className="sr-only">Message</label>
-                  <Textarea name="message" id="message" rows={5} placeholder="Your Message" className="bg-white/5 border-white/20"></Textarea>
-                </div>
-                <Button type="submit" className="w-full bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] text-white luxury-glow shadow-xl px-8 py-3 rounded-xl font-semibold text-lg hover:scale-105 transition-all duration-300 border border-white/20">
-                  Submit
-                </Button>
-              </form>
-            </div>
+            <ContactForm />
 
             <div className="space-y-8">
                 <div className="flex items-start gap-6">
@@ -46,7 +26,7 @@ export default function ContactPage() {
                     <div>
                         <h3 className="text-2xl font-bold">Email</h3>
                         <p className="text-white/70 text-lg">General Inquiries</p>
-                        <a href="mailto:admin@ashwinai.in" className="text-lg text-[var(--executive-amethyst)] hover:underline">admin@ashwinai.in</a>
+                        <a href="mailto:connect@forgeash.in" className="text-lg text-[var(--executive-amethyst)] hover:underline">connect@forgeash.in</a>
                     </div>
                 </div>
                 <div className="flex items-start gap-6">
@@ -56,7 +36,7 @@ export default function ContactPage() {
                     <div>
                         <h3 className="text-2xl font-bold">Phone</h3>
                         <p className="text-white/70 text-lg">Mon-Fri from 9am to 5pm</p>
-                        <a href="tel:9884047475" className="text-lg text-[var(--executive-amethyst)] hover:underline">+91 98840 47475</a>
+                        <a href="tel:+916369126439" className="text-lg text-[var(--executive-amethyst)] hover:underline">+91 63691 26439</a>
                     </div>
                 </div>
                 <div className="flex items-start gap-6">
@@ -66,7 +46,7 @@ export default function ContactPage() {
                     <div>
                         <h3 className="text-2xl font-bold">WhatsApp</h3>
                         <p className="text-white/70 text-lg">Click to chat with us</p>
-                        <a href="https://wa.me/919884047475" target="_blank" rel="noopener noreferrer" className="text-lg text-[var(--executive-amethyst)] hover:underline">Chat on WhatsApp</a>
+                        <a href="https://wa.me/916369126439" target="_blank" rel="noopener noreferrer" className="text-lg text-[var(--executive-amethyst)] hover:underline">Chat on WhatsApp</a>
                     </div>
                 </div>
                 <div className="flex items-start gap-6">
