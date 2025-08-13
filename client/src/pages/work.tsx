@@ -10,7 +10,7 @@ export default function WorkPage() {
       category: "Digital Marketing",
       description: "We executed a comprehensive digital marketing campaign for AMET University, focusing on SEO, content strategy, and social media engagement to boost online visibility and student enrollment.",
       imageUrl: "/placeholder.jpg", // (unused)
-      logoSrc: "/src/assets/client-logos/AMET-removebg-preview.png",
+      logoSrc: "/images/client-logos/AMET-removebg-preview.png",
       client: "AMET University",
       logoOnly: true
     },
@@ -19,7 +19,7 @@ export default function WorkPage() {
       category: "Digital Marketing",
       description: "",
       imageUrl: "/placeholder.jpg", // (unused)
-      logoSrc: "/src/assets/client-logos/Maersk-removebg-preview.png",
+      logoSrc: "/images/client-logos/Maersk-removebg-preview.png",
       client: "Maersk",
       logoOnly: true
     },
@@ -78,7 +78,7 @@ export default function WorkPage() {
       description: "ForgeCircle connects students with alumni mentors and career opportunities. Join our campus-to-career alumni network today.",
       imageUrl: "/placeholder.jpg", // Replace with actual image path
       client: "AMET University",
-      clientLogoSrc: "/src/assets/client-logos/AMET-removebg-preview.png",
+      clientLogoSrc: "/images/client-logos/AMET-removebg-preview.png",
       link: "https://www.ametalumni.in/"
     }
   ];
