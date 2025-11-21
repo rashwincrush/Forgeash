@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Brother Home";
+  src: url("../fonts/Brother Home.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brother Home";
+  src: url("../fonts/Brother-Home.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-brother-home {
+  font-family: "Brother Home", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
 :root {
   /* Luxury Dark Theme - Rich Background Colors */
   --background: hsl(232, 75%, 8%);          /* Ultra-deep midnight blue */

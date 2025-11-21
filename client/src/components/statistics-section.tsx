@@ -31,16 +31,16 @@ export function StatisticsSection() {
     <section className="py-24 bg-gradient-to-br from-[var(--executive-navy-dark)] via-[var(--executive-navy)]/70 to-[var(--executive-navy-dark)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Subtle Subliminal Success Affirmations */}
-        <div className="subliminal-text prosperity-frequency top-16 left-12">Success multiplies through my work</div>
-        <div className="subliminal-text abundance-flow top-24 right-20">I create value that transforms businesses</div>
-        <div className="subliminal-text success-magnetism bottom-20 left-16">My solutions generate abundant returns</div>
-        <div className="subliminal-text prosperity-frequency bottom-28 right-28">Excellence flows through every project</div>
+        <div className="subliminal-text prosperity-frequency top-16 left-12">I create systems that compound results</div>
+        <div className="subliminal-text abundance-flow top-24 right-20">Every project strengthens my clients business</div>
+        <div className="subliminal-text success-magnetism bottom-20 left-16">My work turns complexity into clarity</div>
+        <div className="subliminal-text prosperity-frequency bottom-28 right-28">The products we ship keep paying back over time</div>
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl font-bold text-white mb-6">
-            Driving <span className="text-transparent bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] bg-clip-text">Excellence</span> Through Innovation
+            Numbers that reflect <span className="text-transparent bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] bg-clip-text">real delivery</span>, not experiments
           </h2>
           <p className="text-xl text-[var(--executive-silver)] max-w-4xl mx-auto leading-relaxed">
-            Our proven track record demonstrates consistent delivery of transformative AI solutions that generate measurable business impact across diverse industries.
+            ForgeAsh focuses on shipping production systems for real businesseswebsites, AI workflows, and SaaS products that stay in use. These numbers come from shipped work, not prototypes.
           </p>
         </div>
         
@@ -52,10 +52,10 @@ export function StatisticsSection() {
                 {projectsCount}+
               </div>
               <div className="text-lg font-semibold text-white mb-2">
-                PROJECTS COMPLETED
+                PROJECTS DELIVERED
               </div>
               <div className="text-sm text-[var(--executive-silver)]">
-                Successfully delivered across multiple industries
+                Websites, SaaS products, and AI systems launched for real clients
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ export function StatisticsSection() {
                 CLIENT SATISFACTION
               </div>
               <div className="text-sm text-[var(--executive-silver)]">
-                Consistently exceeding expectations
+                Long-term relationships built on clear communication and outcomes
               </div>
             </div>
           </div>

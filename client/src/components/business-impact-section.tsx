@@ -2,23 +2,23 @@ export function BusinessImpactSection() {
   const metrics = [
     {
       percentage: "35%",
-      title: "Increase Operational Efficiency",
-      description: "Our clients typically see a 35% improvement in operational efficiency through strategic automation and workflow optimization."
+      title: "Less time lost to manual work",
+      description: "Clients typically reclaim 2535% of their teams time by automating routine tasks and reporting."
     },
     {
-      percentage: "28%",
-      title: "Boost Revenue Growth",
-      description: "Leverage AI-driven insights and optimized customer experiences to achieve an average 28% increase in revenue growth."
+      percentage: "2030%",
+      title: "Increase in lead quality or conversion",
+      description: "Clearer websites and funnels translate into more relevant enquiries and higher close rates."
     },
     {
       percentage: "40%",
-      title: "Reduce Development Time",
-      description: "Our AI-augmented development approach reduces project timelines by up to 40% compared to traditional methods."
+      title: "Faster delivery of new features",
+      description: "A clean architecture and focused scope mean new ideas ship in weeks, not quarters."
     },
     {
       percentage: "65%",
-      title: "Enhance Decision Quality",
-      description: "Data-driven strategies and predictive analytics improve decision quality by 65%, leading to better business outcomes."
+      title: "Better decision confidence",
+      description: "Dashboards and analytics give leadership a single source of truth instead of conflicting spreadsheets."
     }
   ];
 
@@ -27,10 +27,10 @@ export function BusinessImpactSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-5xl font-bold text-white mb-6">
-            BUSINESS <span className="text-transparent bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] bg-clip-text">IMPACT</span>
+            Business <span className="text-transparent bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] bg-clip-text">outcomes</span> we design for
           </h2>
           <p className="text-xl text-white/80 max-w-4xl mx-auto leading-relaxed">
-            Our clients consistently achieve significant improvements in key business metrics through our strategic technology implementations and AI-driven solutions.
+            Behind every website or system we build, theres a simple goal: better numbers. More qualified leads, fewer manual hours, faster decisions, and clearer visibility for leadership.
           </p>
         </div>
         

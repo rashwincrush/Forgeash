@@ -1,5 +1,6 @@
-import { BrainCircuit, Cloud, TrendingUp, CheckCircle, Sparkles } from "lucide-react";
+import { BrainCircuit, Cloud, TrendingUp, CheckCircle, Sparkles, Globe } from "lucide-react";
 import { useEffect, useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 export function ServiceCategoriesSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -10,42 +11,45 @@ export function ServiceCategoriesSection() {
 
   const categories = [
     {
-      icon: BrainCircuit,
-      title: "Enterprise AI Implementation",
-      description: "Transform your operations with custom AI solutions that automate tasks, generate insights, and drive strategic decision-making.",
+      icon: Globe,
+      title: "High-Performance Business Websites",
+      description:
+        "Flagship websites for clinics, institutes, coaches, agencies, and service businesses that want a premium look and consistent enquiries.",
       features: [
-        "Custom AI models tailored to your business needs",
-        "Seamless integration with existing systems",
-        "Ongoing optimization and support"
+        "Homepage, services, work, testimonials, FAQ, contact",
+        "Conversion-optimized enquiry and booking flows",
+        "Fast, responsive, SEO-ready foundations",
       ],
-      affirmation: "My AI solutions create unprecedented value."
+      affirmation: "My website quietly works as a full-time salesperson."
     },
     {
-      icon: Cloud,
-      title: "SaaS Platform Innovation",
-      description: "Create scalable, cloud-based applications that generate recurring revenue and deliver continuous value to your customers.",
+      icon: BrainCircuit,
+      title: "AI Systems & Automation",
+      description:
+        "AI workflows that remove repetitive work from your team’s day—lead qualification, reports, approvals, and more.",
       features: [
-        "Subscription-based business models",
-        "Multi-tenant architecture design",
-        "User-friendly interfaces that drive adoption"
+        "Convert manual processes into stable flows",
+        "Decision support dashboards",
+        "Automation roadmap for scale",
       ],
-      affirmation: "My platforms scale effortlessly to millions of users."
+      affirmation: "The more my business grows, the less my team does manually."
     },
     {
       icon: TrendingUp,
-      title: "Data Analysis & Visualization",
-      description: "Turn complex data into actionable insights with powerful analytics and intuitive visualizations that inform strategic decisions.",
+      title: "Dashboards & SaaS Platforms",
+      description:
+        "Dashboards and SaaS platforms that centralize information, streamline operations, and improve decision-making.",
       features: [
-        "Interactive dashboards that reveal patterns",
-        "Predictive analytics that anticipate trends",
-        "Custom reporting tailored to your KPIs"
+        "Executive/ops dashboards",
+        "SaaS-ready features: auth, roles, usage tracking",
+        "Integrations with CRMs, ERP, HR, finance tools",
       ],
-      affirmation: "My data insights generate massive wealth opportunities."
+      affirmation: "I always know what’s happening without chasing reports."
     }
   ];
 
   return (
-    <section id="expertise" className="relative py-24 bg-gradient-to-br from-[var(--executive-navy-dark)] via-[var(--executive-navy)]/70 to-[var(--executive-navy-dark)] overflow-hidden">
+    <section id="websites" className="relative py-24 bg-gradient-to-br from-[var(--executive-navy-dark)] via-[var(--executive-navy)]/70 to-[var(--executive-navy-dark)] overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.1)_1px,transparent_0)] bg-[size:30px_30px]"></div>
@@ -55,22 +59,22 @@ export function ServiceCategoriesSection() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Subliminal Prosperity Messages */}
-        <div className="subliminal-text prosperity-frequency top-10 left-12">I effortlessly attract clients who value my expertise</div>
-        <div className="subliminal-text abundance-flow top-20 right-24">Success flows naturally to my business</div>
-        <div className="subliminal-text success-magnetism bottom-12 left-16">My services create abundant prosperity</div>
-        <div className="subliminal-text prosperity-frequency bottom-24 right-20">I am a powerful magnet for business growth</div>
+        <div className="subliminal-text prosperity-frequency top-10 left-12">My work attracts clients who value depth and craft</div>
+        <div className="subliminal-text abundance-flow top-20 right-24">Success flows naturally when systems are well-designed</div>
+        <div className="subliminal-text success-magnetism bottom-12 left-16">The services I offer create lasting prosperity</div>
+        <div className="subliminal-text prosperity-frequency bottom-24 right-20">My business is a strong magnet for the right projects</div>
 
         <div className="text-center mb-20 animate-slide-in-top">
           <div className="inline-block mb-4">
             <span className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[var(--executive-amethyst)]/80 to-[var(--executive-sapphire)]/80 text-white text-sm font-medium backdrop-blur-sm luxury-glow">
-              OUR EXPERTISE
+              Websites · AI · Data
             </span>
           </div>
           <h2 className="text-5xl font-bold text-white mb-6">
-            FEATURED SERVICES
+            What ForgeAsh can own for you end-to-end
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-[var(--executive-silver)]">
-            We deliver <span className='text-transparent bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text'>strategic technology solutions</span> that drive <span className='text-transparent bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text'>growth, efficiency, and competitive advantage</span> for forward-thinking businesses across diverse industries.
+            Whether you need a flagship website, an AI workflow, or a SaaS platform, we step in as your product and engineering partner—owning the thinking, the build, and the launch.
           </p>
         </div>
         
@@ -78,6 +82,7 @@ export function ServiceCategoriesSection() {
           {categories.map((category, index) => {
             const IconComponent = category.icon;
             const isFeatured = index === 2;
+            const isWebsitesCategory = category.title === "High-Performance Business Websites";
             return (
               <div key={index} className="relative flex flex-col items-stretch">
                 {/* Glassy Card */}
@@ -108,7 +113,18 @@ export function ServiceCategoriesSection() {
                   </ul>
                   {/* Button */}
                   <div className="mt-auto">
-                    <button className="w-full py-3 rounded-xl font-semibold flex items-center justify-center shadow-md text-lg transition-all duration-200 text-white hover:brightness-110 bg-white/20 ring-1 ring-white/40">
+                    <button
+                      className="w-full py-3 rounded-xl font-semibold flex items-center justify-center shadow-md text-lg transition-all duration-200 text-white hover:brightness-110 bg-white/20 ring-1 ring-white/40"
+                      onClick={() => {
+                        if (isWebsitesCategory) {
+                          trackEvent("view_website_plans", {
+                            location: "services_websites",
+                            label: "learn_more_high_performance_websites"
+                          });
+                          window.location.href = "/services/websites";
+                        }
+                      }}
+                    >
                       <Sparkles className="h-5 w-5 mr-2" />
                       Learn More
                     </button>

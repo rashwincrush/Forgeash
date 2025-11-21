@@ -1,121 +1,178 @@
-import logoPath from "@assets/Image_02-05-25_at_10.52_AM-removebg-preview_1752479361775.png";
-import { Twitter, Linkedin, Github, MessageCircle, MapPin, Mail, Phone } from 'lucide-react';
+import { Twitter, Linkedin, Github, MessageCircle, MapPin, Mail, Phone, ArrowRight, Sparkles } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-[var(--executive-navy)] via-[var(--executive-charcoal)] to-[var(--executive-navy)] text-white py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-4 gap-12">
-          <div className="lg:col-span-1 animate-fade-in">
-            <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-xl flex items-center justify-center mr-4 shadow-lg p-2">
-                <img 
-                  src={logoPath} 
-                  alt="ForgeAsh Technologies" 
-                  className="w-full h-full object-contain"
-                />
+    <footer className="relative bg-gradient-to-br from-slate-950 via-blue-950/30 to-slate-950 text-white overflow-hidden">
+      <style>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+        }
+        .animate-float {
+          animation: float 6s ease-in-out infinite;
+        }
+        .glass-card {
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+      `}</style>
+
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 left-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
+      </div>
+
+      {/* Main Footer Content */}
+      <div className="relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 md:py-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-start">
+            {/* Brand & Description */}
+            <div>
+              <div className="flex items-center mb-2 group cursor-pointer">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl blur opacity-40 group-hover:opacity-70 transition-opacity"></div>
+                  <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center border border-white/20">
+                    <span className="text-xl font-bold">F</span>
+                  </div>
+                </div>
+                <div className="ml-2 flex flex-col">
+                  <span className="font-semibold text-base leading-tight">ForgeAsh Technologies</span>
+                  <span className="text-xs text-slate-400">Websites · AI · SaaS</span>
+                </div>
               </div>
-              <span className="font-bold text-2xl">ForgeAsh Technologies</span>
+              <p className="text-sm text-slate-300 leading-relaxed mb-3 max-w-xs">
+                Studio partner for founders and teams who want high-performance websites, AI systems, and SaaS products that actually move business metrics.
+              </p>
             </div>
-            <p className="text-white/80 mb-8 leading-relaxed">
-              Leading AI solutions provider based in Chennai, transforming businesses through strategic technology implementations and innovative digital solutions.
-            </p>
-            <div className="flex space-x-4">
-              <a href="#" className="w-12 h-12 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-xl flex items-center justify-center hover:from-[var(--executive-blue)] hover:to-[var(--executive-purple)] hover:scale-110 transition-all duration-300 luxury-glow shadow-lg">
-                <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </a>
-              <a href="#" className="w-12 h-12 bg-gradient-to-r from-[var(--executive-green)] to-[var(--executive-orange)] rounded-xl flex items-center justify-center hover:from-[var(--executive-green)] hover:to-[var(--executive-orange)] hover:scale-110 transition-all duration-300 luxury-glow shadow-lg">
-                <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                </svg>
-              </a>
-              <a href="#" className="w-12 h-12 bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] rounded-xl flex items-center justify-center hover:from-[var(--executive-gold)] hover:to-[var(--executive-orange)] hover:scale-110 transition-all duration-300 luxury-glow shadow-lg">
-                <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-              </a>
+
+            {/* Services */}
+            <div>
+              <h4 className="text-sm font-semibold text-slate-200 tracking-wide mb-2 flex items-center gap-2">
+                <div className="h-0.5 w-6 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"></div>
+                Services
+              </h4>
+              <ul className="space-y-1.5 text-sm text-slate-300">
+                <li>
+                  <a href="/services/websites" className="hover:text-white transition-colors flex items-center gap-1 group">
+                    <ArrowRight className="h-3 w-3 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
+                    <span>High-Performance Websites</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/services/ai-automation" className="hover:text-white transition-colors flex items-center gap-1 group">
+                    <ArrowRight className="h-3 w-3 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
+                    <span>AI Systems &amp; Automation</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/services/saas-mvp-build" className="hover:text-white transition-colors flex items-center gap-1 group">
+                    <ArrowRight className="h-3 w-3 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
+                    <span>SaaS MVP Build</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/services/data-dashboards" className="hover:text-white transition-colors flex items-center gap-1 group">
+                    <ArrowRight className="h-3 w-3 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
+                    <span>Data Dashboards &amp; Automation</span>
+                  </a>
+                </li>
+                <li className="pt-1">
+                  <a href="/work" className="hover:text-white transition-colors flex items-center gap-1 group">
+                    <ArrowRight className="h-3 w-3 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
+                    <span>Our Work</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/about" className="hover:text-white transition-colors flex items-center gap-1 group">
+                    <ArrowRight className="h-3 w-3 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
+                    <span>About</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-          </div>
-          
-          <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            <h4 className="font-bold text-xl mb-6 text-transparent bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] bg-clip-text">Services</h4>
-            <ul className="space-y-4 text-white/80">
-              <li><a href="#" className="hover:text-[var(--executive-gold)] transition-colors duration-300 flex items-center group">
-                <div className="w-2 h-2 bg-[var(--executive-gold)] rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                Enterprise AI Implementation
-              </a></li>
-              <li><a href="#" className="hover:text-[var(--executive-gold)] transition-colors duration-300 flex items-center group">
-                <div className="w-2 h-2 bg-[var(--executive-gold)] rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                SaaS Platform Development
-              </a></li>
-              <li><a href="#" className="hover:text-[var(--executive-gold)] transition-colors duration-300 flex items-center group">
-                <div className="w-2 h-2 bg-[var(--executive-gold)] rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                Data Analysis & Visualization
-              </a></li>
-              <li><a href="#" className="hover:text-[var(--executive-gold)] transition-colors duration-300 flex items-center group">
-                <div className="w-2 h-2 bg-[var(--executive-gold)] rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                Custom Web Applications
-              </a></li>
-            </ul>
-          </div>
-          
-          <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <h4 className="font-bold text-xl mb-6 text-transparent bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] bg-clip-text">Company</h4>
-            <ul className="space-y-4 text-white/80">
-              <li><a href="#" className="hover:text-[var(--executive-blue)] transition-colors duration-300 flex items-center group">
-                <div className="w-2 h-2 bg-[var(--executive-blue)] rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                About Us
-              </a></li>
-              <li><a href="#" className="hover:text-[var(--executive-blue)] transition-colors duration-300 flex items-center group">
-                <div className="w-2 h-2 bg-[var(--executive-blue)] rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                Our Team
-              </a></li>
-              <li><a href="#" className="hover:text-[var(--executive-blue)] transition-colors duration-300 flex items-center group">
-                <div className="w-2 h-2 bg-[var(--executive-blue)] rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                Careers
-              </a></li>
-              <li><a href="#" className="hover:text-[var(--executive-blue)] transition-colors duration-300 flex items-center group">
-                <div className="w-2 h-2 bg-[var(--executive-blue)] rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+            {/* Contact */}
+            <div>
+              <h4 className="text-sm font-semibold text-slate-200 tracking-wide mb-2 flex items-center gap-2">
+                <div className="h-0.5 w-6 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"></div>
                 Contact
-              </a></li>
-            </ul>
-          </div>
-          
-          <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <h4 className="font-bold text-xl mb-6 text-transparent bg-gradient-to-r from-[var(--executive-green)] to-[var(--executive-orange)] bg-clip-text">Contact Info</h4>
-            <div className="space-y-4 text-white/80">
-              <div className="flex items-center group">
-                <div className="w-10 h-10 bg-gradient-to-r from-[var(--executive-green)] to-[var(--executive-orange)] rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                  <MapPin className="w-5 h-5 text-white" />
+              </h4>
+              <div className="space-y-1.5 text-sm text-slate-300">
+                <div className="flex items-start gap-2">
+                  <MapPin className="h-3.5 w-3.5 mt-0.5 text-purple-300" />
+                  <span>Chennai, Tamil Nadu, India</span>
                 </div>
-                <span className="group-hover:text-[var(--executive-green)] transition-colors duration-300">Chennai, Tamil Nadu</span>
-              </div>
-              <div className="flex items-center group">
-                <div className="w-10 h-10 bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                  <Mail className="w-5 h-5 text-white" />
+                <div className="flex items-start gap-2">
+                  <Mail className="h-3.5 w-3.5 mt-0.5 text-blue-300" />
+                  <a href="mailto:connect@forgeash.in" className="hover:text-white transition-colors">
+                    connect@forgeash.in
+                  </a>
                 </div>
-                <a href="mailto:connect@forgeash.in" className="group-hover:text-[var(--executive-blue)] transition-colors duration-300">connect@forgeash.in</a>
-              </div>
-              <div className="flex items-center group">
-                <div className="w-10 h-10 bg-gradient-to-r from-[var(--executive-gold)] to-[var(--executive-orange)] rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                  <Phone className="w-5 h-5 text-white" />
+                <div className="flex items-start gap-2">
+                  <Phone className="h-3.5 w-3.5 mt-0.5 text-green-300" />
+                  <a href="tel:+916369126439" className="hover:text-white transition-colors">
+                    +91 63691 26439
+                  </a>
                 </div>
-                <a href="tel:+916369126439" className="group-hover:text-[var(--executive-gold)] transition-colors duration-300">+91 63691 26439</a>
-              </div>
-              <div className="flex items-center group">
-                <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                  <MessageCircle className="w-5 h-5 text-white" />
+                <div className="flex items-start gap-2">
+                  <MessageCircle className="h-3.5 w-3.5 mt-0.5 text-[#25D366]" />
+                  <a
+                    href="https://wa.me/916369126439"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    Chat on WhatsApp
+                  </a>
                 </div>
-                <a href="https://wa.me/916369126439" target="_blank" rel="noopener noreferrer" className="group-hover:text-green-400 transition-colors duration-300">Chat on WhatsApp</a>
+                <div className="flex items-center gap-2 pt-1">
+                  <a
+                    href="#"
+                    aria-label="LinkedIn"
+                    className="h-8 w-8 rounded-lg glass-card flex items-center justify-center text-slate-300 hover:text-white hover:border-purple-500/50 transition-all"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                  </a>
+                  <a
+                    href="#"
+                    aria-label="Twitter"
+                    className="h-8 w-8 rounded-lg glass-card flex items-center justify-center text-slate-300 hover:text-white hover:border-blue-500/50 transition-all"
+                  >
+                    <Twitter className="h-4 w-4" />
+                  </a>
+                  <a
+                    href="#"
+                    aria-label="GitHub"
+                    className="h-8 w-8 rounded-lg glass-card flex items-center justify-center text-slate-300 hover:text-white hover:border-white/50 transition-all"
+                  >
+                    <Github className="h-4 w-4" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        
-        <div className="border-t border-white/20 mt-16 pt-8 text-center animate-fade-in">
-          <p className="text-white/60 text-lg">&copy; 2024 ForgeAsh Technologies. All rights reserved.</p>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="relative border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 text-xs md:text-sm text-slate-400">
+            <p>© 2024 ForgeAsh Technologies. All rights reserved.</p>
+            <div className="flex flex-wrap items-center gap-4 md:ml-4">
+              <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
+              <a href="/cookies" className="hover:text-white transition-colors">Cookie Policy</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

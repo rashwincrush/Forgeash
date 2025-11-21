@@ -1,9 +1,28 @@
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 // Removed case-study button and arrow imports
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { applySeo, applyBreadcrumbJsonLd } from "@/lib/seo";
 
 export default function WorkPage() {
+  useEffect(() => {
+    applySeo({
+      title: "Our Work – Websites, Dashboards & Digital Projects by ForgeAsh",
+      description:
+        "View a sample of ForgeAsh projects including high-performance websites, logistics and solar sites, alumni platforms and marketing work for clients in Chennai, Tamil Nadu and other Indian cities.",
+      keywords: [
+        "web development portfolio Chennai",
+        "website projects Chennai",
+        "ForgeAsh work",
+      ],
+      canonicalPath: "/work",
+    });
+    applyBreadcrumbJsonLd("work", [
+      { name: "Home", path: "/" },
+      { name: "Our Work", path: "/work" },
+    ]);
+  }, []);
+
   const allProjects = [
     {
       title: "ForgeCircle - Campus-to-Career Alumni Hub",
@@ -26,44 +45,30 @@ export default function WorkPage() {
     {
       title: "Jay Mahal - Elegant Marriage Hall",
       category: "Website Solutions",
-      description: "A stunning, modern website for a premier marriage hall, designed to attract bookings and showcase the venue's elegance.",
+      description: "A bilingual (English + Tamil) marketing site for an elegant marriage hall in Thoothukudi, with a photography-driven hero, detailed amenities and capacity info, and a WhatsApp-powered booking flow.",
       imageUrl: "/placeholder.jpg", // Replace with actual image path
       link: "https://jaymahal.in/"
     },
     {
-      title: "PR Classes - Excellence in CMA Education",
-      category: "Website Solutions",
-      description: "An educational platform for aspiring accountants, providing course information, enrollment, and learning resources.",
-      imageUrl: "/placeholder.jpg", // Replace with actual image path
-      link: "https://prclasses.in/"
-    },
-    {
       title: "Route Revolution - Your Trusted Route To Success",
       category: "Website Solutions",
-      description: "A logistics and courier service website with features for booking, tracking, and managing shipments.",
+      description: "A modern logistics companion that lets customers and businesses book shipments, track parcels live via Delhivery-powered tracking, and use WhatsApp-first workflows for enquiries and collection centers.",
       imageUrl: "/placeholder.jpg", // Replace with actual image path
       link: "https://routerevolution.in/#home"
     },
     {
       title: "KON Sun Energy Solutions - Solar Power Made Simple",
       category: "Website Solutions",
-      description: "A clean energy company's website, designed to educate customers and generate leads for solar panel installations.",
+      description: "A single-page React marketing site for a Tamil Nadu–based solar brand, combining clear value proposition messaging with section-based storytelling to convert visitors into consultation leads.",
       imageUrl: "/placeholder.jpg", // Replace with actual image path
       link: "https://konsunenergy.in/"
     },
     {
-      title: "Tara's Dental & Aesthetic Center",
+      title: "Aakrati Interior Studio – Bengaluru",
       category: "Website Solutions",
-      description: "A professional website for a dental clinic, featuring service details, appointment booking, and patient testimonials.",
+      description: "High-end interior studio website migrated to a clean, fast implementation that preserves the original luxury look and feel while reducing hosting and maintenance overhead.",
       imageUrl: "/placeholder.jpg", // Replace with actual image path
-      link: "https://tarasdental.in/"
-    },
-    {
-      title: "Nalam & Co - Logistics Services",
-      category: "Website Solutions",
-      description: "A comprehensive logistics website offering a range of services from household shifting to corporate logistics.",
-      imageUrl: "/placeholder.jpg", // Replace with actual image path
-      link: "https://nalamnco.in/"
+      link: "https://artkrati.in/"
     },
     {
       title: "Bezalel Interiors | The Art of Elegant Living",
@@ -95,7 +100,7 @@ export default function WorkPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h1 className="text-6xl font-bold text-transparent bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] bg-clip-text">Our Work</h1>
-            <p className="mt-4 text-xl text-white/80 max-w-3xl mx-auto">We partner with ambitious brands to build exceptional digital products and experiences that drive real business results.</p>
+            <p className="mt-4 text-xl text-white/80 max-w-3xl mx-auto">We partner with ambitious brands to build exceptional digital products and experiences that drive real business results, including websites and applications for clients in Chennai and other Indian cities.</p>
           </div>
 
           <div className="mb-16 flex justify-center">

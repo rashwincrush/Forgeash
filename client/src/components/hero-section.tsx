@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, Award, Trophy, DollarSign, PoundSterling, IndianRupee } from "lucide-react";
 import forgeAshLogo from "@assets/Image_02-05-25_at_10.52_AM-removebg-preview_1752479361775.png";
+import { BOOKING_URL } from "@/config";
+import { trackEvent } from "@/lib/analytics";
 
 export function HeroSection() {
   return (
@@ -23,28 +25,61 @@ export function HeroSection() {
           <div className="text-center lg:text-left animate-slide-in-left">
             <div className="mb-6">
               <span className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[var(--executive-sapphire)]/90 to-[var(--executive-amethyst)]/90 text-white text-sm font-medium backdrop-blur-sm luxury-glow shadow-lg">
-                🚀 Build Smarter, Work Faster, Grow Bigger – with AI!
+                🚀 Websites, AI systems, and SaaS built for real business growth
               </span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Transform Your Business With{" "}
+              Websites & AI Systems That{" "}
               <span className="bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] bg-clip-text text-transparent animate-gradient">
-                Strategic AI Solutions
+                Grow Your Business Worldwide
               </span>
             </h1>
             
             <p className="text-xl text-[var(--executive-silver)] mb-8 leading-relaxed max-w-2xl">
-              We leverage AI, automation, and custom software to help businesses streamline operations, create new revenue streams, and achieve extraordinary results.
+              ForgeAsh designs and builds high-performance websites, AI solutions, and SaaS platforms that turn traffic into customers and manual work into automated workflows.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <Button size="lg" className="bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] text-white luxury-glow hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-lg rounded-xl font-semibold group text-lg border border-white/20">
-                Schedule a Free Strategy Call
-                <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <Button
+                asChild
+                size="lg"
+                className="bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] text-white luxury-glow hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-lg rounded-xl font-semibold group text-lg border border-white/20"
+              >
+                <a
+                  href={BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() =>
+                    trackEvent("cta_click", {
+                      location: "hero",
+                      label: "book_free_strategy_call",
+                    })
+                  }
+                  className="flex items-center justify-center"
+                >
+                  <span>Book an Appointment</span>
+                  <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="border-[var(--executive-navy)]/40 dark:border-white/40 text-[var(--executive-navy)] dark:text-white hover:bg-[var(--executive-navy)]/10 dark:hover:bg-white/15 hover:border-[var(--executive-navy)]/60 dark:hover:border-white/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm bg-[var(--executive-navy)]/5 dark:bg-white/5 rounded-xl font-semibold text-lg px-8 py-4 shadow-lg">
-                Explore Our Services
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="border-[var(--executive-navy)]/40 dark:border-white/40 text-white hover:bg-[var(--executive-navy)]/10 dark:hover:bg-white/15 hover:border-[var(--executive-navy)]/60 dark:hover:border-white/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm bg-[var(--executive-navy)]/5 dark:bg-white/5 rounded-xl font-semibold text-lg px-8 py-4 shadow-lg"
+              >
+                <a
+                  href="/services"
+                  onClick={() =>
+                    trackEvent("cta_click", {
+                      location: "hero",
+                      label: "explore_services",
+                    })
+                  }
+                  className="flex items-center justify-center"
+                >
+                  Explore Our Services
+                </a>
               </Button>
             </div>
             

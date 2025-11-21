@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { LogoTooltip } from "./LogoTooltip";
 
 const clientLogos = [
-  { src: "/src/assets/client-logos/Tara-removebg-preview.png", alt: "Tara's Dental", description: "Leading dental care provider, Chennai.", link: "https://tarasdental.in/", status: "Existing Client" },
   { src: "/src/assets/client-logos/MB_logo-removebg-preview.png", alt: "Mangalabharathi Trust - MB", description: "Educational trust fostering rural development.", link: "https://nalamnco.in/", status: "Existing Client" },
   { src: "/src/assets/client-logos/Bezalellogo.png", alt: "Bezalel Interiors", description: "Award-winning interior design studio.", link: "https://bezalelinterior.com/", status: "Our Work" },
+  { src: "/images/client-logos/Artkrati.png", alt: "Artkrati", description: "High-end interior studio website crafted for a Bengaluru-based brand.", link: "https://artkrati.in/", status: "Our Work", textOnly: true, textLabel: "Artkrati" },
   { src: "/src/assets/client-logos/AMET-removebg-preview.png", alt: "AMET University", description: "India's premier maritime university.", link: "https://www.ametalumni.in/", status: "Existing Client" },
+  { src: "/src/assets/client-logos/AMET-removebg-preview.png", alt: "ForgeCircle – Campus-to-Career Hub", description: "Alumni and campus-to-career platform built for AMET University.", link: "https://www.ametalumni.in/", status: "Our Work" },
   { src: "/src/assets/client-logos/Maersk-removebg-preview.png", alt: "Maersk", description: "Global leader in shipping and logistics.", link: "https://konsunenergy.in/", status: "Our Work" },
-  { src: "/src/assets/client-logos/PR_Classes-removebg-preview.png", alt: "PR Classes", description: "Top coaching institute for competitive exams.", link: "https://prclasses.in/", status: "Existing Client" },
   { src: "/src/assets/client-logos/Route_Revolution-removebg-preview.png", alt: "Route Revolution", description: "Innovative transport and logistics startup.", link: "https://routerevolution.in/#home", status: "Our Work" },
   // Jaymahal.in is not mapped to a logo yet; add if logo available
 ];
@@ -70,14 +70,31 @@ export function ClientLogosSlider() {
                 onFocus={() => { setHoveredIdx(idx); setTooltipIdx(idx); }}
                 onBlur={() => { setHoveredIdx(null); setTooltipIdx(null); }}
               >
-                <div className={`w-36 h-28 flex items-center justify-center mb-2 rounded-2xl border border-white/30 shadow-2xl glass-card transition-all duration-300 ${isSpotlight||isHovered ? "bg-white/80" : "bg-white/50"} group-hover:bg-white/90 group-hover:shadow-2xl`} style={{ boxShadow: isSpotlight||isHovered ? '0 10px 40px 0 #f2c94c44' : '0 6px 32px rgba(0,0,0,0.14)' }}>
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className={`max-h-[70%] max-w-[70%] object-contain transition-all duration-300 ${isSpotlight||isHovered ? "grayscale-0" : "grayscale hover:grayscale-0"}`}
-                    draggable={false}
-                    style={{ filter: isSpotlight||isHovered ? "none" : "grayscale(0.7)" }}
-                  />
+                <div
+                  className={`w-36 h-28 flex items-center justify-center mb-2 rounded-2xl border border-white/30 shadow-2xl glass-card transition-all duration-300 ${
+                    logo.textOnly
+                      ? "bg-slate-900/95"
+                      : isSpotlight || isHovered
+                      ? "bg-white/80 group-hover:bg-white/90"
+                      : "bg-white/50 group-hover:bg-white/90"
+                  } group-hover:shadow-2xl`}
+                  style={{ boxShadow: isSpotlight || isHovered ? "0 10px 40px 0 #f2c94c44" : "0 6px 32px rgba(0,0,0,0.14)" }}
+                >
+                  {logo.textOnly ? (
+                    <span className="text-lg font-semibold tracking-wide text-white font-brother-home">
+                      {logo.textLabel || logo.alt}
+                    </span>
+                  ) : (
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className={`max-h-[70%] max-w-[70%] object-contain transition-all duration-300 ${
+                        isSpotlight || isHovered ? "grayscale-0" : "grayscale hover:grayscale-0"
+                      }`}
+                      draggable={false}
+                      style={{ filter: isSpotlight || isHovered ? "none" : "grayscale(0.7)" }}
+                    />
+                  )}
                 </div>
                 <span className="block text-base font-semibold text-white/90 bg-black/50 rounded-xl px-3 py-1 mt-2 shadow-sm tracking-wide font-sans backdrop-blur-md" style={{letterSpacing: '0.01em'}}>
                   {logo.alt}
@@ -104,14 +121,31 @@ export function ClientLogosSlider() {
                 onFocus={() => { setHoveredIdx(idx); setTooltipIdx(idx); }}
                 onBlur={() => { setHoveredIdx(null); setTooltipIdx(null); }}
               >
-                <div className={`w-36 h-28 flex items-center justify-center mb-2 rounded-2xl border border-white/30 shadow-2xl glass-card transition-all duration-300 ${isSpotlight||isHovered ? "bg-white/80" : "bg-white/50"} group-hover:bg-white/90 group-hover:shadow-2xl`} style={{ boxShadow: isSpotlight||isHovered ? '0 10px 40px 0 #f2c94c44' : '0 6px 32px rgba(0,0,0,0.14)' }}>
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className={`max-h-[70%] max-w-[70%] object-contain transition-all duration-300 ${isSpotlight||isHovered ? "grayscale-0" : "grayscale hover:grayscale-0"}`}
-                    draggable={false}
-                    style={{ filter: isSpotlight||isHovered ? "none" : "grayscale(0.7)" }}
-                  />
+                <div
+                  className={`w-36 h-28 flex items-center justify-center mb-2 rounded-2xl border border-white/30 shadow-2xl glass-card transition-all duration-300 ${
+                    logo.textOnly
+                      ? "bg-slate-900/95"
+                      : isSpotlight || isHovered
+                      ? "bg-white/80 group-hover:bg-white/90"
+                      : "bg-white/50 group-hover:bg-white/90"
+                  } group-hover:shadow-2xl`}
+                  style={{ boxShadow: isSpotlight || isHovered ? "0 10px 40px 0 #f2c94c44" : "0 6px 32px rgba(0,0,0,0.14)" }}
+                >
+                  {logo.textOnly ? (
+                    <span className="text-lg font-semibold tracking-wide text-white font-brother-home">
+                      {logo.textLabel || logo.alt}
+                    </span>
+                  ) : (
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className={`max-h-[70%] max-w-[70%] object-contain transition-all duration-300 ${
+                        isSpotlight || isHovered ? "grayscale-0" : "grayscale hover:grayscale-0"
+                      }`}
+                      draggable={false}
+                      style={{ filter: isSpotlight || isHovered ? "none" : "grayscale(0.7)" }}
+                    />
+                  )}
                 </div>
                 <span className="block text-base font-semibold text-white/90 bg-black/50 rounded-xl px-3 py-1 mt-2 shadow-sm tracking-wide font-sans backdrop-blur-md" style={{letterSpacing: '0.01em'}}>
                   {logo.alt}

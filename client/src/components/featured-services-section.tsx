@@ -58,48 +58,50 @@ export function FeaturedServicesSection() {
       icon: Brain,
       secondaryIcon: Diamond,
       title: "Enterprise AI Implementation",
-      description: "Transform your operations with custom AI solutions that automate tasks, generate insights, and drive strategic decision-making.",
+      description:
+        "Bring AI into your operations in a way that’s safe, predictable, and actually useful. We design workflows that plug into your existing tools instead of forcing new platforms.",
       features: [
-        "Custom AI models tailored to your business needs",
-        "Seamless integration with existing systems",
-        "Ongoing optimization and support"
+        "AI workflows for operations, finance, and support",
+        "Human-in-the-loop review",
+        "Monitoring and iteration as your data evolves"
       ],
       bgGradient: "from-[var(--executive-navy)]/20 to-[var(--executive-blue)]/20",
       iconGradient: "from-[var(--executive-navy)] to-[var(--executive-blue)]",
       buttonGradient: "from-[var(--executive-navy)] to-[var(--executive-blue)]",
-      affirmation: "My AI solutions multiply profits exponentially",
+      affirmation: "The systems I build keep creating value long after launch.",
       particleColor: "bg-blue-400"
     },
     {
       icon: Cloud,
       secondaryIcon: Crown,
       title: "SaaS Platform Innovation",
-      description: "Create scalable, cloud-based applications that generate recurring revenue and deliver continuous value to your customers.",
+      description:
+        "Design and evolve SaaS products with clear roles, dashboards, and workflows that users understand in minutes—not after a training manual.",
       features: [
-        "Subscription-based business models",
-        "Multi-tenant architecture design",
-        "User-friendly interfaces that drive adoption"
+        "Subscription-ready architecture",
+        "Activation and retention-focused UX",
+        "Built-in admin tools and analytics"
       ],
       bgGradient: "from-[var(--executive-purple)]/20 to-[var(--executive-blue)]/20",
       iconGradient: "from-[var(--executive-purple)] to-[var(--executive-blue)]",
       buttonGradient: "from-[var(--executive-purple)] to-[var(--executive-blue)]",
-      affirmation: "My SaaS solutions attract unlimited recurring revenue",
+      affirmation: "My products create recurring value for founders and users.",
       particleColor: "bg-purple-400"
     },
     {
       icon: TrendingUp,
       secondaryIcon: Star,
       title: "Data Analysis & Visualization",
-      description: "Turn complex data into actionable insights with powerful analytics and intuitive visualizations that inform strategic decisions.",
+      description: "Turn operational data into dashboards and insights that leadership uses to make decisions.",
       features: [
-        "Interactive dashboards that reveal patterns",
-        "Predictive analytics that anticipate trends",
-        "Custom reporting tailored to your KPIs"
+        "Interactive KPI dashboards",
+        "Clear visual language",
+        "Shareable reporting layers"
       ],
       bgGradient: "from-[var(--executive-gold)]/20 to-[var(--executive-orange)]/20",
       iconGradient: "from-[var(--executive-amethyst)] to-[var(--executive-sapphire)]",
       buttonGradient: "from-[var(--executive-amethyst)] to-[var(--executive-sapphire)]",
-      affirmation: "My data insights generate massive wealth opportunities",
+      affirmation: "My insights help clients make faster, calmer decisions.",
       particleColor: "bg-amber-400"
     }
   ];
@@ -117,30 +119,22 @@ export function FeaturedServicesSection() {
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Subtle Subliminal Innovation Affirmations */}
-        <div className="subliminal-text prosperity-frequency top-12 left-14">My services create extraordinary value</div>
-        <div className="subliminal-text abundance-flow top-20 right-18">Innovation flows through my solutions</div>
-        <div className="subliminal-text success-magnetism bottom-16 left-22">Clients see immediate transformation</div>
-        <div className="subliminal-text prosperity-frequency bottom-24 right-20">My expertise commands premium investment</div>
+        <div className="subliminal-text prosperity-frequency top-12 left-14">My services create sustainable, compounding value</div>
+        <div className="subliminal-text abundance-flow top-20 right-18">Innovation flows into every system we ship</div>
+        <div className="subliminal-text success-magnetism bottom-16 left-22">Clients feel the impact of our work every day</div>
+        <div className="subliminal-text prosperity-frequency bottom-24 right-20">The products we build keep paying back over time</div>
         <div className={`text-center mb-20 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="inline-block mb-4">
-            <span className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[var(--executive-amethyst)]/20 to-[var(--executive-sapphire)]/20 text-foreground text-sm font-medium backdrop-blur-sm professional-glow dark:text-white shadow-lg">
-              <span className="animate-pulse mr-2">✨</span> Transformative Technology Solutions
+            <span className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[var(--executive-amethyst)]/20 to-[var(--executive-sapphire)]/20 text-foreground text-sm font-medium backdrop-blur-sm border border-white/10">
+              ✨ High-Impact Services
             </span>
           </div>
-          
-          <h2 className="text-5xl font-bold mb-6">
-            <span className="text-transparent bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] bg-clip-text animate-gradient">FEATURED</span>
-            <span className="text-foreground dark:text-white"> SERVICES</span>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
+            What we’re building most often right now
           </h2>
-          
-          <div className="relative">
-            <div className="absolute -left-1/4 top-1/2 w-16 h-16 bg-[var(--executive-amethyst)]/10 rounded-full filter blur-xl animate-pulse-slow"></div>
-            <div className="absolute -right-1/4 top-1/2 w-16 h-16 bg-[var(--executive-blue)]/10 rounded-full filter blur-xl animate-pulse-slow" style={{ animationDelay: "1.5s" }}></div>
-            
-            <p className="text-xl text-muted-foreground dark:text-slate-400 max-w-4xl mx-auto leading-relaxed">
-              We deliver <span className="text-transparent bg-gradient-to-r from-[var(--executive-sapphire)] to-[var(--executive-navy)] bg-clip-text font-medium">strategic technology solutions</span> that drive <span className="text-transparent bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] bg-clip-text font-medium">growth, efficiency,</span> and <span className="text-transparent bg-gradient-to-r from-[var(--executive-sapphire)] to-[var(--executive-amethyst)] bg-clip-text font-medium">competitive advantage</span> for forward-thinking businesses across diverse industries.
-            </p>
-          </div>
+          <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground text-[var(--executive-silver)]">
+            These are the types of projects we deliver again and again for ambitious teams—blending UX, engineering, and data to create systems that quietly power everyday work.
+          </p>
         </div>
         
         <div className="grid lg:grid-cols-3 gap-10">

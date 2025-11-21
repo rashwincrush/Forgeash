@@ -65,10 +65,10 @@ export function IndustryExpertiseSection() {
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Subliminal Prosperity Messages */}
-        <div className="subliminal-text prosperity-frequency top-10 left-14">My industry expertise attracts ideal clients</div>
-        <div className="subliminal-text abundance-flow top-16 right-20">Every industry I serve creates abundant prosperity</div>
-        <div className="subliminal-text success-magnetism bottom-24 left-28">I naturally attract business from all industries</div>
-        <div className="subliminal-text prosperity-frequency bottom-12 right-16">My solutions create exponential wealth for clients</div>
+        <div className="subliminal-text prosperity-frequency top-10 left-14">My experience across industries keeps attracting ideal clients</div>
+        <div className="subliminal-text abundance-flow top-16 right-20">Every sector we serve becomes a source of long-term prosperity</div>
+        <div className="subliminal-text success-magnetism bottom-24 left-28">The more industries we work with, the stronger our positioning becomes</div>
+        <div className="subliminal-text prosperity-frequency bottom-12 right-16">The systems we build create compounding value for clients</div>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-16 opacity-0'}`}>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -81,18 +81,21 @@ export function IndustryExpertiseSection() {
                   </h2>
                   <div className="mt-2 h-1 w-36 mx-auto bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] rounded-full"></div>
                   <h3 className="text-2xl font-semibold text-[var(--executive-silver-light)] mt-6 mb-6">
-                    Solutions That <span className="text-transparent bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] bg-clip-text">Magnetize Success</span> In Every Industry
+                    Solutions shaped around how your industry really works
                   </h3>
                   <div className="relative">
                     <div className="absolute -left-6 -top-6 w-12 h-12 bg-[var(--executive-amethyst)]/20 rounded-full filter blur-xl animate-pulse-slow"></div>
                     <p className="text-xl text-[var(--executive-silver-dark)] mb-8 relative z-10">
-                      We deliver tailored solutions for diverse industries, addressing sector-specific challenges with specialized expertise and innovative approaches.
+                      We’ve worked with universities, clinics, logistics brands, service businesses, and founders. The common thread: systems that respect existing processes while pushing them forward.
                     </p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-4 mt-8">
-                  <Button className="w-full bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] text-white shadow-lg luxury-glow hover:shadow-xl hover-lift font-medium">
-                    Explore Industry Solutions
+                  <Button
+                    asChild
+                    className="w-full bg-gradient-to-r from-[var(--executive-amethyst)] to-[var(--executive-sapphire)] text-white shadow-lg luxury-glow hover:shadow-xl hover-lift font-medium"
+                  >
+                    <a href="/about#approach">Learn About Our Approach</a>
                   </Button>
                 </div>
               </div>
@@ -100,13 +103,9 @@ export function IndustryExpertiseSection() {
             <div className="relative">
               <div className="absolute -right-6 -bottom-6 w-12 h-12 bg-[var(--executive-purple)]/20 rounded-full filter blur-xl animate-pulse-slow"></div>
               <p className="text-lg text-muted-foreground dark:text-slate-400 mb-8 relative z-10">
-                Our team combines deep industry knowledge with cutting-edge technical capabilities to create solutions that drive meaningful results for your specific business context.
+                Instead of forcing one-size-fits-all templates, we map your workflows, stakeholders, and constraints—and then build websites, dashboards, and AI systems that fit the way your team operates.
               </p>
             </div>
-            <Button size="lg" className="bg-gradient-to-r from-[var(--executive-blue)] to-[var(--executive-purple)] text-white hover:from-[var(--executive-blue)] hover:to-[var(--executive-purple)] hover:scale-105 group professional-glow shadow-xl px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 border border-white/10">
-              <Sparkles className="mr-2 h-5 w-5 animate-pulse" />
-              Learn About Our Approach
-            </Button>
           </div>
           
           <div className={`grid grid-cols-3 gap-4 transform transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-16 opacity-0'}`}>
