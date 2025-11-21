@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { LogoTooltip } from "./LogoTooltip";
 
 const clientLogos = [
-  { src: "/src/assets/client-logos/MB_logo-removebg-preview.png", alt: "Mangalabharathi Trust - MB", description: "Educational trust fostering rural development.", link: "https://nalamnco.in/", status: "Existing Client" },
-  { src: "/src/assets/client-logos/Bezalellogo.png", alt: "Bezalel Interiors", description: "Award-winning interior design studio.", link: "https://bezalelinterior.com/", status: "Our Work" },
+  { src: "/images/client-logos/MB_logo-removebg-preview.png", alt: "Mangalabharathi Trust - MB", description: "Educational trust fostering rural development.", link: "https://nalamnco.in/", status: "Existing Client" },
+  { src: "/images/client-logos/Bezalellogo.png", alt: "Bezalel Interiors", description: "Award-winning interior design studio.", link: "https://bezalelinterior.com/", status: "Our Work" },
   { src: "/images/client-logos/Artkrati.png", alt: "Artkrati", description: "High-end interior studio website crafted for a Bengaluru-based brand.", link: "https://artkrati.in/", status: "Our Work", textOnly: true, textLabel: "Artkrati" },
-  { src: "/src/assets/client-logos/AMET-removebg-preview.png", alt: "AMET University", description: "India's premier maritime university.", link: "https://www.ametalumni.in/", status: "Existing Client" },
-  { src: "/src/assets/client-logos/AMET-removebg-preview.png", alt: "ForgeCircle – Campus-to-Career Hub", description: "Alumni and campus-to-career platform built for AMET University.", link: "https://www.ametalumni.in/", status: "Our Work" },
-  { src: "/src/assets/client-logos/Maersk-removebg-preview.png", alt: "Maersk", description: "Global leader in shipping and logistics.", link: "https://konsunenergy.in/", status: "Our Work" },
-  { src: "/src/assets/client-logos/Route_Revolution-removebg-preview.png", alt: "Route Revolution", description: "Innovative transport and logistics startup.", link: "https://routerevolution.in/#home", status: "Our Work" },
+  { src: "/images/client-logos/AMET-removebg-preview.png", alt: "AMET University", description: "India's premier maritime university.", link: "https://www.ametalumni.in/", status: "Existing Client" },
+  { src: "/images/client-logos/AMET-removebg-preview.png", alt: "ForgeCircle – Campus-to-Career Hub", description: "Alumni and campus-to-career platform built for AMET University.", link: "https://www.ametalumni.in/", status: "Our Work" },
+  { src: "/images/client-logos/Maersk-removebg-preview.png", alt: "Maersk", description: "Global leader in shipping and logistics.", link: "https://konsunenergy.in/", status: "Our Work" },
+  { src: "/images/client-logos/Route_Revolution-removebg-preview.png", alt: "Route Revolution", description: "Innovative transport and logistics startup.", link: "https://routerevolution.in/#home", status: "Our Work" },
   // Jaymahal.in is not mapped to a logo yet; add if logo available
 ];
 
